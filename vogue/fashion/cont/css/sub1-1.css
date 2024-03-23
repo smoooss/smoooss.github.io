@@ -1,0 +1,560 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color:#000000;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    vertical-align: top;
+}
+
+
+
+
+#wrap{
+    width: 100%;
+}
+
+
+
+
+
+#main{
+    max-width: 1240px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+#main .aside{
+    width: 240px;
+    position: absolute;
+    top: 100px;
+}
+#main .aside > .text{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#main .aside > .text span{
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+#main .aside > .text p{
+    width: 30%;
+    margin-top: 10px;
+    color: #333333;
+    font-size: 13px;
+    letter-spacing: 0;
+}
+#main .aside > .text p:nth-child(3){
+    width: 70%;
+    text-align: right;
+}
+#main .aside .cont{
+    margin: 15px 0;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    transition: 0.5s;
+}
+#main .aside .cont > span{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+#main .aside .cont ul li{
+    margin-bottom: 10px;
+}
+#main .aside .cont ul li a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main .aside .cont ul li img{
+    width: 100px;
+}
+#main .aside .cont ul li .text{
+    width: 125px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main .aside .cont ul li .text span{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+#main .aside .cont ul li .text p{
+    width: 50%;
+    height: 0;
+    color: #555555;
+    font-size: 12px;
+    position: relative;
+    letter-spacing: 0;
+}
+#main .aside .cont ul li .text p:nth-child(3){
+    width: 50%;
+    text-align: right;
+}
+#main .aside .cont ul li .text p:nth-child(3)::before{
+    content: "|";
+    font-size: 12px;
+    font-weight: 500;
+    color: #999999;
+    position: absolute;
+    left: 2px;
+}
+
+#main .main-cont{
+    max-width: 1400px;
+    width: 100%;
+}
+#main .main-cont .cont{
+    width: calc(100% - 320px);
+    margin-left: 320px;
+    position: relative;
+    top: 140px;
+}
+#main .main-cont .cont > ul{
+    border-bottom: 1px solid #333333;
+}
+#main .main-cont .cont > ul > li{
+    margin-top: 90px;
+}
+#main .main-cont .cont > ul > li:nth-child(1){
+    margin-top: 40px;
+}
+#main .main-cont .cont > ul > li:last-child{
+    margin-bottom: 90px;
+}
+#main .main-cont .cont .name{
+    font-size: 30px;
+    font-weight: 700;
+}
+#main .main-cont .cont p{
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 30px;
+}
+#main .main-cont .cont ul li .on{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main .main-cont .cont ul li ul li{
+    position: relative;
+}
+#main .main-cont .cont ul li .on li{
+    width: 480px;
+}
+#main .main-cont .cont ul li ul li span{
+    display: inline-block;
+    height: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+#main .main-cont .cont ul li .on li:nth-child(2){
+    width: calc(100% - 510px);
+}
+#main .main-cont .cont ul li ul li .insta{
+    position: absolute;
+    left: 15px;
+    bottom: 18px;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+}
+#main .main-cont .cont a{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 5px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+
+
+#footer{
+    margin-top: 350px;
+}
+
+
+
+
+@media only screen and (max-width:1400px){
+
+    #main .aside{
+        width: 220px;
+        transition: 0.5s;
+    }
+    #main .aside > .text span{
+        font-size: 0.7em;
+        transition: 0.5s;
+    }
+    #main .aside > .text p{
+        margin-top: 7px;
+        font-size: 0.6em;
+        transition: 0.5s;
+    }
+    #main .aside .cont{
+        height: 345px;
+        transition: 0.5s;
+    }
+    #main .aside .cont > span{
+        font-size: 0.7em;
+        transition: 0.5s;
+    }
+    #main .aside .cont ul li img{
+        width: 90px;
+        transition: 0.5s;
+    }
+    #main .aside .cont ul li .text{
+        width: 118px;
+        margin-top: 5px;
+        transition: 0.5s;
+    }
+    #main .aside .cont ul li .text span{
+        font-size: 0.7em;
+        transition: 0.5s;
+    }
+    #main .aside .cont ul li .text p{
+        font-size: 0.6em;
+        transition: 0.5s;
+    }
+    #main .aside .cont ul li .text p:nth-child(3)::before{
+        font-size: 0.9em;
+        transition: 0.5s;
+    }
+    #main .main-cont .cont{
+        width: calc(100% - 290px);
+        margin-left: 290px;
+        transition: 0.5s;
+    }
+    #main .main-cont .cont .name{
+        font-size: 1.4em;
+        transition: 0.5s;
+    }
+    #main .main-cont .cont p{
+        margin-top: 15px;
+        font-size: 0.85em;
+        line-height: 1.7em;
+        transition: 0.5s;
+    }
+    #main .main-cont .cont ul li ul li span{
+        font-size: 0.9em;
+        transition: 0.5s;
+    }
+    #main .main-cont .cont ul li .on span{
+        margin-top: 5px;
+        transition: 0.5s;
+    }
+    #main .main-cont .cont ul li .on p{
+        margin-top: 10px;
+        transition: 0.5s;
+    }
+    #main .main-cont .cont ul li .on li{
+        width: 48%;
+        transition: 0.5s;
+    }
+    #main .main-cont .cont ul li .on li:nth-child(2){
+        width: 48%;
+        transition: 0.5s;
+    }
+    #main .main-cont .cont a{
+        font-size: 0.75em;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width:1280px){
+
+    #main .aside{
+        width: 200px;
+    }
+    #main .aside > .text span{
+        font-size: 0.65em;
+    }
+    #main .aside > .text p{
+        margin-top: 5px;
+    }
+    #main .aside .cont{
+        height: 310px;
+    }
+    #main .aside .cont ul li img{
+        width: 80px;
+    }
+    #main .aside .cont ul li .text{
+        width: 110px;
+        margin-top: 3px;
+    }
+    #main .aside .cont ul li .text span{
+        font-size: 0.65em;
+    }
+    #main .aside .cont ul li .text p{
+        font-size: 0.55em;
+    }
+    #main .main-cont .cont{
+        width: calc(100% - 250px);
+        margin-left: 250px;
+    }
+    #main .main-cont .cont .name{
+        font-size: 1.2em;
+    }
+    #main .main-cont .cont p{
+        margin-top: 15px;
+        font-size: 0.8em;
+        line-height: 1.6em;
+    }
+    #main .main-cont .cont ul li ul li span{
+        font-size: 0.8em;
+    }
+    #main .main-cont .cont ul li .on span{
+        margin-top: -5px;
+    }
+    #main .main-cont .cont ul li .on p{
+        margin-top: 10px;
+    }
+    #main .main-cont .cont a{
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width:1150px){
+
+    #main .main-cont .cont p{
+        margin-top: 15px;
+        font-size: 0.73em;
+        line-height: 1.5em;
+    }
+}
+
+@media only screen and (max-width:1024px){
+
+    #main .aside{
+        width: 180px;
+    }
+    #main .aside > .text span{
+        font-size: 0.63em;
+    }
+    #main .aside > .text p{
+        font-size: 0.55em;
+    }
+    #main .aside .cont{
+        height: 280px;
+    }
+    #main .aside .cont ul li img{
+        width: 70px;
+    }
+    #main .aside .cont ul li .text{
+        width: 100px;
+        margin-top: 2px;
+    }
+    #main .aside .cont ul li .text span{
+        font-size: 0.63em;
+        line-height: 1.3em;
+    }
+    #main .aside .cont ul li .text p{
+        font-size: 0.5em;
+    }
+    #main .main-cont .cont{
+        width: calc(100% - 230px);
+        margin-left: 230px;
+    }
+    #main .main-cont .cont .name{
+        font-size: 1em;
+    }
+    #main .main-cont .cont ul li .on{
+        display: block;
+    }
+    #main .main-cont .cont ul li .on span{
+        margin-top: 30px;
+    }
+    #main .main-cont .cont ul li .on li{
+        width: 100%;
+    }
+    #main .main-cont .cont ul li .on li:nth-child(2){
+        width: 100%;
+    }
+    #main .main-cont .cont a{
+        font-size: 0.65em;
+    }
+}
+
+@media only screen and (max-width:800px){
+
+    #main .aside{
+        width: 100%;
+        position: relative;
+        top: 140px;
+    }
+    #main .aside > .text span{
+        width: unset;
+        margin-right: 10px;
+        font-size: 0.7em;
+    }
+    #main .aside > .text p{
+        width: unset;
+        margin-top: 2px;
+        margin-left: 10px;
+        font-size: 0.6em;
+    }
+    #main .aside > .text p:nth-child(3){
+        width: unset;
+    }
+    #main .aside .cont{
+        height: 140px;
+    }
+    #main .aside .cont ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #main .aside .cont ul li{
+        width: 31.5%;
+    }
+    #main .aside .cont ul li img{
+        width: 40%;
+    }
+    #main .aside .cont ul li .text{
+        width: 55%;
+    }
+    #main .aside .cont ul li .text span{
+        height: 38px;
+        font-size: 0.7em;
+    }
+    #main .aside .cont ul li .text p{
+        font-size: 0.55em;
+    }
+    #main .aside .cont ul li .text p:nth-child(3)::before{
+        font-size: 1.1em;
+    }
+    #main .main-cont .cont{
+        width: 100%;
+        margin-left: 0;
+        position: relative;
+        top: 350px;
+    }
+    #main .main-cont .cont ul li ul li .insta{
+        left: 15px;
+        bottom: 17px;
+        transition: 0.5s;
+    }
+    #footer{
+        margin-top: 500px;
+    }
+}
+
+@media only screen and (max-width:740px){
+
+    #main .aside .cont{
+        height: 132px;
+    }
+}
+
+@media only screen and (max-width:700px){
+
+    #main .aside .cont{
+        height: 125px;
+    }
+}
+
+@media only screen and (max-width:640px){
+
+    #main .aside .cont{
+        height: 375px;
+    }
+    #main .aside .cont ul{
+        display: block;
+    }
+    #main .aside .cont ul li{
+        width: 100%;
+    }
+    #main .aside .cont ul li img{
+        width: 100px;
+    }
+    #main .aside .cont ul li .text{
+        width: calc(100% - 120px);
+    }
+    #main .aside .cont ul li .text span{
+        width: 100%;
+        font-size: 0.85em;
+        margin-top: 25px;
+    }
+    #main .aside .cont ul li .text p{
+        width: 80px;
+        margin-top: -25px;
+        font-size: 0.65em;
+    }
+    #main .aside .cont ul li .text p:nth-child(3){
+        width: calc(100% - 80px);
+        text-align: left;
+    }
+    #main .aside .cont ul li .text p:nth-child(3)::before{
+        font-size: 1em;
+        left: -10px;
+    }
+    #main .main-cont .cont{
+        top: 600px;
+    }
+    #main .main-cont .cont a{
+        font-size: 0.6em;
+    }
+    #main .main-cont .cont ul li ul li .insta{
+        left: 15px;
+        bottom: 16px;
+        font-size: 0.6em;
+    }
+    #footer{
+        margin-top: 750px;
+    }
+}
+
+@media only screen and (max-width:499px){
+
+    #main .aside .cont ul li .text{
+        width: calc(100% - 115px);
+    }
+    #main .aside .cont ul li .text span{
+        margin-top: 10px;
+    }
+    #main .aside .cont ul li .text p{
+        width: 75px;
+        margin-top: 0;
+        font-size: 0.6em;
+    }
+    #main .aside .cont ul li .text p:nth-child(3){
+        width: calc(100% - 75px);
+    }
+    #main .main-cont .cont{
+        top: 600px;
+    }
+    #main .main-cont .cont a{
+        font-size: 0.6em;
+    }
+    #main .main-cont .cont ul li ul li .insta{
+        left: 12px;
+        bottom: 13px;
+        font-size: 0.55em;
+    }
+    #footer{
+        margin-top: 750px;
+    }
+}
