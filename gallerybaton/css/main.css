@@ -567,11 +567,6 @@
         line-height: 10px;
     }
     #main-cont .cont.c2 ul li .back{
-        bottom: 28px;
-    }
-    #main-cont .cont.c2 ul li:nth-child(1) .back,
-    #main-cont .cont.c2 ul li:nth-child(3) .back,
-    #main-cont .cont.c2 ul li:nth-child(4) .back{
-        bottom: 31px;
+        display: none;
     }
 }
