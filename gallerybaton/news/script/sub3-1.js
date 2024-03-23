@@ -1,25 +1,26 @@
 $(document).ready(function(){
 
 
+    a=$(window).width()
 
-    $('#main-cont .cont').mouseover(function(){
-        var a=$(this).find('.name').width();
+    if(a>500){
+        
+        $('#main-cont .cont').mouseover(function(){
+            var a=$(this).find('.name').width();
 
-        $(this).find('.back').css({'width':a}).stop().fadeIn(100)
-    }).mouseout(function(){
-        $(this).find('.back').stop().fadeOut(200)
-    });
+            $(this).find('.back').css({'width':a}).stop().fadeIn(100)
+        }).mouseout(function(){
+            $(this).find('.back').stop().fadeOut(200)
+        });
+
+        $('#sub-cont .cont').mouseover(function(){
+            var a=$(this).find('.name').width();
     
-
-
-
-    $('#sub-cont .cont').mouseover(function(){
-        var a=$(this).find('.name').width();
-
-       $(this).find('.back').css({'width':a}).stop().fadeIn(50)
-    }).mouseout(function(){
-        $(this).find('.back').stop().fadeOut(200)
-    });
+           $(this).find('.back').css({'width':a}).stop().fadeIn(50)
+        }).mouseout(function(){
+            $(this).find('.back').stop().fadeOut(200)
+        });
+    }
 
 
 
