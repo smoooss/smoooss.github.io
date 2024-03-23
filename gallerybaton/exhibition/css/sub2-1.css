@@ -1,0 +1,470 @@
+@charset "UTF-8";
+
+
+
+
+#wrap{
+    width: 100%;
+}
+
+
+
+
+#main-ad{
+    width: 100%;
+    margin-top: 150px;
+    transition: 1s;
+    opacity: 0;
+}
+#main-ad .title{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+#main-ad .title h2{
+    font-size: 18px;
+    text-align: center;
+}
+#main-ad .contwrap{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#main-ad .contwrap .cont{
+    max-width: 680px;
+    width: 86%;
+    margin: 0 auto;
+    position: relative;
+}
+#main-ad .contwrap .cont .name{
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+#main-ad .contwrap .cont p{
+    font-size: 13px;
+    color: #333333;
+}
+#main-ad .contwrap .cont .back{
+    width: 335px;
+    height: 10px;
+    background-color: #fffb0080;
+    position: absolute;
+    bottom: 31px;
+    left: -2px;
+    display: none;
+}
+
+
+
+
+
+#main-cont{
+    width: 100%;
+}
+#main-cont .title{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 140px;
+    margin-bottom: 60px;
+}
+#main-cont .title ul{
+    margin: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main-cont .title ul li{
+    letter-spacing: 1px;
+}
+#main-cont .title ul li:nth-child(2){
+    width: calc(100% - 50px);
+    margin-top: 8px;
+    border-top: 1px solid #909090;
+}
+#main-cont .contentswrap{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main-cont .contentswrap .cont{
+    width: 345px;
+    height: 230px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    position: relative;
+    transition: 1s;
+    opacity: 0;
+}
+#main-cont .contentswrap .cont:nth-child(3n+1){
+    margin-left: 150px;
+}
+#main-cont .contentswrap .cont:nth-child(3n+3){
+    margin-right: 150px;
+}
+#main-cont .contentswrap .cont:nth-child(n+10){
+    display: none;
+}
+#main-cont .contentswrap .cont .front{
+    width: 345px;
+    height: 230px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#main-cont .contentswrap .cont .front a{
+    display: block;
+    width: 345px;
+    height: 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#main-cont .contentswrap .cont .front span,
+#main-cont .contentswrap .cont .front p{
+    color: #ffffff;
+    font-weight: 400;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+}
+#main-cont .contentswrap .cont .front span{
+    bottom: 66px;
+}
+#main-cont .contentswrap .cont .front h3{
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    position: absolute;
+    left: 25px;
+    bottom: 44px;
+}
+
+#main-cont .contentswrap .more,
+#main-cont .contentswrap .less{
+    width: 70px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+#main-cont .contentswrap .less{
+    display: none;
+}
+#main-cont .contentswrap .more i,
+#main-cont .contentswrap .less i{
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+}
+#main-cont .contentswrap .more i{
+    top: -1px;
+}
+#main-cont .contentswrap .less i{
+    top: 6px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1400px){
+
+    #main-cont .title{
+        margin-top: 135px;
+        margin-bottom: 55px;
+        transition: 0.5s;
+    }
+    #main-cont .title ul{
+        margin: 0 7%;
+        transition: 0.5s;
+    }
+    #main-cont .contentswrap .cont{
+        width: 27.5%;
+        height: 100%;
+    }
+    #main-cont .contentswrap .cont:nth-child(3n+1){
+        margin-left: 7%;
+    }
+    #main-cont .contentswrap .cont:nth-child(3n+3){
+        margin-right: 7%;
+    }
+    #main-cont .contentswrap .cont .front{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width:1280px){
+    
+    #main-ad .title h2{
+        font-size: 17px;
+        transition: 0.5s;
+    }
+    #main-ad .contwrap{
+        margin-top: 45px;
+        transition: 0.5s;
+    }
+    #main-ad .contwrap .cont .name{
+        margin-top: 25px;
+        margin-bottom: 9px;
+        font-size: 17px;
+        transition: 0.5s;
+    }
+    #main-ad .contwrap .cont p{
+        font-size: 12px;
+        transition: 0.5s;
+    }
+    #main-ad .contwrap .cont .back{
+        height: 9px;
+        bottom: 28px;
+    }
+    #main-cont .title{
+        margin-top: 130px;
+        margin-bottom: 45px;
+    }
+    #main-cont .contentswrap .cont .front span,
+    #main-cont .contentswrap .cont .front p{
+        font-size: 11px;
+        left: 20px;
+        bottom: 20px;
+        transition: 0.5s;
+    }
+    #main-cont .contentswrap .cont .front span{
+        bottom: 59px;
+        transition: 0.5s;
+    }
+    #main-cont .contentswrap .cont .front h3{
+        font-size: 14px;
+        left: 20px;
+        bottom: 38px;
+        transition: 0.5s;
+    }
+    #main-cont .contentswrap .more,
+    #main-cont .contentswrap .less{
+        font-size: 14px;
+        transition: 0.5s;
+    }
+    #main-cont .contentswrap .more i,
+    #main-cont .contentswrap .less i{
+        font-size: 14px;
+        transition: 0.5s;
+    }
+    #main-cont .contentswrap .less i{
+        top: 5px;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    
+    #main-ad .title h2{
+        font-size: 16px;
+    }
+    #main-ad .contwrap{
+        margin-top: 40px;
+    }
+    #main-ad .contwrap .cont .name{
+        margin-top: 25px;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    #main-ad .contwrap .cont p{
+        font-size: 11px;
+    }
+    #main-ad .contwrap .cont .back{
+        height: 8px;
+        bottom: 25px;
+    }
+    #main-cont .title{
+        margin-top: 120px;
+        margin-bottom: 40px;
+    }
+    #main-cont .title ul li{
+        font-size: 11px;
+        transition: 0.5s;
+    }
+    #main-cont .title ul li:nth-child(2){
+        width: calc(100% - 45px);
+        margin-top: 6px;
+        transition: 0.5s;
+    }
+    #main-cont .contentswrap .cont{
+        width: 42%;
+    }
+    #main-cont .contentswrap .cont .front span,
+    #main-cont .contentswrap .cont .front p{
+        font-size: 12px;
+        left: 25px;
+        bottom: 25px;
+    }
+    #main-cont .contentswrap .cont .front span{
+        bottom: 66px;
+    }
+    #main-cont .contentswrap .cont .front h3{
+        font-size: 15px;
+        left: 25px;
+        bottom: 44px;
+    }
+    #main-cont .contentswrap .cont:nth-child(3n+1){
+        margin-left: 0;
+    }
+    #main-cont .contentswrap .cont:nth-child(3n+3){
+        margin-right: 0;
+    }
+    #main-cont .contentswrap .cont:nth-child(2n+1){
+        margin-left: 7%;
+    }
+    #main-cont .contentswrap .cont:nth-child(2n+2){
+        margin-right: 7%;
+    }
+    #main-cont .contentswrap .cont:nth-child(n+9){
+        display: none;
+    }
+}
+
+@media only screen and (max-width:800px){
+    
+    #main-ad .title{
+        margin-top: 55px;
+        transition: 0.5s;
+    }
+    #main-ad .title h2{
+        font-size: 15px;
+    }
+    #main-ad .contwrap{
+        margin-top: 35px;
+    }
+    #main-ad .contwrap .cont .name{
+        margin-bottom: 7px;
+        font-size: 15px;
+    }
+    #main-ad .contwrap .cont p{
+        font-size: 10px;
+    }
+    #main-ad .contwrap .cont .back{
+        height: 7px;
+        bottom: 23px;
+    }
+    #main-cont .title{
+        margin-top: 100px;
+        margin-bottom: 35px;
+    }
+    #main-cont .contentswrap .cont .front span,
+    #main-cont .contentswrap .cont .front p{
+        font-size: 11px;
+        left: 20px;
+        bottom: 20px;
+    }
+    #main-cont .contentswrap .cont .front span{
+        bottom: 59px;
+    }
+    #main-cont .contentswrap .cont .front h3{
+        font-size: 14px;
+        left: 20px;
+        bottom: 38px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    
+    #main-ad .title{
+        margin-top: 50px;
+    }
+    #main-ad .title h2{
+        font-size: 14px;
+    }
+    #main-ad .contwrap{
+        margin-top: 30px;
+    }
+    #main-ad .contwrap .cont .name{
+        margin-top: 20px;
+        margin-bottom: 6px;
+        font-size: 14px;
+    }
+    #main-ad .contwrap .cont p{
+        font-size: 9px;
+    }
+    #main-ad .contwrap .cont .back{
+        bottom: 22px;
+    }
+    #main-cont .title{
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    #main-cont .title ul li{
+        font-size: 10px;
+    }
+    #main-cont .title ul li:nth-child(2){
+        width: calc(100% - 40px);
+    }
+    #main-cont .contentswrap .cont{
+        width: 86%;
+        margin-left: 7%;
+    }
+    #main-cont .contentswrap .cont:nth-child(3n+1){
+        margin-left: 7%;
+    }
+    #main-cont .contentswrap .cont .front span,
+    #main-cont .contentswrap .cont .front p{
+        font-size: 12px;
+        left: 25px;
+        bottom: 25px;
+    }
+    #main-cont .contentswrap .cont .front span{
+        bottom: 66px;
+    }
+    #main-cont .contentswrap .cont .front h3{
+        font-size: 15px;
+        left: 25px;
+        bottom: 44px;
+    }
+}
+
+@media only screen and (max-width:499px){
+
+    #main-cont .contentswrap .cont .front{
+        background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+        display: block;
+    }
+    #main-cont .contentswrap .cont .front span,
+    #main-cont .contentswrap .cont .front p{
+        font-size: 11px;
+        left: 20px;
+        bottom: 20px;
+    }
+    #main-cont .contentswrap .cont .front span{
+        bottom: 59px;
+    }
+    #main-cont .contentswrap .cont .front h3{
+        font-size: 14px;
+        left: 20px;
+        bottom: 38px;
+    }
+    #main-cont .contentswrap .more,
+    #main-cont .contentswrap .less{
+        font-size: 12px;
+    }
+    #main-cont .contentswrap .more i,
+    #main-cont .contentswrap .less i{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color:#000000;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    word-spacing: 2px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    vertical-align: top;
+}
+
+
+
+body::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+body::-webkit-scrollbar-trac{
+    background-color:transparent;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: #777777;
+    background-attachment: fixed;
+}
+body::-webkit-scrollbar-button{
+    width: 0;
+    height: 0;
+}
+body::-webkit-scrollbar-corner{
+    width: 0;
+    height: 0;
+}
+
+#header{
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+}
+#header .header{
+    max-width: 1400px;
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#header .header .logo{
+    width: 280px;
+    margin-top: 35px;
+    margin-left: 150px;
+}
+#header .header .nav{
+    width: 320px;
+    margin-top: 45px;
+    margin-right: 150px;
+    position: relative;
+    z-index: 1;
+}
+#header .header .nav > i{
+    font-size: 20px;
+    position: absolute;
+    top: -3px;
+    right: 7%;
+    display: none;
+}
+#header .header .nav ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+#header .header .nav ul li{
+    position: relative;
+}
+#header .header .nav ul li{
+    width: 50px;
+}
+#header .header .nav ul li:nth-child(2){
+    width: 80px;
+}
+#header .header .nav ul li:nth-child(3){
+    width: 40px;
+}
+#header .header .nav ul li:nth-child(5){
+    width: 20px;
+}
+#header .header .nav ul li:nth-child(7){
+    display: none;
+}
+#header .header .nav ul li a{
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+#header .header .nav ul li i{
+    font-size: 20px;
+    position: absolute;
+    top: -3px;
+    right: 2px;
+}
+#header .header .nav ul li span{
+    height: 5px;
+    background-color: #fffb0080;
+    position: absolute;
+    top: 5px;
+    left: 1px;
+}
+#header .header .nav ul li:nth-child(6){
+    display: none;
+}
+
+
+
+
+.btn i{
+    font-size: 40px;
+    color: #aaaaaa;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width:1400px){
+
+    #header .header .logo{
+        margin-left: 7%;
+        transition: 0.5s;
+    }
+    #header .header .nav{
+        margin-right: 7%;
+    }
+    .btn i{
+        right: 7%;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width:1280px){
+
+    #header .header .logo{
+        width: 260px;
+    }
+    #header .header .nav{
+        width: 300px;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width:1024px){
+
+    #header .header .logo{
+        width: 240px;
+    }
+    #header .header .nav{
+        width: 270px;
+    }
+    #header .header .nav ul li a{
+        font-size: 11px;
+        transition: 0.5s;
+    }
+    .btn i{
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    
+    #header .header{
+        height: 85px;
+        margin-right: 5%;
+    }
+    #header .header .logo{
+        width: 220px;
+    }
+    #header .header .nav{
+        width: 100px;
+        margin-top: 40px;
+        margin-right: 5%;
+    }
+    #header .header .nav ul{
+        display: unset;
+        text-align: right;
+    }
+    #header .header .nav ul li{
+        padding: 5px 10px;
+        background-color: #ffffff;
+    }
+    #header .header .nav ul li{
+        width: 80px;
+    }
+    #header .header .nav ul li:nth-child(2){
+        width: 80px;
+    }
+    #header .header .nav ul li:nth-child(3){
+        width: 80px;
+    }
+    #header .header .nav ul li:nth-child(5){
+        width: 80px;
+    }
+    #header .header .nav ul li:nth-child(7){
+        padding: 15px 10px;
+    }
+    #header .header .nav ul li i{
+        display: block;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #header .header .nav ul li span{
+        top: 10px;
+        right: 10px;
+        left: auto;
+    }
+    #header .header .nav ul{
+        display: none;
+    }
+    #header .header .nav i{
+        display: block;
+    }
+    .btn i{
+        font-size: 33px;
+    }
+}
+@media only screen and (max-width:640px){
+
+
+    #header .header{
+        height: 80px;
+    }
+    #header .header .logo{
+        width: 200px;
+    }
+    .btn i{
+        font-size: 30px;
+    }
+}

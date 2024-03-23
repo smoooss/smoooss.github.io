@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+
+
+#wrap{
+    width: 100%;
+}
+
+
+
+
+
+#main-cont{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+    transition: 1s;
+    opacity: 0;
+}
+#main-cont .cont{
+    max-width: 1100px;
+    width: 86%;
+    margin: 0 auto;
+    text-align: center;
+}
+#main-cont .cont img{
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+#main-cont .cont p{
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 25px;
+    transition: 1s;
+    opacity: 0;
+}
+
+#main-cont form{
+    max-width: 1100px;
+    width: 86%;
+    height: 205px;
+    margin: 0 auto;
+    margin-top: 240px;
+    text-align: center;
+    position: relative;
+    transition: 1s;
+    opacity: 0;
+}
+#main-cont form h2{
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 18px;
+}
+#main-cont form input{
+    width: 200px;
+    height: 35px;
+    border: 1px solid #dddddd;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#main-cont form .name{
+    top: 50px;
+}
+#main-cont form .email{
+    top: 90px;
+}
+#main-cont form .phone{
+    top: 130px;
+}
+#main-cont form .massage{
+    width: calc(100% - 210px);
+    height: 204px;
+    position: absolute;
+    top: 0;
+    left: 205px;
+}
+#main-cont form .send{
+    width: 202px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width:1280px){
+
+    #main-cont .cont img{
+        margin-bottom: 40px;
+        transition: 0.5s;
+    }
+    #main-cont .cont p{
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 23px;
+        transition: 0.5s;
+    }
+    #main-cont form h2{
+        font-size: 17px;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width:1024px){
+
+    #main-cont .cont img{
+        margin-bottom: 30px;
+    }
+    #main-cont .cont p{
+        margin-bottom: 20px;
+        font-size: 13px;
+        line-height: 21px;
+    }
+    #main-cont form h2{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:800px){
+
+    #main-cont .cont img{
+        margin-bottom: 25px;
+    }
+    #main-cont .cont p{
+        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 19px;
+    }
+    #main-cont form h2{
+        width: 150px;
+        font-size: 15px;
+    }
+    #main-cont form input{
+        width: 150px;
+        font-size: 11px;
+        transition: 0.5s;
+    }
+    #main-cont form .massage{
+        width: calc(100% - 158px);
+        left: 155px;
+        transition: 0.5s;
+    }
+    #main-cont form .send{
+        width: 152px;
+        font-size: 11px;
+        top: 170px;
+        transition: 0.5s;
+    }
+}
+
+
+@media only screen and (max-width:640px){
+
+    #main-cont .cont p{
+        font-size: 11px;
+        line-height: 17px;
+    }
+    #main-cont form{
+        height: 170px;
+    }
+    #main-cont form h2{
+        width: 110px;
+        top: 8px;
+        font-size: 13px;
+    }
+    #main-cont form input{
+        width: 110px;
+        height: 30px;
+        font-size: 10px;
+    }
+    #main-cont form .name{
+        top: 35px;
+        transition: 0.5s;
+    }
+    #main-cont form .email{
+        top: 70px;
+        transition: 0.5s;
+    }
+    #main-cont form .phone{
+        top: 105px;
+        transition: 0.5s;
+    }
+    #main-cont form .massage{
+        width: calc(100% - 118px);
+        height: 169px;
+        left: 115px;
+    }
+    #main-cont form .send{
+        width: 112px;
+        font-size: 10px;
+        top: 140px;
+    }
+}

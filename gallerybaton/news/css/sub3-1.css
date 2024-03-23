@@ -1,0 +1,574 @@
+@charset "UTF-8";
+
+
+
+
+
+#wrap{
+    width: 100%;
+}
+
+
+
+
+
+#main-cont{
+    width: 100%;
+    margin-top: 150px;
+    transition: 1s;
+    opacity: 0;
+}
+#main-cont .title{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+#main-cont .title h2{
+    font-size: 18px;
+    text-align: center;
+}
+#main-cont .contwrap{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#main-cont .contwrap .cont{
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+#main-cont .contwrap .cont .image{
+    max-width: 1100px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#main-cont .contwrap .cont a{
+    position: relative;
+}
+#main-cont .contwrap .cont h2{
+    font-size: 13px;
+    font-weight: 500;
+    color: #333333;
+}
+#main-cont .contwrap .cont .name{
+    display: inline-block;
+    margin: 10px auto;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+#main-cont .contwrap .cont .back{
+    height: 10px;
+    background-color: #fffb0080;
+    position: absolute;;
+    left: 0;
+    bottom: 95px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#main-cont .contwrap .cont p{
+    font-size: 13px;
+    line-height: 20px;
+    color: #333333;
+}
+#main-cont .contwrap .cont p:last-child{
+    line-height: 45px;
+}
+
+
+
+
+#sub-cont{
+    width: 100%;
+}
+#sub-cont .title{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 140px;
+    margin-bottom: 60px;
+}
+#sub-cont .title ul{
+    margin: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#sub-cont .title ul li{
+    letter-spacing: 1px;
+}
+#sub-cont .title ul li:nth-child(2){
+    width: calc(100% - 60px);
+    margin-top: 8px;
+    border-top: 1px solid #909090;
+}
+#sub-cont .contentswrap{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#sub-cont .contentswrap .cont{
+    width: 540px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    transition: 1s;
+    opacity: 0;
+}
+#sub-cont .contentswrap .cont:nth-child(2n+1){
+    margin-left: 150px;
+}
+#sub-cont .contentswrap .cont:nth-child(2n+2){
+    margin-right: 150px;
+}
+#sub-cont .contentswrap .cont:nth-child(n+7){
+    display: none;
+}
+
+#sub-cont .contentswrap .cont a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#sub-cont .contentswrap .cont .image{
+    width: 180px;
+}
+#sub-cont .contentswrap .cont.c3 .image,
+#sub-cont .contentswrap .cont.c11 .image{
+    width: 178px;
+    border: 1px solid #cccccc;
+}
+#sub-cont .contentswrap .cont .discript{
+    width: 340px;
+    margin-top: 20px;
+    position: relative;
+}
+#sub-cont .contentswrap .cont .discript h3{
+    font-size: 12px;
+    font-weight: 500;
+    color: #333333;
+}
+#sub-cont .contentswrap .cont .discript .name{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+#sub-cont .contentswrap .cont .discript .back{
+    height: 8px;
+    background-color: #fffb0080;
+    position: absolute;
+    top: 35px;
+    left: -1px;
+}
+#sub-cont .contentswrap .cont .discript p{
+    margin-top: 15px;
+    color: #333333;
+}
+
+
+#sub-cont .contentswrap .more,
+#sub-cont .contentswrap .less{
+    width: 70px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+#sub-cont .contentswrap .less{
+    display: none;
+}
+#sub-cont .contentswrap .more i,
+#sub-cont .contentswrap .less i{
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+}
+#sub-cont .contentswrap .more i{
+    top: -1px;
+}
+#sub-cont .contentswrap .less i{
+    top: 6px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1400px){
+    
+    #sub-cont .title{
+        margin-top: 135px;
+        margin-bottom: 55px;
+        transition: 0.5s;
+    }
+    #sub-cont .title ul{
+        margin: 0 7%;
+        transition: 0.5s;
+    }
+    #sub-cont .contentswrap{
+        margin-top: 25px;
+        transition: 0.5s;
+    }
+    #sub-cont .contentswrap .cont{
+        width: 42%;
+        margin-top: 150px;
+        opacity: 0;
+    }
+    #sub-cont .contentswrap .cont:nth-child(2n+1){
+        margin-left: 7%;
+    }
+    #sub-cont .contentswrap .cont:nth-child(2n+2){
+        margin-right: 7%;
+    }
+    #sub-cont .contentswrap .cont .image{
+        width: 30%;
+        transition: 0.5s;
+    }
+    #sub-cont .contentswrap .cont.c3 .image,
+    #sub-cont .contentswrap .cont.c11 .image{
+        width: calc(30% - 2px);
+    }
+    #sub-cont .contentswrap .cont .discript{
+        width: 66%;
+        margin-top: 10px;
+        transition: 0.5s;
+    }
+    #sub-cont .contentswrap .cont .discript .name{
+        margin-top: 10px;
+        transition: 0.5s;
+    }
+    #sub-cont .contentswrap .cont .discript .back{
+        top: 30px;
+    }
+    #sub-cont .contentswrap .cont .discript p{
+        margin-top: 10px;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width:1280px){
+    
+    #main-cont .title h2{
+        font-size: 12px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap{
+        margin-top: 45px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .cont h2{
+        font-size: 12px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .cont .name{
+        font-size: 17px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .cont p{
+        font-size: 12px;
+        line-height: 19px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .cont p:last-child{
+        line-height: 43px;
+    }
+    #main-cont .contwrap .cont .back{
+        height: 9px;
+        bottom: 92px;
+    }
+    #sub-cont .title{
+        margin-top: 130px;
+        margin-bottom: 45px;
+    }
+    #sub-cont .contentswrap{
+        margin-top: 15px;
+    }
+    #sub-cont .contentswrap .cont .discript .name{
+        font-size: 14px;
+    }
+    #sub-cont .contentswrap .cont .discript .back{
+        top: 25px;
+    }
+    #sub-cont .contentswrap .cont .discript h3{
+        font-size: 11px;
+    }
+    #sub-cont .contentswrap .cont .discript p{
+        font-size: 11px;
+    }
+    #sub-cont .contentswrap .cont .discript .back{
+        height: 7px;
+        top: 29px;
+    }
+    #sub-cont .contentswrap .more,
+    #sub-cont .contentswrap .less{
+        width: 68px;
+        font-size: 14px;
+        transition: 0.5s;
+    }
+    #sub-cont .contentswrap .more i,
+    #sub-cont .contentswrap .less i{
+        font-size: 14px;
+        transition: 0.5s;
+    }
+    #sub-cont .contentswrap .less i{
+        top: 5px;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    
+    #main-cont .title h2{
+        font-size: 11px;
+    }
+    #main-cont .contwrap{
+        margin-top: 40px;
+    }
+    #main-cont .contwrap .cont .image{
+        margin-bottom: 25px;
+    }
+    #main-cont .contwrap .cont h2{
+        font-size: 11px;
+    }
+    #main-cont .contwrap .cont .name{
+        font-size: 16px;
+    }
+    #main-cont .contwrap .cont p{
+        font-size: 11px;
+        line-height: 18px;
+    }
+    #main-cont .contwrap .cont p:last-child{
+        line-height: 40px;
+    }
+    #main-cont .contwrap .cont .back{
+        height: 8px;
+        bottom: 87px;
+    }
+    #sub-cont .title{
+        margin-top: 120px;
+        margin-bottom: 40px;
+    }
+    #sub-cont .title ul li{
+        font-size: 11px;
+        transition: 0.5s;
+    }
+    #sub-cont .title ul li:nth-child(2){
+        width: calc(100% - 55px);
+        margin-top: 6px;
+        transition: 0.5s;
+    }
+    #sub-cont .contentswrap{
+        margin-top: 10px;
+    }
+    #sub-cont .contentswrap .cont{
+        width: 86%;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-bottom: 25px;
+    }
+    #sub-cont .contentswrap .cont .image{
+        width: 25%;
+    }
+    #sub-cont .contentswrap .cont.c3 .image,
+    #sub-cont .contentswrap .cont.c11 .image{
+        width: calc(25% - 2px);
+    }
+    #sub-cont .contentswrap .cont .discript{
+        width: 72%;
+        margin-top: 20px;
+    }
+    #sub-cont .contentswrap .cont .discript .back{
+        top: 28px;
+    }
+    #sub-cont .contentswrap .cont .discript h3{
+        font-size: 12px;
+    }
+    #sub-cont .contentswrap .cont .discript .name{
+        font-size: 15px;
+    }
+    #sub-cont .contentswrap .cont .discript p{
+        font-size: 12px;
+    }
+    #sub-cont .contentswrap .cont .discript .back{
+        height: 7px;
+        top: 30px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    
+    #main-cont .title h2{
+        font-size: 15px;
+    }
+    #main-cont .contwrap{
+        margin-top: 15px;
+    }
+    #main-cont .contwrap .cont .image{
+        margin-bottom: 20px;
+    }
+    #main-cont .contwrap .cont h2{
+        font-size: 10px;
+    }
+    #main-cont .contwrap .cont .name{
+        font-size: 15px;
+    }
+    #main-cont .contwrap .cont p{
+        font-size: 10px;
+        line-height: 16px;
+    }
+    #main-cont .contwrap .cont p:last-child{
+        line-height: 35px;
+    }
+    #main-cont .contwrap .cont .back{
+        height: 7px;
+        bottom: 78px;
+    }
+    #sub-cont .title{
+        margin-top: 100px;
+        margin-bottom: 35px;
+    }
+    #sub-cont .contentswrap{
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    
+    #main-cont .title h2{
+        font-size: 14px;
+    }
+    #main-cont .contwrap .cont{
+        width: 86%;
+    }
+    #main-cont .contwrap .cont .back{
+        bottom: 66px;
+    }
+    #main-cont .contwrap .cont h2{
+        font-size: 9px;
+    }
+    #main-cont .contwrap .cont .name{
+        margin: 7px auto;
+        font-size: 14px;
+    }
+    #main-cont .contwrap .cont p{
+        font-size: 9px;
+        line-height: 14px;
+    }
+    #main-cont .contwrap .cont p:last-child{
+        line-height: 30px;
+    }
+    #sub-cont .title{
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    #sub-cont .title ul li{
+        font-size: 10px;
+    }
+    #sub-cont .title ul li:nth-child(2){
+        width: calc(100% - 50px);
+    }
+    #sub-cont .contentswrap{
+        margin-top: 0;
+    }
+    #sub-cont .contentswrap .cont{
+        margin-bottom: 20px;
+    }
+    #sub-cont .contentswrap .cont .image{
+        width: 130px;
+    }
+    #sub-cont .contentswrap .cont.c3 .image,
+    #sub-cont .contentswrap .cont.c11 .image{
+        width: 128px;
+    }
+    #sub-cont .contentswrap .cont .discript{
+        width: calc(100% - 145px)
+    }
+    #sub-cont .contentswrap .cont .discript .name{
+        font-size: 13px;
+        margin-top: 7px;
+    }
+    #sub-cont .contentswrap .cont .discript h3{
+        font-size: 10px;
+    }
+    #sub-cont .contentswrap .cont .discript p{
+        font-size: 10px;
+        margin-top: 7px;
+    }
+    #sub-cont .contentswrap .cont .discript .back{
+        height: 6px;
+        top: 24px;
+    }
+}
+
+@media only screen and (max-width:499px){
+
+    #main-cont .contwrap .cont .back{
+        bottom: 64px;
+    }
+    #main-cont .contwrap .cont p{
+        line-height: 10px;
+    }
+    #sub-cont .contentswrap .cont{
+        margin-bottom: 15px;
+    }
+    #sub-cont .contentswrap .cont .image{
+        width: 100px;
+    }
+    #sub-cont .contentswrap .cont.c3 .image,
+    #sub-cont .contentswrap .cont.c11 .image{
+        width: 98px;
+    }
+    #sub-cont .contentswrap .cont .discript{
+        width: calc(100% - 115px);
+        margin-top: 15px;
+    }
+    #sub-cont .contentswrap .cont .discript h3{
+        font-size: 9px;
+    }
+    #sub-cont .contentswrap .cont .discript .name{
+        font-size: 11px;
+    }
+    #sub-cont .contentswrap .cont .discript .back{
+        top: 22px;
+    }
+    #sub-cont .contentswrap .cont .discript p{
+        font-size: 9px;
+    }
+    #sub-cont .contentswrap .cont .discript p:nth-child(4){
+        display: none;
+    }
+    #sub-cont .contentswrap .more,
+    #sub-cont .contentswrap .less{
+        width: 65px;
+        font-size: 12px;
+    }
+    #sub-cont .contentswrap .more i,
+    #sub-cont .contentswrap .less i{
+        font-size: 12px;
+    }
+    
+    @media only screen and (max-width:473px){
+        
+        #main-cont .contwrap .cont .back{
+            transform: translate(0, 0);
+            bottom: 4px;
+        }
+    }
+}
