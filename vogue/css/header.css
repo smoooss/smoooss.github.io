@@ -1,0 +1,318 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    color:#000000;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    vertical-align: top;
+}
+#header .header .nav > ul > li > ul > li:hover,
+#header .header .lang ul li:hover,
+#header .header .scribe a:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+
+
+#wrap{
+    width: 100%;
+}
+
+
+
+
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+    transition: 0.2s;
+}
+#header .header{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+#header .header .logo{
+    width: 130px;
+    margin-top: 35px;
+    margin-right: 10%;
+    transition: 0.2s;
+}
+#header .header .wrap{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#header .header .wrap .lang{
+    width: 150px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#header .header .wrap .lang a{
+    display: block;
+    margin-top: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+#header .header .wrap .lang img{
+    width: 15px;
+    margin-top: 7px;
+}
+#header .header .wrap .lang img:nth-child(2){
+    display: none;
+}
+#header .header .wrap .lang ul{
+    width: 145px;
+    padding-top: 10px;
+    display: none;
+    position: absolute;
+    left: 50px;
+    transform: translate(-50px, 0);
+}
+#header .header .wrap .lang ul li{
+    padding: 5px 10px;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    cursor: pointer;
+}
+#header .header .wrap .lang ul li:nth-child(1){
+    margin-bottom: -1px;
+    padding-top: 10px;
+}
+#header .header .wrap .lang ul li:nth-child(2){
+    padding-bottom: 10px;
+}
+#header .header .wrap .scribe{
+    width: 100px;
+    height: 35px;
+    background-color: #000000;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#header .header .wrap .scribe a{
+    color:#ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 34px;
+}
+#header .header .nav{
+    width: 500px;
+    margin-top: 35px;
+    transition: 0.2s;
+}
+#header .header .nav > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+#header .header .nav > ul > li{
+    position: relative;
+}
+#header .header .nav > ul > li a{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+#header .header .nav > ul > li > ul{
+    width: 400px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+#header .header .nav > ul > li > ul > li{
+    margin-top: 5px;
+    margin-right: 25px;
+    display: none;
+    cursor: pointer;
+}
+#header .header .nav > ul > li > ul > li a{
+    color: #333333;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+
+
+
+
+@media only screen and (max-width:1440px){
+
+    #header .header{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:1280px){
+
+    #header .header .logo{
+        width: 100px;
+    }
+    #header .header .nav{
+        width: 400px;
+    }
+    #header .header .nav > ul > li a{
+        font-size: 15px;
+        transition: 0.5s;
+    }
+    #header .header .nav > ul > li > ul > li{
+        margin-right: 20px;
+    }
+    #header .header .nav > ul > li > ul > li a{
+        font-size: 13px;
+    }
+    #header .header .wrap{
+        width: 210px;
+    }
+    #header .header .wrap .lang{
+        width: 130px;
+    }
+    #header .header .wrap .lang a{
+        font-size: 16px;
+    }
+    #header .header .wrap .lang img{
+        width: 13px;
+        margin-top: 6px;
+    }
+    #header .header .wrap .lang ul{
+        width: 140px;
+        left: 42px;
+    }
+    #header .header .wrap .lang ul li{
+        font-size: 13px;
+    }
+    #header .header .wrap .scribe{
+        width: 80px;
+        height: 30px;
+    }
+    #header .header .wrap .scribe a{
+        display: block;
+        font-size: 13px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width:1024px){
+
+    #header .header .logo{
+        width: 90px;
+    }
+    #header .header .nav{
+        width: 350px;
+    }
+    #header .header .nav > ul > li a{
+        font-size: 13px;
+    }
+    #header .header .nav > ul > li > ul > li{
+        margin-right: 15px;
+    }
+    #header .header .nav > ul > li > ul > li a{
+        font-size: 12px;
+    }
+    #header .header .wrap{
+        width: 170px;
+    }
+    #header .header .wrap .lang{
+        width: 100px;
+    }
+    #header .header .wrap .lang a{
+        width: 80px;
+        margin-left: 8px;
+        font-size: 15px;
+    }
+    #header .header .wrap .lang ul{
+        width: 120px;
+        left: 36px;
+    }
+    #header .header .wrap .lang ul li{
+        font-size: 12px;
+    }
+    #header .header .wrap .scribe{
+        width: 70px;
+        height: 25px;
+        margin-top: 3px;
+    }
+    #header .header .wrap .scribe a{
+        font-size: 12px;
+        line-height: 26px;
+    }
+}
+
+
+
+@media only screen and (max-width:800px){
+
+    #header .header{
+        display: block;
+    }
+    #header .header .logo{
+        width: 90px;
+        margin-top: 25px;
+    }
+    #header .header .nav{
+        margin-top: 0;
+    }
+    #header .header .nav > ul > li > a{
+        font-weight: 500;
+    }
+    #header .header .nav > ul > li:nth-child(1){
+        margin-left: 0;
+    }
+    #header .header .nav > ul > li > ul > li{
+        margin-top: 0;
+    }
+    #header .header .wrap{
+        width: 170px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #header .header .wrap .lang{
+        width: 100px;
+        margin-top: -3px;
+    }
+    #header .header .wrap .lang img{
+        width: 11px;
+    }
+    #header .header .wrap .lang ul li:nth-child(1){
+        padding-top: 5px;
+    }
+    #header .header .wrap .scribe{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width:499px){
+
+    #header .header .nav{
+        width: 100%;
+    }
+}

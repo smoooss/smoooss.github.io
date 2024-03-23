@@ -1,0 +1,1091 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    color:#000000;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    vertical-align: top;
+}
+
+
+
+#header .header .navwrap > ul > li > ul > li:hover,
+#main-ad .main .text .read:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+
+
+#wrap{
+    width: 100%;
+}
+
+
+
+
+#header .header .logo{
+    margin-left: 30px;
+}
+#header .header .logo img:nth-child(2){
+    display: none;
+}
+#header .header .nav{
+    display: none;
+}
+#header .header .navwrap{
+    width: 47%;
+    margin-top: 32px;
+    font-size: 20px;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    transform: translate(0, -50%);
+    transition: 0.2s;
+}
+#header .header .navwrap > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+#header .header .navwrap > ul > li{
+    position: relative;
+}
+#header .header .navwrap > ul > li a{
+    font-weight: 600;
+}
+#header .header .navwrap > ul > li > ul{
+    width: 400px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+#header .header .navwrap > ul > li > ul > li{
+    margin-top: 5px;
+    margin-right: 25px;
+    display: none;
+    cursor: pointer;
+}
+#header .header .navwrap > ul > li > ul > li a{
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+}
+#header .header .wrap{
+    width: 260px;
+    position: absolute;
+    right: 0;
+    top: 70%;
+}
+#header .header .wrap .lang a{
+    display: block;
+    margin-left: 0;
+}
+#header .header .wrap .lang ul{
+    left: 54px;
+}
+#header .header .wrap .lang ul li{
+    margin-left: 0px;
+}
+#header .header .wrap .lang img{
+    position: absolute;
+    margin-top: -14px;
+    right: 25px;
+}
+#header .header .wrap .lang img:nth-child(1){
+    z-index: 1;
+}
+#header .header .wrap .lang img:nth-child(2){
+    display: none;
+}
+#header .header .wrap .scribe{
+    transition: 0.2s;
+}
+
+
+
+
+#main-ad{
+    width: 100%;
+    position: relative;
+}
+#main-ad .main{
+    max-width: 1240px;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+}
+#main-ad .main a{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+#main-ad .main .image{
+    width: calc(53% - 50px);
+    height: 100%;
+    margin: 0 auto;
+    background-image: url(../img/main/main_ad1.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main-ad .main .text{
+    width: 47%;
+    height: 27%;
+    margin-left: 50px;
+    position: relative;
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 0;
+}
+#main-ad .main .text p{
+    margin: 2px 0;
+    font-size: 20px;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+}
+#main-ad .main .text p:nth-child(5){
+    margin-bottom: 20px;
+}
+#main-ad .main .text .title{
+    margin: 0;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+#main-ad .main .text .name{
+    margin: 20px 0;
+    font-size: 30px;
+    color: #000000;
+}
+#main-ad .main .text span{
+    font-size: 15px;
+    color:#555555;
+}
+#main-ad .main .text span:nth-child(7){
+    margin-left: 25px;
+}
+#main-ad .main .text span:nth-child(7)::before{
+    content: "|";
+    color:#999999;
+    position: absolute;
+    top: 0.5px;
+    left: -14px;
+}
+
+
+
+
+
+span{
+    position: relative;
+    font-weight: 300;
+    color:#555555;
+}
+.name{
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+    color:#000000;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+}
+.cont ul li img{
+    margin-bottom: 20px;
+}
+.cont ul li span:nth-child(5){
+    margin-left: 25px;
+}
+.cont ul li span:nth-child(5)::before{
+    content: "|";
+    font-weight: 500;
+    color:#999999;
+    position: absolute;
+    top: 0.5px;
+    left: -14px;
+}
+.text .title,
+.text span{
+    color: #ffffff;
+    font-size: 15px;
+}
+.text span:nth-child(4)::before{
+    content: "|";
+    font-weight: 400;
+    color:#ffffff;
+    position: absolute;
+    top: 0.5px;
+    left: -15px;
+}
+
+#main-cont{
+    width: 100%;
+    margin-top: 100px;
+}
+#main-cont > .title{
+    height: 500px;
+    background-image: url(../img/main/cont01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0;
+    transition: 0.2s;
+}
+#main-cont .title .back{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+}
+#main-cont .title h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#main-cont .contwrap{
+    max-width: 1240px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+#main-cont .contwrap .textwrap{
+    width: 600px;
+    height: 430px;
+    background-image: url(../img/main/cont01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+}
+#main-cont .contwrap .textwrap .text{
+    width: 600px;
+    height: 430px;
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+#main-cont .contwrap .textwrap .text .title{
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+}
+#main-cont .contwrap .textwrap .text .name{
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    bottom: 62px;
+}
+#main-cont .contwrap .textwrap .text span{
+    width: calc(50% - 13px);
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    bottom: 35px;
+}
+#main-cont .contwrap .textwrap .text span:last-child{
+    text-align: left;
+    right: 0;
+}
+#main-cont .contwrap .cont{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+#main-cont .contwrap .cont ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: 150px;
+}
+#main-cont .contwrap .cont ul li{
+    width: 390px;
+    opacity: 0;
+    transition: 0.5s;
+}
+#main-cont .contwrap .cont ul li .name{
+    margin-top: 6px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+#main-cont .contwrap .cont ul li .title,
+#main-cont .contwrap .cont ul li span{
+    font-size: 15px;
+}
+
+
+
+
+
+#sub-cont{
+    width: 100%;
+    margin-top: 350px;
+}
+#sub-cont > .title{
+    margin: 0 auto;
+    text-align: center;
+}
+#sub-cont .title h2{
+    font-size: 35px;
+}
+#sub-cont .cont{
+    max-width: 1240px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+}
+#sub-cont .cont ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#sub-cont .cont ul li{
+    width: 280px;
+    position: relative;
+    opacity: 0;
+    transition: 0.5s;
+}
+#sub-cont .cont ul li:nth-child(2){
+    width: 600px;
+}
+#sub-cont .cont ul li:nth-child(n+4){
+    position: absolute;
+    bottom: 0;
+}
+#sub-cont .cont ul li:nth-child(5){
+    right: 0;
+}
+#sub-cont .cont ul li .name{
+    margin-top: 6px;
+    margin-bottom: 5px;
+    font-size: 19px;
+}
+#sub-cont .cont ul li .title,
+#sub-cont .cont ul li span{
+    font-size: 14px;
+}
+#sub-cont .cont ul li .text{
+    width: 100%;
+    height: 890px;
+    box-sizing: border-box;
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#sub-cont .cont ul li:nth-child(2) img{
+    margin-bottom: 0;
+}
+#sub-cont .cont ul li .text .title{
+    position: absolute;
+    left: 35px;
+    bottom: 110px;
+}
+#sub-cont .cont ul li .text .name{
+    width: calc(100% - 35px);
+    font-size: 30px;
+    bottom: 62px;
+}
+#sub-cont .cont ul li .text span{
+    display: inline-block;
+    position: absolute;
+    left: 35px;
+    bottom: 40px;
+}
+#sub-cont .cont ul li .text span:nth-child(4){
+    left: 135px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1400px){
+
+    #main-ad .main{
+        height: 750px;
+        transition: 0.5s;
+    }
+    #main-cont .title h2{
+        font-size: 33px;
+        top: 110px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .textwrap{
+        width: 500px;
+        height: 380px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .textwrap .text{
+        width: 500px;
+        height: 380px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .cont ul{
+        top: 140px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .cont ul li{
+        width: 31.5%;
+        transition: 0.5s;
+    }
+    #sub-cont{
+        margin-top: 320px;
+        transition: 0.5s;
+    }
+    #sub-cont .title h2{
+        font-size: 33px;
+        transition: 0.5s;
+    }
+    #sub-cont .cont ul li{
+        width: 22.5%;
+        transition: 0.5s;
+    }
+    #sub-cont .cont ul li:nth-child(2){
+        width: 48.5%;
+        transition: 0.5s;
+    }
+    #sub-cont .cont ul li img{
+        margin-bottom: 15px;
+        transition: 0.5s;
+    }
+    #sub-cont .cont ul li:nth-child(2) img{
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width:1280px){
+
+    #header .header .wrap{
+        width: 220px;
+    }
+    #header .header .wrap .lang img{
+        margin-top: -13px;
+        right: 23px;
+    }
+    #header .header .navwrap{
+        margin-top: 25px;
+        font-size: 17px;
+    }
+    #header .header .navwrap > ul > li > ul > li{
+        margin-right: 20px;
+    }
+    #header .header .navwrap > ul > li > ul > li a {
+        font-size: 14px;
+    }
+    #header .header .wrap .lang ul{
+        left: 49px;
+    }
+    .cont ul li span:nth-child(5){
+        margin-left: 20px;
+        transition: 0.5s;
+    }
+    .cont ul li span:nth-child(5)::before{
+        left: -11px;
+        transition: 0.5s;
+    }
+    #main-ad .main{
+        height: 700px;
+    }
+    #main-ad .main .text p{
+        font-size: 18px;
+        transition: 0.5s;
+    }
+    #main-ad .main .text p:nth-child(5){
+        margin-bottom: 20px;
+        transition: 0.5s;
+    }
+    #main-ad .main .text .title{
+        font-size: 14px;
+        transition: 0.5s;
+    }
+    #main-ad .main .text .name{
+        font-size: 27px;
+        transition: 0.5s;
+    }
+    #main-ad .main .text span{
+        font-size: 14px;
+        transition: 0.5s;
+    }
+    #main-cont > .title{
+        height: 430px;
+        transition: 0.5s;
+    }
+    #main-cont .title h2{
+        font-size: 30px;
+        top: 100px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .textwrap{
+        width: 450px;
+        height: 340px;
+    }
+    #main-cont .contwrap .textwrap .text{
+        width: 450px;
+        height: 340px;
+    }
+    #main-cont .contwrap .textwrap .text .title{
+        bottom: 92px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .textwrap .text .name{
+        font-size: 23px;
+        bottom: 57px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .textwrap .text span{
+        bottom: 32px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .cont ul{
+        top: 120px;
+    }
+    #main-cont .contwrap .cont ul li .name{
+        margin-top: 5px;
+        margin-bottom: 4px;
+        font-size: 18px;
+        transition: 0.5s;
+    }
+    #main-cont .contwrap .cont ul li .title,
+    #main-cont .contwrap .cont ul li span{
+        font-size: 14px;
+        transition: 0.5s;
+    }
+    #sub-cont{
+        margin-top: 300px;
+    }
+    #sub-cont .title h2{
+        font-size: 30px;
+    }
+    #sub-cont .cont ul li .name{
+        margin-top: 5px;
+        margin-bottom: 4px;
+        font-size: 17px;
+        transition: 0.5s;
+    }
+    #sub-cont .cont ul li .title,
+    #sub-cont .cont ul li span{
+        font-size: 13px;
+        transition: 0.5s;
+    }
+    #sub-cont .cont ul li .text .title{
+        left: 35px;
+        bottom: 100px;
+        transition: 0.5s;
+    }
+    #sub-cont .cont ul li .text .name{
+        font-size: 26px;
+        bottom: 55px;
+        transition: 0.5s;
+    }
+    #sub-cont .cont ul li .text span{
+        bottom: 35px;
+        transition: 0.5s;
+    }
+    #sub-cont .cont ul li .text span:nth-child(4){
+        left: 125px;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width:1150px){
+
+    #sub-cont .cont ul li .text .title{
+        bottom: 95px;
+    }
+    #sub-cont .cont ul li .text .name{
+        font-size: 23px;
+        bottom: 55px;
+    }
+}
+
+@media only screen and (max-width:1024px){
+
+    #header .header .wrap{
+        width: 170px;
+    }
+    #header .header .wrap .lang img{
+        margin-top: -12px;
+        right: 20px;
+    }
+    #header .header .navwrap{
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    #header .header .navwrap > ul > li > ul > li{
+        margin-right: 15px;
+    }
+    #header .header .navwrap > ul > li > ul > li a {
+        font-size: 13px;
+    }
+    #header .header .wrap .lang ul{
+        left: 33px;
+    }
+    .text .title,
+    .text span{
+        font-size: 13px;
+    }
+    .text span:nth-child(4)::before{
+        left: -11px;
+    }
+    .cont ul li span:nth-child(5){
+        margin-left: 0;
+        width: 50%;
+        display: block;
+        top: -16px;
+        left: 78px;
+    }
+    #main-ad .main{
+        height: 600px;
+    }
+    #main-ad .main .text p{
+        width: 90%;
+        font-size: 16px;
+    }
+    #main-ad .main .text p:nth-child(5){
+        margin-bottom: 15px;
+    }
+    #main-ad .main .text .name{
+        margin: 15px 0;
+        font-size: 25px;
+    }
+    #main-cont > .title{
+        height: 390px;
+    }
+    #main-cont .title h2{
+        font-size: 27px;
+        top: 90px;
+    }
+    #main-cont .contwrap .textwrap{
+        width: 400px;
+        height: 300px;
+    }
+    #main-cont .contwrap .textwrap .text{
+        width: 400px;
+        height: 300px;
+    }
+    #main-cont .contwrap .textwrap .text .title{
+        bottom: 80px;
+    }
+    #main-cont .contwrap .textwrap .text .name{
+        font-size: 21px;
+        bottom: 49px;
+    }
+    #main-cont .contwrap .textwrap .text span{
+        width: calc(50% - 10px);
+        bottom: 27px;
+    }
+    #main-cont .contwrap .cont ul{
+        top: 100px;
+    }
+    #main-cont .contwrap .cont ul li .name{
+        margin-top: 4px;
+        margin-bottom: 3px;
+        font-size: 15px;
+    }
+    #main-cont .contwrap .cont ul li .title,
+    #main-cont .contwrap .cont ul li span{
+        font-size: 12px;
+    }
+    #sub-cont{
+        margin-top: 250px;
+    }
+    #sub-cont .title h2{
+        font-size: 27px;
+    }
+    #sub-cont .cont ul li:nth-child(n+4){
+        bottom: -17px;
+    }
+    #sub-cont .cont ul li .name{
+        margin-top: 3px;
+        margin-bottom: 2px;
+        font-size: 15px;
+    }
+    #sub-cont .cont ul li .title,
+    #sub-cont .cont ul li span{
+        font-size: 12px;
+    }
+    #sub-cont .cont ul li .text .title{
+        left: 30px;
+        bottom: 83px;
+    }
+    #sub-cont .cont ul li .text .name{
+        font-size: 20px;
+        bottom: 49px;
+    }
+    #sub-cont .cont ul li .text span{
+        left: 30px;
+        bottom: 30px;
+    }
+    #sub-cont .cont ul li .text span:nth-child(4){
+        left: 110px;
+    }
+}
+
+@media only screen and (max-width:900px){
+
+    #sub-cont .cont ul li .text .title{
+        left: 30px;
+        bottom: 80px;
+    }
+    #sub-cont .cont ul li .text .name{
+        font-size: 18px;
+        bottom: 50px;
+    }
+    #sub-cont .cont ul li .text span{
+        left: 30px;
+        bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:800px){
+
+    
+    #header .header{
+        display: block;
+    }
+    #header .header .logo{
+        width: 90px;
+        margin-top: 25px;
+    }
+    #header .header .nav{
+        margin-top: 13px;
+    }
+    #header .header .nav > ul > li > a{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    #header .header .nav > ul > li:nth-child(1){
+        margin-left: 0;
+    }
+    #header .header .wrap{
+        width: 170px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #header .header .wrap .lang{
+        width: 100px;
+        margin-top: -3px;
+    }
+    #header .header .wrap .lang img{
+        width: 11px;
+    }
+    #header .header .wrap .lang img:nth-child(1){
+        display: none;
+    }
+    #header .header .wrap .lang img:nth-child(2){
+        display: block;
+        margin-top: -14px;
+    }
+    #header .header .wrap .lang ul li:nth-child(1){
+        padding-top: 5px;
+    }
+    #header .header .wrap .scribe{
+        margin-top: 0;
+    }
+    .text .title,
+    .text span{
+        font-size: 12px;
+    }
+    .text .name{
+        font-weight: 500;
+    }
+    #main-ad .main{
+        height: 700px;
+    }
+    #main-ad .main a{
+        display: block;
+    }
+    #main-ad .main .image{
+        width: 100%;
+    }
+    #main-ad .main .text{
+        width: 90%;
+        height: 180px;
+        margin-left: 35px;
+        top: unset;
+        right: 0;
+        bottom: 125px;
+    }
+    #main-ad .main .text p,
+    #main-ad .main .text span:nth-child(n+6){
+        color:#ffffff;
+        font-weight: 300;
+    }
+    #main-ad .main .text .title,
+    #main-ad .main .text .name,
+    #main-ad .main .text span:nth-child(7)::before{
+        color:#ffffff;
+    }
+    #main-cont > .title{
+        height: 320px;
+    }
+    #main-cont .title h2{
+        font-size: 25px;
+        top: 80px;
+    }
+    #main-cont .contwrap .textwrap{
+        width: 350px;
+        height: 250px;
+        top: -70px;
+    }
+    #main-cont .contwrap .textwrap .text{
+        width: 350px;
+        height: 250px;
+    }
+    #main-cont .contwrap .textwrap .text .title{
+        bottom: 73px;
+    }
+    #main-cont .contwrap .textwrap .text .name{
+        font-size: 19px;
+        bottom: 45px;
+    }
+    #main-cont .contwrap .textwrap .text span{
+        bottom: 25px;
+    }
+    #main-cont .contwrap .cont ul{
+        top: 90px;
+    }
+    #sub-cont{
+        margin-top: 200px;
+    }
+    #sub-cont .title h2{
+        font-size: 25px;
+    }
+    #sub-cont .cont ul li{
+        width: 28%;
+    }
+    #sub-cont .cont ul li:nth-child(2){
+        width: 38%;
+    }
+    #sub-cont .cont ul li:nth-child(n+4){
+        width: 48.5%;
+        margin-top: 20px;
+        position: unset;
+    }
+    #sub-cont .cont ul li .text .title{
+        left: 20px;
+        bottom: 90px;
+    }
+    #sub-cont .cont ul li .text .name{
+        width: 160px;
+        font-size: 17px;
+        bottom: 42px;
+    }
+    #sub-cont .cont ul li .text span{
+        left: 20px;
+        bottom: 20px;
+    }
+    #sub-cont .cont ul li .text span:nth-child(4){
+        left: 100px;
+    }
+}
+
+@media only screen and (max-width:640px){
+
+    .cont ul li span:nth-child(5){
+        margin-left: 20px;
+        width: unset;
+        display: inline;
+        top: unset;
+        left: unset;
+    }
+    .cont ul li span:nth-child(5)::before{
+        left: -11px;
+    }
+    #main-ad .main .text {
+        height: 155px;
+        bottom: 110px;
+    }
+    #main-ad .main .text .title,
+    #main-ad .main .text span{
+        font-size: 13px;
+    }
+    #main-ad .main .text .name{
+        margin: 10px 0;
+        font-size: 22px;
+    }
+    #main-ad .main .text p{
+        font-size: 15px;
+    }
+    #main-ad .main .text p:nth-child(5){
+        margin-bottom: 10px;
+    }
+    #main-cont .title h2{
+        font-size: 20px;
+    }
+    #main-cont .contwrap .cont ul{
+        display: block;
+    }
+    #main-cont .contwrap .cont ul li{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #main-cont .contwrap .cont ul li img{
+        margin-bottom: 20px;
+    }
+    #main-cont .contwrap .cont ul li .name{
+        margin-top: 5px;
+        margin-bottom: 4px;
+        font-size: 18px;
+    }
+    #main-cont .contwrap .cont ul li .title,
+    #main-cont .contwrap .cont ul li span{
+        font-size: 13px;
+    }
+    #sub-cont .title h2{
+        font-size: 20px;
+    }
+    #sub-cont .cont ul li{
+        width: 48%;
+        margin-top: 155%;
+    }
+    #sub-cont .cont ul li:nth-child(2){
+        width: 100%;
+        margin-top: 0;
+        position: absolute;
+    }
+    #sub-cont .cont ul li:nth-child(n+4){
+        margin-top: 30px;
+    }
+    #sub-cont .cont ul li img{
+        margin-bottom: 15px;
+    }
+    #sub-cont .cont ul li .name{
+        margin-top: 5px;
+        margin-bottom: 4px;
+        font-size: 17px;
+    }
+    #sub-cont .cont ul li:nth-child(2) img{
+        margin-bottom: 0;
+    }
+    #sub-cont .cont ul li .text .title{
+        font-size: 15px;
+        left: 35px;
+        bottom: 100px;
+    }
+    #sub-cont .cont ul li .text .name{
+        width: calc(100% - 35px);
+        font-size: 23px;
+        bottom: 62px;
+    }
+    #sub-cont .cont ul li .text span{
+        font-size: 14px;
+        left: 35px;
+        bottom: 40px;
+    }
+    #sub-cont .cont ul li .text span:nth-child(4){
+        left: 125px;
+    }
+}
+
+@media only screen and (max-width:499px){
+
+    .cont ul li span:nth-child(5){
+        margin-left: 15px;
+    }
+    .cont ul li span:nth-child(5)::before{
+        left: -9px;
+    }
+    #main-ad .main .text{
+        height: 140px;
+        margin-left: 25px;
+        bottom: 95px;
+    }
+    #main-ad .main .text .title,
+    #main-ad .main .text span{
+        font-size: 12px;
+    }
+    #main-ad .main .text .name{
+        margin: 7px 0;
+        font-size: 20px;
+    }
+    #main-ad .main .text p{
+        width: 100%;
+        margin: 0;
+        font-size: 13px;
+    }
+    #main-ad .main .text p:nth-child(5){
+        margin-bottom: 5px;
+    }
+    #main-ad .main .text span:nth-child(7){
+        margin-left: 20px;
+    }
+    #main-ad .main .text span:nth-child(7)::before{
+        left: -11px;
+    }
+    #main-cont .contwrap .cont ul li{
+        margin-bottom: 40px;
+    }
+    #main-cont .contwrap .cont ul li img{
+        margin-bottom: 15px;
+    }
+    #main-cont .contwrap .cont ul li .title,
+    #main-cont .contwrap .cont ul li span{
+        font-size: 12px;
+    }
+    #sub-cont .cont ul li:nth-child(n+4){
+        margin-top: 25px;
+    }
+    #sub-cont .cont ul li .name{
+        margin-top: 4px;
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+    #sub-cont .cont ul li .title,
+    #sub-cont .cont ul li span{
+        font-size: 11px;
+    }
+    #sub-cont .cont ul li .text .title{
+        font-size: 12px;
+        left: 25px;
+        bottom: 77px;
+    }
+    #sub-cont .cont ul li .text .name{
+        width: calc(100% - 25px);
+        font-size: 18px;
+        bottom: 50px;
+    }
+    #sub-cont .cont ul li .text span{
+        font-size: 12px;
+        left: 25px;
+        bottom: 30px;
+    }
+    #sub-cont .cont ul li .text span:nth-child(4){
+        left: 105px;
+    }
+}
