@@ -1,0 +1,276 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color:#000000;
+    font-family: 'Playfair Display', serif;
+    word-spacing: 4px;
+    letter-spacing: -1px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    vertical-align: top;
+}
+p{
+    color: #333333;
+    font-weight: 300;
+}
+
+
+
+
+#wrap{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+#main{
+    min-width: 7440px;
+    width: 600vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.main-cont,
+.sub-cont,
+.cont{
+    min-width: 1240px;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main-cont{
+    background-image: url(../img/cont01.png);
+}
+.main-cont .text{
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    text-align: center;
+    display: none;
+}
+.main-cont .text h1{
+    width: 100%;
+    font-size: 70px;
+    font-weight: 700;
+}
+.main-cont .text span{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+.main-cont .text p{
+    font-size: 30px;
+}
+.next,
+.prev{
+    width: 162px;
+    display: block;
+    font-size: 35px;
+    position: absolute;
+    right: 60px;
+    bottom: 50px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.next.enter{
+    width: 230px;
+}
+.prev{
+    left: 60px;
+}
+.prev img{
+    transform:rotateY(180deg);
+}
+.next img,
+.prev img{
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 70px;
+}
+
+
+
+
+.sub-cont{
+    background-image: url(../img/cont02.png);
+    position: relative;
+}
+.sub-cont .wrap{
+    width: 490px;
+    position: absolute;
+    top: 43%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+}
+.sub-cont .wrap .image{
+    width: 490px;
+    height: 400px;
+    background-image: url(../img/cont02-1.png);
+    background-size: 100%;
+    background-position: center;
+}
+.sub-cont .wrap .text{
+    width: 100%;
+    margin-top: -60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub-cont .wrap .text span{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.sub-cont .wrap .text span:nth-child(2){
+    font-size: 17px;
+    letter-spacing: 0;
+}
+.sub-cont .wrap .text a{
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
+}
+.sub-cont .wrap .text a:nth-child(3){
+    margin-left: 60px;
+}
+.sub-cont .wrap .text a::before{
+    content: "|";
+    color:#999999;
+    font-size: 11px;
+    position: absolute;
+    top: 2px;
+    left: -10px;
+}
+.sub-cont .wrap .text a:nth-child(3)::before{
+    content: none;
+}
+
+
+
+.cont.c1{
+    background-image: url(../img/cont03.jpg);
+    position: relative;
+}
+.cont.c2{
+    background-image: url(../img/cont04.jpg);
+    position: relative;
+}
+.cont.c3{
+    background-image: url(../img/cont05.jpg);
+    position: relative;
+}
+.cont.c4{
+    background-image: url(../img/cont06.jpg);
+    position: relative;
+}
+.main-cont .next,
+.sub-cont .next,
+.cont.c1 .prev,
+.cont.c3 .next{
+    color: #000000;
+}
+.cont .textwrap{
+    width: 100%;
+    height: 100%;
+}
+.cont .textwrap .text{
+    width: 510px;
+    height: 405px;
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+.cont.c2 .textwrap .text{
+    height: 380px;
+}
+.cont.c3 .textwrap .text{
+    left: 34%;
+}
+.cont.c4 .textwrap .text{
+    left: 31%;
+}
+.cont .textwrap .text h2{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #ffffff;
+}
+.cont .textwrap .text span{
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.cont .textwrap .text p{
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0;
+    word-spacing: 2px;
+    color: #ffffff;
+}
+.cont .textwrap .text a{
+    margin-right: 20px;
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #ffffff;
+}
+.cont .textwrap .text a::before{
+    content: "|";
+    color:#e5e5e5;
+    font-size: 11px;
+    position: absolute;
+    top: 3px;
+    left: -15px;
+}
+.cont.c1 .textwrap .text a:nth-child(12)::before,
+.cont.c2 .textwrap .text a:nth-child(11)::before,
+.cont.c3 .textwrap .text a:nth-child(12)::before,
+.cont.c4 .textwrap .text a::before{
+    content: none;
+}
+.cont.c1 .textwrap .text a:nth-child(13),
+.cont.c2 .textwrap .text a:nth-child(12),
+.cont.c3 .textwrap .text a:nth-child(13),
+.cont.c4 .textwrap .text a:nth-child(13){
+    position: absolute;
+    left: 100px;
+}
+.cont.c1 .textwrap .text p:nth-child(6),
+.cont.c1 .textwrap .text p:nth-child(9),
+.cont.c2 .textwrap .text p:nth-child(5),
+.cont.c2 .textwrap .text p:nth-child(9),
+.cont.c3 .textwrap .text p:nth-child(5),
+.cont.c3 .textwrap .text p:nth-child(9),
+.cont.c4 .textwrap .text p:nth-child(4),
+.cont.c4 .textwrap .text p:nth-child(8){
+    margin-top: 20px;
+}
