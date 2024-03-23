@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#main-ad .image{
+    background-image: url(../img/main_ad.jpg);
+}
+
+.cont ul li{
+    width: 290px;
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+@media only screen and (max-width:1400px){
+
+    .cont ul li{
+        width: 23.5%;
+        margin-bottom: 50px;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width:1024px){
+
+    .cont ul li{
+        width: 31.5%;
+    }
+}
+
+@media only screen and (max-width:640px){
+
+    .cont ul li{
+        width: 48%;
+    }
+    #sub-cont{
+        margin-top: 200px;
+    }
+}
