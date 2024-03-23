@@ -1,0 +1,129 @@
+$(document).ready(function(){
+
+    a=$(window).width()
+
+    if(a>=500){
+
+        $('#main .contentwrap ul li').click(cont1);
+
+        let index = 0
+    
+        function cont1(){
+            index = $(this).index()+1;
+
+            $('html,body').animate({scrollTop:index*89.5},500)
+
+            a=$(this).find('.more').hasClass('on')
+            
+            if(a==false){
+                $('#main .contentwrap ul li .more').slideUp()
+                $(this).find('.more').slideDown()
+                $('#main .contentwrap ul li .more').removeClass('on')
+                $(this).find('.more').addClass('on')
+            }else{
+                $(this).find('.more').slideUp()
+                $(this).find('.more').removeClass('on')
+            }
+        }
+
+    }else{
+
+        $('#main .contentwrap ul li').click(cont2);
+    
+        function cont2(){
+
+            a=$(this).find('.more').hasClass('on')
+            b=$(window).scrollTop()
+
+            if(a==false){
+                $(this).find('.more').slideDown()
+                $(this).find('.more').addClass('on')
+                $('html,body').animate({scrollTop:b})
+            }else{
+                $(this).find('.more').slideUp()
+                $(this).find('.more').removeClass('on')
+            }
+        }
+    }
+
+
+
+
+
+    $(window).on('scroll touchmove mousewheel',function(){
+
+        b=$(window).scrollTop()
+        d=$(window).width()
+
+        if(d<500){
+            if(b>50){
+                for(c=10; c<20; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>800){
+                for(c=20; c<30; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>1500){
+                for(c=30; c<40; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>2200){
+                for(c=40; c<50; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>2900){
+                for(c=50; c<60; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>3600){
+                for(c=60; c<70; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>4300){
+                for(c=70; c<80; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>5000){
+                for(c=80; c<90; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }    
+        }else{
+            if(b>250){
+                for(c=10; c<20; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>1000){
+                for(c=20; c<30; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>2000){
+                for(c=30; c<40; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>3000){
+                for(c=40; c<50; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>3500){
+                for(c=50; c<60; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>4500){
+                for(c=60; c<70; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>5000){
+                for(c=70; c<80; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>5500){
+                for(c=80; c<90; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }    
+        }
+    });
+
+});
