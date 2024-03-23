@@ -1,0 +1,304 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color:#333333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    word-spacing: 2px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    vertical-align: top;
+}
+p{
+    font-weight: 300;
+}
+
+
+
+#wrap{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+#main-ad{
+    width: 100%;
+    position: relative;
+}
+#main-ad .nav-popup{
+    width: 400px;
+    height: 100vh;
+    padding: 60px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: -400px;
+    z-index: 3;
+    display: none;
+}
+#main-ad .nav-popup > a{
+    display: block;
+    width: 30px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: none;
+}
+#main-ad .nav-popup > a img{
+    width: 100%;
+}
+#main-ad .nav-popup > ul > li{
+    text-align: left;
+    margin: 30px 0;
+}
+#main-ad .nav-popup > ul > li a{
+    font-size: 25px;
+    font-weight: 500;
+}
+#main-ad .nav-popup > ul > li > ul{
+    margin-top: 5px;
+}
+#main-ad .nav-popup > ul > li > ul > li a{
+    font-size: 20px;
+    font-weight: 400;
+    color: #888888;
+}
+#main-ad .nav-popup > ul > li > ul > li a:hover{
+    font-weight: 600;
+    color: #333333;
+    transition: 0.1s;
+}
+
+
+
+#main-ad .main{
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#main-ad .main .typog{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 90px;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+#main-ad .main .typog ul li{
+    color: #ffffff;
+}
+#main-ad .main .typog ul li:nth-child(1){
+    margin-bottom: 10px;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 70px; 
+}
+#main-ad .main .typog ul li:nth-child(2){
+    font-weight: 300;
+}
+
+
+
+#main-ad .back{
+    width: 100%;
+    height: 750px;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5), rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#main-ad .back a{
+    display: block;
+    width: 100%;
+    height: 750px;
+}
+#main-ad .front{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+#main-ad .book{
+    width: 400px;
+    height: 100vh;
+    padding: 60px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: -400px;
+    z-index: 2;
+}
+#main-ad .book > a{
+    width: 30px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: none;
+}
+#main-ad .book > a img{
+    width: 100%;
+}
+#main-ad .book h2{
+    margin-top: 50px;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+#main-ad .book form{
+    margin-top: 70px;
+    position: relative;
+}
+#main-ad .book form p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.text, .date{
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-size: 12px;
+    background-color:#ffffff;
+}
+.search{
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    background-color:#ffffff;
+    font-size: 14px;
+    line-height: 29px;
+    text-align: center;
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.search:hover{
+    background-color: #000000;
+    font-weight: 700;
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:1400px){
+
+    #main-ad .main .typog{
+        bottom: 65px;
+        transition: 0.5s;
+    }
+    #main-ad .main .typog ul li:nth-child(1){
+        font-size: 60px;
+        transition: 0.5s;
+    }
+    #main-ad .main .typog ul li:nth-child(2){
+        font-size: 16px;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width:1280px){
+
+    #main-ad .main .typog{
+        bottom: 65px;
+    }
+    #main-ad .main .typog ul li:nth-child(1){
+        margin-bottom: 8px;
+        font-size: 55px;
+    }
+    #main-ad .main .typog ul li:nth-child(2){
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:1024px){
+
+    #main-ad .main .typog{
+        bottom: 60px;
+    }
+    #main-ad .main .typog ul li:nth-child(1){
+        margin-bottom: 7px;
+        font-size: 50px;
+    }
+    #main-ad .main .typog ul li:nth-child(2){
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:800px){
+
+    #main-ad .main .typog{
+        bottom: 38px;
+    }
+    #main-ad .main .typog ul li:nth-child(1){
+        margin-bottom: 5px;
+        font-size: 45px;
+    }
+    #main-ad .main .typog ul li:nth-child(2){
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:640px){
+
+    #main-ad .main .typog{
+        bottom: 40px;
+    }
+    #main-ad .main .typog ul li:nth-child(1){
+        margin-bottom: 4px;
+        font-size: 35px;
+    }
+    #main-ad .main .typog ul li:nth-child(2){
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:499px){
+
+    #main-ad .nav-popup{
+        width: 100vw;
+    }
+    #main-ad .nav-popup > a,
+    #main-ad .book > a{
+        display: block;
+    }
+    #main-ad .nav-popup > ul > li{
+        text-align: center;
+        margin: 30px 0;
+    }
+    .search{
+        background-color: #000000;
+        font-weight: 700;
+        color: #ffffff;
+    }
+}
