@@ -1,20 +1,25 @@
 $(document).ready(function(){
 
-    $('#main-cont .cont ul li').mouseover(function(){
-        var a=$(this).find('.name').width();
 
-        $(this).find('.back').css({'width':a}).stop().fadeIn(100)
-    }).mouseout(function(){
-        $(this).find('.back').stop().fadeOut(200)
-    });
+    a=$(window).width()
 
-    $('#sub-cont .cont ul li').mouseover(function(){
-        var a=$(this).find('a').width();
-        
-        $(this).find('.back').css({'width':a}).stop().fadeIn(100)
-    }).mouseout(function(){
-        $(this).find('.back').stop().fadeOut(200)
-    });
+    if(a>500){
+        $('#main-cont .cont ul li').mouseover(function(){
+            var a=$(this).find('.name').width();
+    
+            $(this).find('.back').css({'width':a}).stop().fadeIn(100)
+        }).mouseout(function(){
+            $(this).find('.back').stop().fadeOut(200)
+        });
+    
+        $('#sub-cont .cont ul li').mouseover(function(){
+            var a=$(this).find('a').width();
+            
+            $(this).find('.back').css({'width':a}).stop().fadeIn(100)
+        }).mouseout(function(){
+            $(this).find('.back').stop().fadeOut(200)
+        });
+    }
 
     
 
@@ -27,8 +32,8 @@ $(document).ready(function(){
 
     
     $(window).on('scroll touchmove mousewheel',function(){
-        a=$(window).scrollTop();
-        b=$(window).width();
+        a=$(window).scrollTop()
+        b=$(window).width()
 
         if(b>1280){
             if(a>=80){
