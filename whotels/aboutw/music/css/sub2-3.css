@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+#main-cont .contentwrap.w1,
+#main-cont .contentwrap.w2,
+#main-cont .contentwrap.w4{
+    display: none;
+}
