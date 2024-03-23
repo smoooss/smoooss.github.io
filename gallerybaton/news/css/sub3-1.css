@@ -520,7 +520,7 @@
 @media only screen and (max-width:499px){
 
     #main-cont .contwrap .cont .back{
-        bottom: 64px;
+        display: none;
     }
     #main-cont .contwrap .cont p{
         line-height: 10px;
@@ -546,7 +546,7 @@
         font-size: 11px;
     }
     #sub-cont .contentswrap .cont .discript .back{
-        top: 22px;
+        display: none;
     }
     #sub-cont .contentswrap .cont .discript p{
         font-size: 9px;
@@ -562,13 +562,5 @@
     #sub-cont .contentswrap .more i,
     #sub-cont .contentswrap .less i{
         font-size: 12px;
-    }
-    
-    @media only screen and (max-width:473px){
-        
-        #main-cont .contwrap .cont .back{
-            transform: translate(0, 0);
-            bottom: 4px;
-        }
     }
 }
