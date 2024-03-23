@@ -366,13 +366,13 @@
         line-height: 15px;
     }
     #main-cont .cont ul li .back{
-        bottom: 18px;
+        display: none;
     }
     #sub-cont .cont ul li a{
         font-size: 14px;
         line-height: 28px;
     }
     #sub-cont .cont ul li .back{
-        height: 7px;
+        display: none;
     }
 }
