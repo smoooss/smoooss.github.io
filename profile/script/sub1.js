@@ -15,10 +15,10 @@ $(document).ready(function(){
     if(a<500){
 
         $('.header .menu').click(function(){
-            $('#main .link').css({'bottom':'0'})
+            $('#main .link').css({'bottom':'60px'})
         });
         $('.close').click(function(){
-            $('#main .link').css({'bottom':'-40px'})
+            $('#main .link').css({'bottom':'20px'})
         });
     }
 
