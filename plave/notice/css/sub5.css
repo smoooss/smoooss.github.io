@@ -134,4 +134,8 @@
         height: 188px;
         padding-top: 20px;
     }
+    #main .contentwrap ul li .more.m1 img:nth-child(2){
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
