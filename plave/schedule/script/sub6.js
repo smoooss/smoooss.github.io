@@ -7,7 +7,7 @@ $(document).ready(function(){
     function date(){
         index = $(this).index()+1;
         $('#main .contentwrap .cont.c2 .schedule ul').css({'display':'none'})
-        $('#main .contentwrap .cont.c2 .schedule ul').eq(index-5).css({'display':'block'})
+        $('#main .contentwrap .cont.c2 .schedule ul').eq(index-1).css({'display':'block'})
     }
 
     a=$(window).width()
