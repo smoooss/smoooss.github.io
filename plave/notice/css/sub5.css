@@ -11,7 +11,7 @@
     position: relative;
     z-index: 1;
 }
-#main .contentwrap ul{
+#main .contentwrap > ul{
     border-top: 2px solid #000000;
     border-bottom: 2px solid #000000;
 }
@@ -73,6 +73,81 @@
 #main .contentwrap ul li .more a{
     display: block;
     margin-top: 20px;
+}
+#main .contentwrap ul li .more .guidewrap{
+    text-align: left;
+}
+#main .contentwrap ul li .more .guidewrap .guide{
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main .contentwrap ul li .more .guidewrap .guide li{
+    width: 33.5%;
+}
+#main .contentwrap ul li .more .guidewrap .guide li:last-child{
+    width: 33%;
+}
+#main .contentwrap ul li .more .guidewrap .guide .title{
+    width: 100%;
+    padding: 30px;
+    font-size: 20px;
+    color: #ffffff;
+}
+#main .contentwrap ul li .more .guidewrap .guide p{
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+#main .contentwrap ul li .more .guidewrap .guide span{
+    font-weight: 700;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g1 .title{
+    background-color: #0055ff;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g1{
+    border: solid 5px #0055ff;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g1 p span{
+    color: #0055ff;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g2 .title{
+    background-color: #06b500;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g2{
+    border: solid 5px #06b500;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g2 p span{
+    color: #06b500;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g3 .title{
+    background-color: #ff0000;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g3{
+    border: solid 5px #ff0000;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g3 p span{
+    color: #ff0000;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g4 .title{
+    background-color: #ff00cc;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g4{
+    border: solid 5px #ff00cc;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g4 p span{
+    color: #ff00cc;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g5 .title{
+    background-color: #9500ff;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g5{
+    border: solid 5px #9500ff;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g5 p span{
+    color: #9500ff;
 }
 
 
