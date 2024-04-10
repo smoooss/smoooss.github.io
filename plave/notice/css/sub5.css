@@ -174,7 +174,7 @@
         padding-bottom: 40px;
         z-index: 0;
     }
-    #main .contentwrap ul{
+    #main .contentwrap > ul{
         padding: 0 7%;
         box-sizing: border-box;
     }
@@ -213,4 +213,40 @@
         margin-left: 0;
         margin-right: 0;
     }
+    #main .contentwrap ul li .more .guidewrap .guide .title{
+        padding: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+    #main .contentwrap ul li .more .guidewrap .guide li{
+        width: 100%;
+    }
+    #main .contentwrap ul li .more .guidewrap .guide li:last-child{
+        width: 100%;
+    }
+    #main .contentwrap ul li .more .guidewrap .guide p{
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    #main .contentwrap ul li .more .guidewrap .guide p:last-child{
+        margin-bottom: 20px;
+    }
+    #main .contentwrap ul li .more .guidewrap .guide.g1{
+        border: solid 3px #0055ff;
+    }
+    #main .contentwrap ul li .more .guidewrap .guide.g2{
+        border: solid 3px #06b500;
+    }
+    #main .contentwrap ul li .more .guidewrap .guide.g3{
+        border: solid 3px #ff0000;
+    }
+    #main .contentwrap ul li .more .guidewrap .guide.g4{
+        border: solid 3px #ff00cc;
+    }
+    #main .contentwrap ul li .more .guidewrap .guide.g5{
+        border: solid 3px #9500ff;
+    }
+    
 }
