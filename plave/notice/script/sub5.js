@@ -56,39 +56,55 @@ $(document).ready(function(){
         d=$(window).width()
 
         if(d<500){
-            if(b>50){
+            if(b>10){
                 for(c=10; c<20; c++){
                     $('#main .contentwrap ul li').eq(c).fadeIn(500)
                 }
-            }if(b>800){
+            }if(b>200){
                 for(c=20; c<30; c++){
                     $('#main .contentwrap ul li').eq(c).fadeIn(500)
                 }
-            }if(b>1500){
+            }if(b>600){
                 for(c=30; c<40; c++){
                     $('#main .contentwrap ul li').eq(c).fadeIn(500)
                 }
-            }if(b>2200){
+            }if(b>1000){
                 for(c=40; c<50; c++){
                     $('#main .contentwrap ul li').eq(c).fadeIn(500)
                 }
-            }if(b>2900){
+            }if(b>1400){
                 for(c=50; c<60; c++){
                     $('#main .contentwrap ul li').eq(c).fadeIn(500)
                 }
-            }if(b>3600){
+            }if(b>1800){
                 for(c=60; c<70; c++){
                     $('#main .contentwrap ul li').eq(c).fadeIn(500)
                 }
-            }if(b>4300){
+            }if(b>2200){
                 for(c=70; c<80; c++){
                     $('#main .contentwrap ul li').eq(c).fadeIn(500)
                 }
-            }if(b>5000){
+            }if(b>2600){
                 for(c=80; c<90; c++){
                     $('#main .contentwrap ul li').eq(c).fadeIn(500)
                 }
-            }    
+            }if(b>3000){
+                for(c=90; c<100; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>3400){
+                for(c=100; c<110; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>3800){
+                for(c=110; c<120; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>4200){
+                for(c=120; c<130; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }
         }else{
             if(b>250){
                 for(c=10; c<20; c++){
@@ -122,7 +138,23 @@ $(document).ready(function(){
                 for(c=80; c<90; c++){
                     $('#main .contentwrap ul li').eq(c).fadeIn(500)
                 }
-            }    
+            }if(b>6000){
+                for(c=90; c<100; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>6500){
+                for(c=100; c<110; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>7000){
+                for(c=110; c<120; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }if(b>7500){
+                for(c=120; c<130; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
+            }
         }
     });
 
