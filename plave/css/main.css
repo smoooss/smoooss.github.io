@@ -266,11 +266,8 @@ img{
     }
     #main .front .text{
         width: 70%;
-        top: 50%;
+        top: 70%;
         right: 7%;
-    }
-    #main .front .text a{
-    color: #333333;
     }
     #main .front .text a:nth-child(1){
         font-size: 30px;
@@ -288,7 +285,6 @@ img{
         left: unset;
         right: 0;
         position: absolute;
-        background-color: #333333;
     }
 
     #nav .top{
