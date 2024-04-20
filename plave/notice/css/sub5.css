@@ -72,6 +72,15 @@
 }
 #main .contentwrap ul li .more a{
     display: block;
+    position: relative;
+}
+#main .contentwrap ul li .more a img:nth-child(2){
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 8%;
+}
+#main .contentwrap ul li .more .seemore{
     margin-top: 20px;
 }
 #main .contentwrap ul li .more .guidewrap{
