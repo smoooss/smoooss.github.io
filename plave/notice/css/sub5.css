@@ -213,6 +213,10 @@
     #main .contentwrap ul li .more a{
         font-size: 14px;
     }
+    #main .contentwrap ul li .more a img:nth-child(2){
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
     #main .contentwrap ul li .more iframe{
         width: 335px;
         height: 188px;
