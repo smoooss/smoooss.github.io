@@ -20,11 +20,6 @@
 #main .contentwrap .cont{
     height: 100%;
 }
-#main .contentwrap .cont.c1 ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 #main .contentwrap .cont.c1 ul li{
     text-align: center;
 }
@@ -33,10 +28,44 @@
     margin-bottom: 50px;
     font-size: 25px;
     font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
 }
+/*
+#main .contentwrap .cont.c1 .date .month{
+    width: 40px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 77px;
+}
+#main .contentwrap .cont.c1 .date .month li:nth-child(2){
+    letter-spacing: -1px;
+}
+#main .contentwrap .cont.c1 .date .month li:nth-child(n+2){
+    display: none;
+}
+#main .contentwrap .cont.c1 .date ul li{
+    cursor: pointer;
+}
+#main .contentwrap .cont.c1 .date .btn{
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+}
+#main .contentwrap .cont.c1 .date .btn li:nth-child(2){
+    display: none;
+}
+*/
 #main .contentwrap .cont.c1 .week{
     width: 520px;
     margin: 30px auto;
+}
+#main .contentwrap .cont.c1 .week ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 #main .contentwrap .cont.c1 .week ul li{
     width: 40px;
@@ -45,6 +74,14 @@
 }
 #main .contentwrap .cont.c1 .calendar{
     width: 550px;
+}
+#main .contentwrap .cont.c1 .calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main .contentwrap .cont.c1 .calendar ul:nth-child(n+2){
+    display: none;
 }
 #main .contentwrap .cont.c1 .calendar ul li{
     width: 30px;
@@ -91,7 +128,7 @@
     width: 38px;
 }
 #main .contentwrap .cont.c2 .type ul li:nth-child(4){
-    width: 48px;
+    width: 35px;
 }
 #main .contentwrap .cont.c2 .type ul li:nth-child(5){
     width: 75px;
@@ -156,10 +193,10 @@
 .live{
     background-color: #9500ff;
 }
-.event{
+.show{
     background-color: #ff00cc;
 }
-.show{
+.etc{
     background-color: #ff0000;
 }
 .anniversary{
@@ -309,7 +346,7 @@
         width: 9%;
     }
     #main .contentwrap .cont.c2 .type ul li:nth-child(4){
-        width: 11%;
+        width: 8%;
     }
     #main .contentwrap .cont.c2 .type ul li:nth-child(5){
         width: 21%;
