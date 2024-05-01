@@ -157,7 +157,7 @@
     width: 0;
     height: 0;
 }
-#main .contentwrap .cont.c2 .schedule ul{
+#main .contentwrap .cont.c2 .schedule ul:nth-child(n+4){
     margin-bottom: 30px;
 }
 #main .contentwrap .cont.c2 .schedule ul li{
