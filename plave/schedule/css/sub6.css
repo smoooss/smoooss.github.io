@@ -128,10 +128,10 @@
     width: 38px;
 }
 #main .contentwrap .cont.c2 .type ul li:nth-child(4){
-    width: 35px;
+    width: 85px;
 }
 #main .contentwrap .cont.c2 .type ul li:nth-child(5){
-    width: 75px;
+    width: 25px;
 }
 #main .contentwrap .cont.c2 .scroll{
     height: 300px;
@@ -196,10 +196,10 @@
 .show{
     background-color: #ff00cc;
 }
-.etc{
+.anniversary{
     background-color: #ff0000;
 }
-.anniversary{
+.etc{
     background-color: #06b500;
 }
 
@@ -277,10 +277,7 @@
         width: 35px;
     }
     #main .contentwrap .cont.c2 .type ul li:nth-child(4){
-        width: 42px;
-    }
-    #main .contentwrap .cont.c2 .type ul li:nth-child(5){
-        width: 70px;
+        width: 80px;
     }
     #main .contentwrap .cont.c2 ul li span{
         width: 14px;
@@ -299,7 +296,7 @@
         margin-bottom: 15px;
         display: none;
     }
-    #main .contentwrap .cont.c2 .schedule ul:first-child{
+    #main .contentwrap .cont.c2 .schedule ul:nth-child(4){
         display: block;
     }
     #main .contentwrap .cont.c2 .schedule ul li{
@@ -346,10 +343,10 @@
         width: 9%;
     }
     #main .contentwrap .cont.c2 .type ul li:nth-child(4){
-        width: 8%;
+        width: 22%;
     }
     #main .contentwrap .cont.c2 .type ul li:nth-child(5){
-        width: 21%;
+        width: 7%;
     }
 }
 @media only screen and (max-width:381px){
