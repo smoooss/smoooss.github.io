@@ -213,7 +213,7 @@
         height: 100vh;
     }
     #main{
-        height: calc(100vh - 40px);
+        height: calc(100% - 40px);
         position: relative;
     }
     #main .contentwrap{
@@ -222,7 +222,7 @@
         display: block;
         position: unset;
         transform: unset;
-        padding: 100px 0;
+        padding-top: 100px;
     }
     #main .contentwrap .cont{
         width: 86%;
@@ -230,17 +230,17 @@
         padding-left: 7%;
     }
     #main .contentwrap .cont.c1{
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     #main .contentwrap .cont.c1 .date{
         margin-left: 0;
-        margin-bottom: 30px;
+        margin-bottom: 0;
         font-size: 20px;
         text-align: center;
     }
     #main .contentwrap .cont.c1 .week{
         width: 100%;
-        margin: 20px auto;
+        margin: 10px auto;
     }
     #main .contentwrap .cont.c1 .week ul li{
         font-size: 13px;
@@ -268,7 +268,7 @@
         display: none;
     }
     #main .contentwrap .cont.c2 .type{
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         border-bottom: 1px solid #333333;
     }
     #main .contentwrap .cont.c2 .type ul li{
@@ -291,7 +291,7 @@
         left: -19px;
     }
     #main .contentwrap .cont.c2 .scroll{
-        height: 150px;
+        height: 120px;
         padding-right: 0;
         overflow-y: unset;
     }
