@@ -81,7 +81,9 @@
         margin-left: 7%;
     }
     #main .contentwrap ul li:first-child > img{
+        min-width: unset;
         width: calc(100% - 2px);
+        min-height: unset;
         height: calc(100% - 2px);
     }
     #main .contentwrap ul li a{
