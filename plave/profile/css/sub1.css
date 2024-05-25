@@ -1,18 +1,15 @@
 @charset "UTF-8";
 
-
-
-
-
 #main{
-    width: 100%;
     height: calc(100vh - 70px);
     position: relative;
 }
 #main .contentwrap{
+    min-width: unset;
     width: 650px;
     height: 550px;
-    position: relative;
+    margin: unset;
+    padding-top: unset;
     transform: translate(-50%, -50%);
     top: 53%;
     left: 50%;
