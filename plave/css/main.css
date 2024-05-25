@@ -78,7 +78,7 @@ img{
 #main .back{
     width: 100%;
     height: 100%;
-    background-image: url(../img/main2.jpg);
+    background-image: url(../img/main.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -261,12 +261,12 @@ img{
         margin-top: 27px;
     }
     #main .back{
-        background-image: url(../img/main02.jpg);
+        background-image: url(../img/main1.jpg);
         background-position: bottom;
     }
     #main .front .text{
         width: 70%;
-        top: 70%;
+        top: 50%;
         right: 7%;
     }
     #main .front .text a:nth-child(1){
