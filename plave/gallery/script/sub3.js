@@ -18,11 +18,11 @@ $(document).ready(function(){
         index = $(this).index()+1;
         let url = 'url(img/content'+index+'.jpg)';
         
-        a=$(window).scrollTop()
+        b=$(window).scrollTop()
 
-        $('#main .popup').fadeIn(200).css({marginTop:a});
+        $('#main .popup').css({'display':'block',marginTop:b});
         $('#main .popup .popup-cont').css({'backgroundImage':url});
-        $('html,body').css({'overflow':'hidden'}).animate({scrollTop:a});
+        $('html,body').css({'overflow':'hidden'}).scrollTop(b);
     }
 
 
