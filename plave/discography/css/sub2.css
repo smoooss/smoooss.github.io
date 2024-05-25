@@ -76,6 +76,7 @@
         display: block;
     }
     #main .contentwrap ul li{
+        min-width: unset;
         width: 86%;
         margin-left: 7%;
     }
