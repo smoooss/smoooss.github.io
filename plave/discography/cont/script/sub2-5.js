@@ -14,4 +14,23 @@ $(document).ready(function(){
         }
     }
 
+    b=$('#main .contentwrap .cont.c4 ul li > img').height()
+            
+    $('#main .contentwrap .cont.c4 ul li').find('a').css({'height':b})
+        
+
+    $('#main .contentwrap .cont.c4 ul li').mouseover(function(){
+        $(this).find('a').css({'opacity':'1'})
+    }).mouseout(function(){
+        $(this).find('a').css({'opacity':'0'})
+    })
+
+    $(window).on('resize',function(){
+
+        c=$('#main .contentwrap .cont.c4 ul li > img').height()
+
+        $('#main .contentwrap .cont.c4 ul li').find('a').css({'height':c})
+        
+    });
+
 });
