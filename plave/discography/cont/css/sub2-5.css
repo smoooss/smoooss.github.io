@@ -219,4 +219,7 @@
     #main .contentwrap .cont.c4{
         padding-bottom: 30px;
     }
+    #main .contentwrap .cont.c4 ul li span{
+    font-size: 13px;
+}
 }
