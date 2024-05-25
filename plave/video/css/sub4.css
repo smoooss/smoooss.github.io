@@ -129,4 +129,7 @@
     #main .contentwrap .content .radio ul li{
         width: calc(100% - 2px);
     }
+    #main .contentwrap .content div ul li span{
+        font-size: 13px;
+    }
 }
