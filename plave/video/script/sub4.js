@@ -26,6 +26,14 @@ $(document).ready(function(){
         $(this).find('a').css({'opacity':'0'})
     })
 
+    $(window).on('resize',function(){
+
+        i=$('#main .contentwrap .content ul li > img').height()
+            
+        $('#main .contentwrap .content ul li').find('a').css({'height':i})
+        
+    });
+
 
     b=$(window).width()
 
