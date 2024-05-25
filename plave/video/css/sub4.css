@@ -1,126 +1,11 @@
 @charset "UTF-8";
 
 #main{
-    min-width: 1400px;
-    width: 100%;
     height: calc(100vh - 70px);
-    position: relative;
-}
-#main .contentwrap{
-    width: 1100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-}
-#main .contentwrap .videowrap{
-    width: 890px;
-    height: 500px;
-    position: relative;
-}
-#main .contentwrap .videowrap .video{
-    width: 100%;
-    height: 100%;
-}
-#main .contentwrap .videowrap .video ul li{
-    position: absolute;
-}
-#main .contentwrap .videowrap .video ul li:nth-child(n+2){
-    display: none;
-}
-#main .contentwrap .videowrap .video ul li a{
-    display: block;
-    position: relative;
-}
-#main .contentwrap .videowrap .video ul li img:nth-child(2){
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 8%;
-}
-#main .contentwrap .videowrap .video ul li span{
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: 700;
-}
-#main .contentwrap .videowrap .btn{
-    display: none;
-}
-#main .contentwrap .imagewrap{
-    width: 200px;
-    height: 500px;
-    overflow-y: scroll;
-    position: relative;
-}
-#main .contentwrap .imagewrap::-webkit-scrollbar{
-    width: 5px;
-    height: 5px;
-}
-#main .contentwrap .imagewrap::-webkit-scrollbar-trac{
-    background-color:transparent;
-}
-#main .contentwrap .imagewrap::-webkit-scrollbar-thumb{
-    border-radius: 3px;
-    background-color: #666666;
-}
-#main .contentwrap .imagewrap::-webkit-scrollbar-button{
-    width: 0;
-    height: 0;
-}
-#main .contentwrap .imagewrap::-webkit-scrollbar-corner{
-    width: 0;
-    height: 0;
-}
-#main .contentwrap .imagewrap .image{
-    width: 100%;
-    position: relative;
-}
-#main .contentwrap .imagewrap .image ul li{
-    width: 190px;
-    margin-bottom: 9px;
-    position: relative;
-    cursor: pointer;
-    opacity: 0.5;
-}
-#main .contentwrap .imagewrap .image ul li:first-child{
-    opacity: 1;
-}
-#main .contentwrap .imagewrap .image ul li:last-child{
-    margin-bottom: 0;
-}
-#main .contentwrap .imagewrap .image ul li a{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(1, 1, 1, 0.7);
-    position: absolute;
-    top: 0;
-    opacity: 0;
-}
-#main .contentwrap .imagewrap .image ul li a img{
-    width: 15%;
-    position: relative;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    opacity: 0.7;
-}
-#main .contentwrap .videowrap .video.v2,
-#main .contentwrap .videowrap .video.v3,
-#main .contentwrap .imagewrap .image.i2,
-#main .contentwrap .imagewrap .image.i3{
-    display: none;
 }
 #main .contentwrap .menu{
-    height: 20px;
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    bottom: -33px;
+    width: 400px;
+    margin-bottom: 10px;
 }
 #main .contentwrap .menu ul{
     display: flex;
@@ -128,96 +13,120 @@
     justify-content: space-between;
 }
 #main .contentwrap .menu ul li{
-    margin-right: 31px;
-    color: #bbbbbb;
-    font-size: 14px;
-    font-weight: 500;
     cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    color: #dddddd;
 }
 #main .contentwrap .menu ul li:first-child{
-    color: #333333;
     font-weight: 700;
+    color: #333333;
 }
-#main .contentwrap .menu ul li:last-child{
-    margin-right: 0;
+#main .contentwrap .content{
+    height: calc(100vh - 280px);
+    position: relative;
+    overflow-y: scroll;
 }
-
+#main .contentwrap .content::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+#main .contentwrap .content::-webkit-scrollbar-trac{
+    background-color:transparent;
+}
+#main .contentwrap .content::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: #666666;
+}
+#main .contentwrap .content::-webkit-scrollbar-button{
+    width: 0;
+    height: 0;
+}
+#main .contentwrap .content::-webkit-scrollbar-corner{
+    width: 0;
+    height: 0;
+}
+#main .contentwrap .content div{
+    width: calc(100% - 10px);
+    position: absolute;
+    display: none;
+}
+#main .contentwrap .content div ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main .contentwrap .content div ul li{
+    width: 32.5%;
+    margin-bottom: 30px;
+    position: relative;
+}
+#main .contentwrap .content div ul li a{
+    display: block;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+#main .contentwrap .content div ul li a img{
+    width: 15%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+#main .contentwrap .content div ul li img{
+    border-radius: 10px;
+}
+#main .contentwrap .content div ul li span{
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 15px;
+}
+#main .contentwrap .content .music{
+    display: flex;
+}
+#main .contentwrap .content .radio ul li{
+    width: calc(32.5% - 2px);
+}
+#main .contentwrap .content .radio ul li a{
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+}
 
 
 
 
 
 @media only screen and (max-width:499px){
-
-    #main{
-        min-width: 100%;
-        height: 100%;
-    }
-    #main .contentwrap{
-        width: 100%;
-        padding: 100px 0;
-        transform: unset;
-        top: 0;
-        left: 0;
-    }
-    #main .contentwrap .videowrap{
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(1, 1, 1, 0.7);
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        display: none;
-    }
-    #main .contentwrap .videowrap .video{
-        width: 330px;
-        height: 180px;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-    }
-    #main .contentwrap .videowrap .video ul li span{
-        width: 100%;
-        color: #ffffff;
-        font-size: 13px;
-        font-weight: 500;
-        text-align: center;
-    }
-    #main .contentwrap .videowrap .btn{
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        transform: translate(0, 0);
-        top: 0;
-        right: 0;
-    }
-    #main .contentwrap .videowrap .btn img{
-        padding: 5px;
-        box-sizing: border-box;
-        background-color: rgba(1, 1, 1, 0.5);
-        opacity: 1;
-    }
-    #main .contentwrap .imagewrap{
-        width: 86%;
-        height: unset;
-        padding-left: 7%;
-        overflow-y: unset;
-        position: relative;
-    }
-    #main .contentwrap .imagewrap .image ul li{
-        width: 100%;
-        opacity: 1;
-    }
+    
     #main .contentwrap .menu{
-        right: 7%;
-        top: 75px;
+        width: 84%;
+        margin-left: 8%;
     }
     #main .contentwrap .menu ul li{
-        margin-right: 20px;
         font-size: 13px;
     }
-    #main .link {
-        bottom: 20px;
+    #main .contentwrap .content{
+        width: 86%;
+        height: unset;
+        margin-left: 7%;
+        overflow-y: unset;
+    }
+    #main .contentwrap .content div{
+        width: 100%;
+    }
+    #main .contentwrap .content div ul{
+        display: block;
+    }
+    #main .contentwrap .content div ul li{
+        width: 100%;
+    }
+    #main .contentwrap .content .radio ul li{
+        width: calc(100% - 2px);
     }
 }
