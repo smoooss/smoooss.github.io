@@ -27,6 +27,8 @@ $(document).ready(function(){
         
     });
 
+
+
     $('#main .contentwrap .content ul li').mouseover(function(){
         $(this).find('a').css({'opacity':'1'})
     }).mouseout(function(){
