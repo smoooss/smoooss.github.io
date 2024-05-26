@@ -20,11 +20,13 @@ $(document).ready(function(){
     $('#main .contentwrap .content ul li').find('a').css({'height':a})
         
 
-    $('#main .contentwrap .content ul li').mouseover(function(){
-        $(this).find('a').css({'opacity':'1'})
-    }).mouseout(function(){
-        $(this).find('a').css({'opacity':'0'})
-    })
+    $(window).on('resize, scroll touchmove mousewheel, mousemove',function(){
+        
+        a=$('#main .contentwrap .content ul li > img').height()
+
+        $('#main .contentwrap .content ul li').find('a').css({'height':a})
+        
+    });
 
     $(window).on('resize',function(){
 
