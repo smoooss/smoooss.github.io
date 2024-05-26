@@ -15,24 +15,15 @@ $(document).ready(function(){
         $('#main .contentwrap .content div').eq(index-1).fadeIn(300).siblings().fadeOut(100)
     }
 
-    a=$('#main .contentwrap .content ul li > img').height()
-            
-    $('#main .contentwrap .content ul li').find('a').css({'height':a})
-        
+    a=$('#main .contentwrap .content .music ul li > img').height()
 
-    $(window).on('resize, scroll touchmove mousewheel, mousemove',function(){
-        
-        a=$('#main .contentwrap .content ul li > img').height()
-
-        $('#main .contentwrap .content ul li').find('a').css({'height':a})
-        
-    });
+    $('#main .contentwrap .content div ul li').find('a').css({'height':a})
 
     $(window).on('resize',function(){
+        
+        a=$('#main .contentwrap .content .music ul li > img').height()
 
-        i=$('#main .contentwrap .content ul li > img').height()
-            
-        $('#main .contentwrap .content ul li').find('a').css({'height':i})
+        $('#main .contentwrap .content div ul li').find('a').css({'height':a})
         
     });
 
