@@ -19,11 +19,27 @@ $(document).ready(function(){
 
     $('#main .contentwrap .content div ul li').find('a').css({'height':a})
 
-    $(window).on('resize',function(){
+    $(window).on('resize, click',function(){
         
         a=$('#main .contentwrap .content .music ul li > img').height()
 
-        $('#main .contentwrap .content div ul li').find('a').css({'height':a})
+        $('#main .contentwrap .content .music ul li').find('a').css({'height':a})
+
+        b=$('#main .contentwrap .content .cont ul li > img').height()
+
+        $('#main .contentwrap .content .cont ul li').find('a').css({'height':b})
+
+        c=$('#main .contentwrap .content .cover ul li > img').height()
+
+        $('#main .contentwrap .content .cover ul li').find('a').css({'height':c})
+
+        d=$('#main .contentwrap .content .stage ul li > img').height()
+
+        $('#main .contentwrap .content .stage ul li').find('a').css({'height':d})
+
+        e=$('#main .contentwrap .content .radio ul li > img').height()
+
+        $('#main .contentwrap .content .radio ul li').find('a').css({'height':e})
         
     });
 
@@ -36,35 +52,38 @@ $(document).ready(function(){
     });
 
 
-    b=$(window).width()
+    f=$(window).width()
 
-    if(b<500){
+    if(f<500){
 
-        c=$('#main .contentwrap .content .music').height()
-        d=$('#main .contentwrap .content .cont').height()
-        e=$('#main .contentwrap .content .cover').height()
-        h=$('#main .contentwrap .content .stage').height()
-        g=$('#main .contentwrap .content .radio').height()
+        g=$('#main .contentwrap .content .music').height()
+        h=$('#main .contentwrap .content .cont').height()
+        i=$('#main .contentwrap .content .cover').height()
+        j=$('#main .contentwrap .content .stage').height()
+        k=$('#main .contentwrap .content .radio').height()
         
-        h=200
+        l=200
 
-        $('#main').css({'height':c+h})
+        $('#main').css({'height':g+l})
 
+        $('#main .contentwrap .menu ul li').eq(0).click(function(){
+            $('#main').css({'height':g+l})
+        })
 
         $('#main .contentwrap .menu ul li').eq(1).click(function(){
-            $('#main').css({'height':d+h})
+            $('#main').css({'height':h+l})
         })
 
         $('#main .contentwrap .menu ul li').eq(2).click(function(){
-            $('#main').css({'height':e+h})
+            $('#main').css({'height':i+l})
         })
 
         $('#main .contentwrap .menu ul li').eq(3).click(function(){
-            $('#main').css({'height':f+h})
+            $('#main').css({'height':j+l})
         })
 
         $('#main .contentwrap .menu ul li').eq(4).click(function(){
-            $('#main').css({'height':g+h})
+            $('#main').css({'height':k+l})
         })
 
 
