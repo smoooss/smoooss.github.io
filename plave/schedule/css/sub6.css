@@ -37,7 +37,6 @@
 
 #main .contentwrap .calendar{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -208,15 +207,23 @@
 
     #main{
         min-width: 100%;
-        height: 100%;
     }
     #main .contentwrap{
         width: 100%;
-        height: 100%;
         display: block;
         position: unset;
         transform: unset;
         padding: 100px 0;
+    }
+    #main .contentwrap .arrow{
+        width: 40%;
+        left: 30%;
+    }
+    #main .contentwrap .arrow ul li{
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+        line-height: 25px;
     }
     #main .contentwrap .calendar .cont{
         width: 86%;
