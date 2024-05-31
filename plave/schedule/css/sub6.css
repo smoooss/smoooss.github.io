@@ -41,7 +41,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
 }
 #main .contentwrap .calendar.c2{
     display: none;
@@ -211,10 +211,11 @@
 
     #main{
         min-width: 100%;
-        height: calc(100vh - 40px);
+        height: unset;
     }
     #main .contentwrap{
         width: 100%;
+        height: unset;
         display: block;
         position: unset;
         transform: unset;
@@ -297,7 +298,7 @@
         left: -19px;
     }
     #main .contentwrap .calendar .cont.c2 .scroll{
-        height: 150px;
+        height: unset;
         padding-right: 0;
         overflow-y: unset;
     }
