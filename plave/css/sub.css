@@ -198,7 +198,7 @@ img{
     }
     #header{
         width: 100vw;
-        background-color: #ffffff;
+        z-index: 2;
     }
     #header .header{
         width: 86%;
