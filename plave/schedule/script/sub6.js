@@ -21,11 +21,13 @@ $(document).ready(function(){
     }
 
     $('#main .contentwrap .arrow ul li').eq(1).click(function(){
+        $(this).css({'display':'none'}).siblings().css({'display':'block','marginLeft':'0'})
         $('#main .contentwrap .calendar').css({'display':'none'})
         $('#main .contentwrap .calendar.c2').css({'display':'flex'})
     })
 
     $('#main .contentwrap .arrow ul li').eq(0).click(function(){
+        $(this).css({'display':'none'}).siblings().css({'display':'block','marginLeft':'156px'})
         $('#main .contentwrap .calendar').css({'display':'none'})
         $('#main .contentwrap .calendar.c1').css({'display':'flex'})
     })
@@ -46,6 +48,7 @@ $(document).ready(function(){
             $('#main .contentwrap .calendar.c2 .cont.c2 .schedule ul').eq(7).css({'display':'block'})
         });
         $('#main .contentwrap .arrow ul li').eq(0).click(function(){
+            $(this).css({'display':'none'}).siblings().css({'display':'block','marginLeft':'calc(100% - 25px)'})
             $('#main .contentwrap .calendar.c1 .cont.c2 .schedule ul').css({'display':'none'})
             $('#main .contentwrap .calendar.c1 .cont.c2 .schedule ul').eq(3).css({'display':'block'})
         });
