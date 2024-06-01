@@ -34,6 +34,9 @@
     line-height: 30px;
     cursor: pointer;
 }
+#main .contentwrap .arrow ul li:nth-child(2){
+    display: none;
+}
 
 
 #main .contentwrap .calendar{
@@ -43,7 +46,7 @@
     justify-content: space-between;
     position: relative;
 }
-#main .contentwrap .calendar.c2{
+#main .contentwrap .calendar.c1{
     display: none;
 }
 #main .contentwrap .calendar .cont.c1{
