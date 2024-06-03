@@ -20,9 +20,9 @@ $(document).ready(function(){
         
         b=$(window).scrollTop()
 
-        $('#main .popup').css({'display':'block',marginTop:b});
+        $('#main .popup').css({'display':'block','marginTop':b});
         $('#main .popup .popup-cont').css({'backgroundImage':url});
-        $('html,body').css({'overflow':'hidden'}).scrollTop(b);
+        $('html,body').css({'overflow':'hidden'}).animate({'scrollTop':b});
     }
 
 
