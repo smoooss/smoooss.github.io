@@ -17,12 +17,10 @@ $(document).ready(function(){
     function popup(){
         index = $(this).index()+1;
         let url = 'url(img/content'+index+'.jpg)';
-        
-        b=$(window).scrollTop()
 
-        $('#main .popup').css({'display':'block','marginTop':b});
+        $('#main .popup').css({'display':'block'});
         $('#main .popup .popup-cont').css({'backgroundImage':url});
-        $('html,body').css({'overflow':'hidden'}).animate({'scrollTop':b});
+        $('html,body').css({'overflow':'hidden'}).scrollTop(0);
     }
 
 
