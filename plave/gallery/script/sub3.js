@@ -18,9 +18,9 @@ $(document).ready(function(){
         index = $(this).index()+1;
         let url = 'url(img/content'+index+'.jpg)';
 
-        $('#main .popup').css({'display':'block'});
+        $('#main .popup').css({'display':'block','marginTop':0});
         $('#main .popup .popup-cont').css({'backgroundImage':url});
-        $('html,body').css({'overflow':'hidden'}).scrollTop(0);
+        $('html,body').css({'overflow':'hidden'}).animate({scrollTop:0},0);
     }
 
 
