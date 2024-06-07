@@ -4,7 +4,7 @@
     height: calc(100vh - 70px);
 }
 #main .contentwrap .menu{
-    width: 400px;
+    width: 450px;
     margin-bottom: 10px;
 }
 #main .contentwrap .menu ul{
@@ -83,8 +83,8 @@
     border-radius: 10px;
 }
 #main .contentwrap .content div ul li span{
-    margin-top: 10px;
     display: inline-block;
+    margin-top: 10px;
     font-size: 15px;
 }
 #main .contentwrap .content .music{
