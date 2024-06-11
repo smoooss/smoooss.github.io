@@ -105,6 +105,10 @@ $(document).ready(function(){
                 for(c=120; c<130; c++){
                     $('#main .contentwrap ul li').eq(c).fadeIn(500)
                 }
+            }if(e>4600){
+                for(c=130; c<140; c++){
+                    $('#main .contentwrap ul li').eq(c).fadeIn(500)
+                }
             }
         }else{
             $('#main .contentwrap ul li').fadeIn(500)
