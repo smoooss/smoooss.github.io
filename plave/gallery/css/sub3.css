@@ -6,31 +6,51 @@
     justify-content: space-between;
 }
 #main .contentwrap ul li{
-    min-width: 133px;
-    width: 12%;
+    width: 19.6%;
     margin-bottom: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
 }
-#main .contentwrap ul li:nth-child(n+6){
-    min-width: 205px;
-    width: 18%;
+#main .contentwrap ul li:nth-child(n+12){
+    width: 36.3%;
 }
-#main .contentwrap ul li:nth-child(n+8){
-    min-width: 272px;
-    width: 24.5%;
+#main .contentwrap ul li:nth-child(11),
+#main .contentwrap ul li:nth-child(14){
+    width: 26%;
 }
-#main .contentwrap ul li:nth-child(n+20){
-    min-width: 155px;
-    width: 14%;
+#main .contentwrap ul li:nth-child(n+17){
+    width: 33%;
 }
-#main .contentwrap ul li:nth-child(25),
-#main .contentwrap ul li:nth-child(31){
-    min-width: 310px;
-    width: 28%;
+#main .contentwrap ul li:nth-child(35),
+#main .contentwrap ul li:nth-child(37){
+    width: 31%;
 }
+#main .contentwrap ul li:nth-child(36){
+    width: 37.4%;
+}
+#main .contentwrap ul li:nth-child(n+38){
+    width: 19.6%;
+}
+#main .contentwrap ul li:nth-child(48),
+#main .contentwrap ul li:nth-child(49){
+    width: 37%;
+}
+#main .contentwrap ul li:nth-child(50){
+    width: 24.7%;
+}
+#main .contentwrap ul li:nth-child(n+51){
+    width: 23.3%;
+}
+#main .contentwrap ul li:nth-child(53),
+#main .contentwrap ul li:nth-child(55){
+    width: 52.2%;
+}
+#main .contentwrap ul li:nth-child(55){
+    margin-right: 23.9%;
+}
+
 #main .contentwrap ul li a{
     display: block;
     width: 100%;
@@ -112,18 +132,42 @@
         width: 86%;
         margin-left: 7%;
     }
-    #main .contentwrap ul li:nth-child(n+6){
+    #main .contentwrap ul li:nth-child(n+12){
+        width: 36.3%;
+    }
+    #main .contentwrap ul li:nth-child(11),
+    #main .contentwrap ul li:nth-child(14){
         width: 86%;
     }
-    #main .contentwrap ul li:nth-child(n+8){
+    #main .contentwrap ul li:nth-child(n+17){
         width: 86%;
     }
-    #main .contentwrap ul li:nth-child(n+20){
+    #main .contentwrap ul li:nth-child(35),
+    #main .contentwrap ul li:nth-child(37){
         width: 86%;
     }
-    #main .contentwrap ul li:nth-child(25),
-    #main .contentwrap ul li:nth-child(31){
+    #main .contentwrap ul li:nth-child(36){
         width: 86%;
+    }
+    #main .contentwrap ul li:nth-child(n+38){
+        width: 86%;
+    }
+    #main .contentwrap ul li:nth-child(48),
+    #main .contentwrap ul li:nth-child(49){
+        width: 86%;
+    }
+    #main .contentwrap ul li:nth-child(50){
+        width: 86%;
+    }
+    #main .contentwrap ul li:nth-child(n+51){
+        width: 86%;
+    }
+    #main .contentwrap ul li:nth-child(53),
+    #main .contentwrap ul li:nth-child(55){
+        width: 86%;
+    }
+    #main .contentwrap ul li:nth-child(55){
+        margin-right: unset;
     }
     #main .popup .popup-cont{
         width: 100%;
