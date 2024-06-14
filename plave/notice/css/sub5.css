@@ -70,7 +70,10 @@
     width: 8%;
 }
 #main .contentwrap ul li .more .seemore{
-    margin-top: 20px;
+    display: inline-block;
+    font-weight: 900;
+    color: #0055ff;
+    text-decoration-line: underline;
 }
 #main .contentwrap ul li .more .guidewrap{
     text-align: left;
