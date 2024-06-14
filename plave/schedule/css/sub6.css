@@ -184,26 +184,23 @@
 #main .contentwrap .calendar .cont.c2 .schedule ul li span{
     top: 5px;
 }
-#main .contentwrap .calendar .cont.c2 .type ul li span{
-    opacity: 0.5;
-}
 .on{
     margin-left: 23px;
 }
 .radio{
-    background-color: #0055ff;
+    background-color: #0055ff50;
 }
 .live{
-    background-color: #9500ff;
+    background-color: #9500ff50;
 }
 .show{
-    background-color: #ff00cc;
+    background-color: #ff00cc50;
 }
 .anniversary{
-    background-color: #ff0000;
+    background-color: #ff000050;
 }
 .etc{
-    background-color: #06b500;
+    background-color: #06b50050;
 }
 
 
