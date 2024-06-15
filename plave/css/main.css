@@ -75,7 +75,7 @@ img{
     height: 100vh;
     position: relative;
 }
-#main .contents{
+#main .contentwrap{
     width: 100%;
     height: 100%;
     background-image: url(../img/main2.jpg);
@@ -83,12 +83,12 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#main .contents .contwrap{
+#main .contentwrap .content{
     width: 100%;
     height: 100%;
     background-color: rgba(1, 1, 1, 0.2);
 }
-#main .contents .contwrap .text{
+#main .contentwrap .content .text{
     width: 425px;
     position: absolute;
     transform: translate(0, -50%);
@@ -97,30 +97,30 @@ img{
     transition: 0.5s;
     opacity: 0;
 }
-#main .contents .contwrap .text a{
+#main .contentwrap .content .text a{
     display: inline-block;
     width: 100%;
     color: #ffffff;
     text-align: right;
     font-weight: 500;
 }
-#main .contents .contwrap .text a:nth-child(1){
+#main .contentwrap .content .text a:nth-child(1){
     font-size: 50px;
     font-weight: 700;
 }
-#main .contents .contwrap .text a:nth-child(2){
+#main .contentwrap .content .text a:nth-child(2){
     margin-top: 10px;
     font-size: 35px;
 }
-#main .contents .contwrap .text a:nth-child(4){
+#main .contentwrap .content .text a:nth-child(4){
     font-size: 20px;
 }
-#main .contents .contwrap .text a:nth-child(5){
+#main .contentwrap .content .text a:nth-child(5){
     margin-top: 10px;
     font-size: 15px;
     font-weight: 400;
 }
-#main .contents .contwrap .text span{
+#main .contentwrap .content .text span{
     display: block;
     width: 300px;
     height: 2px;
@@ -262,23 +262,23 @@ img{
         background-image: url(../img/m_main2.jpg);
         background-position: bottom;
     }
-    #main .contents .contwrap .text{
+    #main .contentwrap .content .text{
         width: 70%;
         top: 73%;
         right: 7%;
     }
-    #main .contents .contwrap .text a:nth-child(1){
+    #main .contentwrap .content .text a:nth-child(1){
         font-size: 30px;
     }
-    #main .contents .contwrap .text a:nth-child(2){
+    #main .contentwrap .content .text a:nth-child(2){
         margin-top: 10px;
         font-size: 25px;
     }
-    #main .contents .contwrap .text a:nth-child(n+3),
+    #main .contentwrap .content .text a:nth-child(n+3),
     #main .link{
         display: none;
     }
-    #main .contents .contwrap .text span{
+    #main .contentwrap .content .text span{
         width: 50%;
         left: unset;
         right: 0;
