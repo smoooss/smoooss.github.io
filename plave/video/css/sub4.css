@@ -46,22 +46,22 @@
     width: 0;
     height: 0;
 }
-#main .contentwrap .content div{
+#main .contentwrap .content .cont{
     width: calc(100% - 10px);
     position: absolute;
     display: none;
 }
-#main .contentwrap .content div ul{
+#main .contentwrap .content .cont ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#main .contentwrap .content div ul li{
+#main .contentwrap .content .cont ul li{
     width: 32.5%;
     margin-bottom: 30px;
     position: relative;
 }
-#main .contentwrap .content div ul li a{
+#main .contentwrap .content .cont ul li a{
     display: block;
     width: 100%;
     background-color: rgba(1, 1, 1, 0.5);
@@ -70,7 +70,7 @@
     top: 0;
     opacity: 0;
 }
-#main .contentwrap .content div ul li a img{
+#main .contentwrap .content .cont ul li a img{
     width: 15%;
     position: relative;
     transform: translate(-50%, -50%);
@@ -79,21 +79,21 @@
     border-radius: 10px;
     opacity: 0.7;
 }
-#main .contentwrap .content div ul li img{
+#main .contentwrap .content .cont ul li img{
     border-radius: 10px;
 }
-#main .contentwrap .content div ul li span{
+#main .contentwrap .content .cont ul li span{
     display: inline-block;
     margin-top: 10px;
     font-size: 15px;
 }
-#main .contentwrap .content .music{
+#main .contentwrap .content .cont.c1{
     display: flex;
 }
-#main .contentwrap .content .radio ul li{
+#main .contentwrap .content .cont.c5 ul li{
     width: calc(32.5% - 2px);
 }
-#main .contentwrap .content .radio ul li a{
+#main .contentwrap .content .cont.c5 ul li a{
     border: 1px solid #eeeeee;
     border-radius: 10px;
 }
@@ -117,19 +117,19 @@
         margin-left: 7%;
         overflow-y: unset;
     }
-    #main .contentwrap .content div{
+    #main .contentwrap .content .cont{
         width: 100%;
     }
-    #main .contentwrap .content div ul{
+    #main .contentwrap .content .cont ul{
         display: block;
     }
-    #main .contentwrap .content div ul li{
+    #main .contentwrap .content .cont ul li{
         width: 100%;
     }
-    #main .contentwrap .content .radio ul li{
+    #main .contentwrap .content .cont.c5 ul li{
         width: calc(100% - 2px);
     }
-    #main .contentwrap .content div ul li span{
+    #main .contentwrap .content .cont ul li span{
         margin-top: 7px;
         font-size: 13px;
     }
