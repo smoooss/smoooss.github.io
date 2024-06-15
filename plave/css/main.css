@@ -258,7 +258,7 @@ img{
         width: 25px;
         margin-top: 27px;
     }
-    #main .back{
+    #main .contentwrap{
         background-image: url(../img/m_main2.jpg);
         background-position: bottom;
     }
