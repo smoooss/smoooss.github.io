@@ -12,34 +12,34 @@ $(document).ready(function(){
     function menu(){
         index = $(this).index()+1;
         $('#main .contentwrap .menu ul li').eq(index-1).css({'fontWeight':'700','color':'#333333'}).siblings().css({'fontWeight':'500','color':'#bbbbbb'})
-        $('#main .contentwrap .content div').eq(index-1).fadeIn(300).siblings().fadeOut(100)
+        $('#main .contentwrap .content .cont').eq(index-1).fadeIn(300).siblings().fadeOut(100)
     }
 
-    a=$('#main .contentwrap .content .music ul li > img').height()
+    a=$('#main .contentwrap .content .cont.c1 ul li > img').height()
 
-    $('#main .contentwrap .content div ul li').find('a').css({'height':a})
+    $('#main .contentwrap .content .cont ul li').find('a').css({'height':a})
 
     $(window).on('resize, click',function(){
         
-        a=$('#main .contentwrap .content .music ul li > img').height()
+        a=$('#main .contentwrap .content .cont.c1 ul li > img').height()
 
-        $('#main .contentwrap .content .music ul li').find('a').css({'height':a})
+        $('#main .contentwrap .content .cont.c1 ul li').find('a').css({'height':a})
 
-        b=$('#main .contentwrap .content .cont ul li > img').height()
+        b=$('#main .contentwrap .content .cont.c2 ul li > img').height()
 
-        $('#main .contentwrap .content .cont ul li').find('a').css({'height':b})
+        $('#main .contentwrap .content .cont.c2 ul li').find('a').css({'height':b})
 
-        c=$('#main .contentwrap .content .cover ul li > img').height()
+        c=$('#main .contentwrap .content .cont.c3 ul li > img').height()
 
-        $('#main .contentwrap .content .cover ul li').find('a').css({'height':c})
+        $('#main .contentwrap .content .cont.c3 ul li').find('a').css({'height':c})
 
-        d=$('#main .contentwrap .content .stage ul li > img').height()
+        d=$('#main .contentwrap .content .cont.c4 ul li > img').height()
 
-        $('#main .contentwrap .content .stage ul li').find('a').css({'height':d})
+        $('#main .contentwrap .content .cont.c4 ul li').find('a').css({'height':d})
 
-        e=$('#main .contentwrap .content .radio ul li > img').height()
+        e=$('#main .contentwrap .content .cont.c5 ul li > img').height()
 
-        $('#main .contentwrap .content .radio ul li').find('a').css({'height':e})
+        $('#main .contentwrap .content .cont.c5 ul li').find('a').css({'height':e})
         
     });
 
@@ -56,11 +56,11 @@ $(document).ready(function(){
 
     if(f<500){
 
-        g=$('#main .contentwrap .content .music').height()
-        h=$('#main .contentwrap .content .cont').height()
-        i=$('#main .contentwrap .content .cover').height()
-        j=$('#main .contentwrap .content .stage').height()
-        k=$('#main .contentwrap .content .radio').height()
+        g=$('#main .contentwrap .content .cont.c1').height()
+        h=$('#main .contentwrap .content .cont.c2').height()
+        i=$('#main .contentwrap .content .cont.c3').height()
+        j=$('#main .contentwrap .content .cont.c4').height()
+        k=$('#main .contentwrap .content .cont.c5').height()
         
         l=200
 
