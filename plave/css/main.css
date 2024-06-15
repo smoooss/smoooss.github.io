@@ -75,22 +75,20 @@ img{
     height: 100vh;
     position: relative;
 }
-#main .back{
+#main .contents{
     width: 100%;
     height: 100%;
     background-image: url(../img/main2.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
 }
-#main .front{
+#main .contents .contwrap{
     width: 100%;
     height: 100%;
     background-color: rgba(1, 1, 1, 0.2);
-    position: absolute;
 }
-#main .front .text{
+#main .contents .contwrap .text{
     width: 425px;
     position: absolute;
     transform: translate(0, -50%);
@@ -99,30 +97,30 @@ img{
     transition: 0.5s;
     opacity: 0;
 }
-#main .front .text a{
+#main .contents .contwrap .text a{
     display: inline-block;
     width: 100%;
     color: #ffffff;
     text-align: right;
     font-weight: 500;
 }
-#main .front .text a:nth-child(1){
+#main .contents .contwrap .text a:nth-child(1){
     font-size: 50px;
     font-weight: 700;
 }
-#main .front .text a:nth-child(2){
+#main .contents .contwrap .text a:nth-child(2){
     margin-top: 10px;
     font-size: 35px;
 }
-#main .front .text a:nth-child(4){
+#main .contents .contwrap .text a:nth-child(4){
     font-size: 20px;
 }
-#main .front .text a:nth-child(5){
+#main .contents .contwrap .text a:nth-child(5){
     margin-top: 10px;
     font-size: 15px;
     font-weight: 400;
 }
-#main .front .text span{
+#main .contents .contwrap .text span{
     display: block;
     width: 300px;
     height: 2px;
@@ -264,23 +262,23 @@ img{
         background-image: url(../img/m_main2.jpg);
         background-position: bottom;
     }
-    #main .front .text{
+    #main .contents .contwrap .text{
         width: 70%;
         top: 73%;
         right: 7%;
     }
-    #main .front .text a:nth-child(1){
+    #main .contents .contwrap .text a:nth-child(1){
         font-size: 30px;
     }
-    #main .front .text a:nth-child(2){
+    #main .contents .contwrap .text a:nth-child(2){
         margin-top: 10px;
         font-size: 25px;
     }
-    #main .front .text a:nth-child(n+3),
+    #main .contents .contwrap .text a:nth-child(n+3),
     #main .link{
         display: none;
     }
-    #main .front .text span{
+    #main .contents .contwrap .text span{
         width: 50%;
         left: unset;
         right: 0;
