@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $(window).on('scroll touchmove mousewheel, mousemove',function(){
-        $('#main .front .text').css({'opacity':'1'})
+        $('#main .contentwrap .content .text').css({'opacity':'1'})
     });
 
     $('.menu').click(function(){
@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     a=$(window).width()
     if(a<500){
-        $('#main .front .text').css({'opacity':'1'})
+        $('#main .contentwrap .content .text').css({'opacity':'1'})
     }
 
 });
