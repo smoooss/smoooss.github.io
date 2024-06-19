@@ -61,6 +61,11 @@
     height: 500px; 
     padding-top: 20px;
 }
+#main .contentwrap ul li .more video{
+    width: 375px;
+    height: 500px; 
+    padding-top: 20px;
+}
 #main .contentwrap ul li .more a{
     display: block;
     position: relative;
@@ -202,10 +207,9 @@
         transform: translate(-50%, -50%);
         top: 50%;
     }
-    #main .contentwrap ul li .more iframe{
-        width: 335px;
-        height: 188px;
-        padding-top: 20px;
+    #main .contentwrap ul li .more video{
+        width: 100%;
+        padding-top: 0;
     }
     #main .contentwrap ul li .more.m1 img:nth-child(2){
         margin-left: 0;
