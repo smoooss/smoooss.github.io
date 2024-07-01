@@ -88,7 +88,13 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 30px;
+}
+#main .contentwrap .calendar.c1 .cont.c1 .date ul li:nth-child(n+5),
+#main .contentwrap .calendar.c2 .cont.c1 .date ul li{
     cursor: pointer;
+}
+#main .contentwrap .calendar.c2 .cont.c1 .date ul li:nth-child(n+31){
+    cursor: default;
 }
 .have{
     border-radius: 15px;
@@ -157,10 +163,10 @@
     width: 0;
     height: 0;
 }
-#main .contentwrap .calendar.c1 .cont.c2 .schedule ul:nth-child(n+4){
+#main .contentwrap .calendar.c1 .cont.c2 .schedule ul:nth-child(n+8){
     margin-bottom: 30px;
 }
-#main .contentwrap .calendar.c2 .cont.c2 .schedule ul:nth-child(n+8){
+#main .contentwrap .calendar.c2 .cont.c2 .schedule ul{
     margin-bottom: 30px;
 }
 #main .contentwrap .calendar .cont.c2 .schedule ul li{
