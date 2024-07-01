@@ -89,7 +89,7 @@
     font-weight: 600;
     line-height: 30px;
 }
-#main .contentwrap .calendar.c1 .cont.c1 .date ul li:nth-child(n+5),
+#main .contentwrap .calendar.c1 .cont.c1 .date ul li:nth-child(n+6),
 #main .contentwrap .calendar.c2 .cont.c1 .date ul li{
     cursor: pointer;
 }
