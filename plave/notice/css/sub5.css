@@ -66,6 +66,10 @@
     height: 500px; 
     padding-top: 20px;
 }
+#main .contentwrap ul li .more.mov video{
+    width: 345px;
+    height: 250px;
+}
 #main .contentwrap ul li .more a{
     display: block;
     position: relative;
