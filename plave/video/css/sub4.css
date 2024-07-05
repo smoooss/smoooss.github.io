@@ -85,17 +85,10 @@
 #main .contentwrap .content .cont ul li span{
     display: inline-block;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 14px;
 }
 #main .contentwrap .content .cont.c1{
     display: flex;
-}
-#main .contentwrap .content .cont.c5 ul li{
-    width: calc(32.5% - 2px);
-}
-#main .contentwrap .content .cont.c5 ul li a{
-    border: 1px solid #eeeeee;
-    border-radius: 10px;
 }
 
 
