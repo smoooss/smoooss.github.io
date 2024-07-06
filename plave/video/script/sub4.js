@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     $('#main .contentwrap .content .cont ul li').find('a').css({'height':a})
 
-    $(window).on('resize, click',function(){
+    $(window).on('resize, click, mousemove',function(){
         
         a=$('#main .contentwrap .content .cont.c1 ul li > img').height()
 
