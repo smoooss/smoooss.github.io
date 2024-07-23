@@ -123,21 +123,14 @@
     justify-content: right;
 }
 #main .contentwrap .calendar .cont.c2 .type ul li{
-    width: 50px;
+    margin-left: 35px;
     margin-bottom: 10px;
     font-size: 12px;
     font-weight: 500;
     position: relative;
-    margin-left: 20px;
 }
-#main .contentwrap .calendar .cont.c2 .type ul li:nth-child(2){
-    width: 38px;
-}
-#main .contentwrap .calendar .cont.c2 .type ul li:nth-child(4){
-    width: 85px;
-}
-#main .contentwrap .calendar .cont.c2 .type ul li:nth-child(5){
-    width: 25px;
+#main .contentwrap .calendar .cont.c2 .type ul li:first-child{
+    margin-left: 0;
 }
 #main .contentwrap .calendar .cont.c2 .scroll{
     height: 300px;
@@ -199,13 +192,13 @@
 .live{
     background-color: #9500ff50;
 }
-.show{
+.content{
     background-color: #ff00cc50;
 }
-.anniversary{
+.show{
     background-color: #ff000050;
 }
-.etc{
+.anniversary{
     background-color: #06b50050;
 }
 
@@ -228,8 +221,9 @@
         padding: 100px 0;
     }
     #main .contentwrap .arrow{
-        width: 40%;
-        left: 30%;
+        width: 170px;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
     #main .contentwrap .arrow ul li{
         width: 25px;
@@ -256,16 +250,18 @@
         margin: 20px auto;
     }
     #main .contentwrap .calendar .cont.c1 .week ul li{
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 600;
     }
     #main .contentwrap .calendar .cont.c1 .date{
         width: 100%;
     }
     #main .contentwrap .calendar .cont.c1 .date ul li{
-        margin: 14px;
+        width: 28px;
+        height: 28px;
+        margin: 15px;
         font-size: 13px;
-        font-weight: 500;
+        line-height: 29px;
     }
     #main .contentwrap .calendar .cont.c1 .date ul li:nth-child(7n+1){
         margin-left: 5px;
@@ -285,15 +281,9 @@
         border-bottom: 1px solid #333333;
     }
     #main .contentwrap .calendar .cont.c2 .type ul li{
-        width: 47px;
+        margin-left: 8%;
         margin-bottom: 10px;
         font-size: 11px;
-    }
-    #main .contentwrap .calendar .cont.c2 .type ul li:nth-child(2){
-        width: 35px;
-    }
-    #main .contentwrap .calendar .cont.c2 .type ul li:nth-child(4){
-        width: 80px;
     }
     #main .contentwrap .calendar .cont.c2 ul li span{
         width: 14px;
@@ -338,67 +328,56 @@
 
 
 
-@media only screen and (max-width:451px){
-
+@media only screen and (max-width:448px){
+    
+    #main .contentwrap .arrow{
+        width: 160px;
+    }
+    #main .contentwrap .arrow ul li{
+        font-size: 19px;
+    }
+    #main .contentwrap .calendar .cont.c1 h2 {
+        margin-bottom: 27px;
+        font-size: 19px;
+    }
     #main .contentwrap .calendar .cont.c1 .date ul li{
+        width: 26px;
+        height: 26px;
+        margin: 13px;
+        font-size: 12px;
+        line-height: 27px;
+    }
+    #main .contentwrap .calendar .cont.c1 .week ul li {
+        font-size: 13px;
+    }
+    
+}
+
+
+@media only screen and (max-width:405px){
+
+    #main .contentwrap .arrow{
+        width: 150px;
+    }
+    #main .contentwrap .arrow ul li{
+        font-size: 18px;
+    }
+    #main .contentwrap .calendar .cont.c1 h2 {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+    #main .contentwrap .calendar .cont.c1 .week{
+        margin: 15px auto;
+    }
+    #main .contentwrap .calendar .cont.c1 .week ul li {
+        font-size: 12px;
+    }
+    #main .contentwrap .calendar .cont.c1 .date ul li{
+        width: 24px;
+        height: 24px;
         margin: 11px;
-    }
-}
-@media only screen and (max-width:410px){
-
-    #main .contentwrap .calendar .cont.c1 .date ul li{
-        margin: 10px;
-    }
-}
-@media only screen and (max-width:400px){
-
-    #main .contentwrap .calendar .cont.c1 .date ul li{
-        margin: 9px;
-    }
-    #main .contentwrap .calendar .cont.c2 .type ul li{
-        width: 12%;
-    }
-    #main .contentwrap .calendar .cont.c2 .type ul li:nth-child(2){
-        width: 9%;
-    }
-    #main .contentwrap .calendar .cont.c2 .type ul li:nth-child(4){
-        width: 22%;
-    }
-    #main .contentwrap .calendar .cont.c2 .type ul li:nth-child(5){
-        width: 7%;
-    }
-}
-@media only screen and (max-width:381px){
-
-    #main .contentwrap .calendar .cont.c1 .date ul li{
-        margin: 8px;
-    }
-}
-@media only screen and (max-width:367px){
-
-    #main .contentwrap .calendar .cont.c1 .date ul li{
-        width: 25px;
-        height: 25px;
         font-size: 11px;
-        font-weight: 500;
-        line-height: 26px;
-    }
-    #main .contentwrap .calendar .cont.c1 .date ul li:nth-child(7n+1){
-        margin-left: 7px;
-    }
-    #main .contentwrap .calendar .cont.c1 .date ul li:nth-child(7n+7){
-        margin-right: 7px;
-    }
-    #main .contentwrap .calendar .cont.c2 ul li span{
-        width: 13px;
-        height: 13px;
-        font-size: 7px;
-        font-weight: 700;
-        line-height: 13px;
-        left: -18px;
-    }
-    #main .contentwrap .calendar .cont.c2 .type ul li{
-        font-size: 10px;
+        line-height: 25px;
     }
     #main .contentwrap .calendar .cont.c2 .schedule ul li{
         margin-bottom: 3px;
@@ -408,20 +387,48 @@
     #main .contentwrap .calendar .cont.c2 .schedule ul li span{
         top: 1px;
     }
+    
 }
-@media only screen and (max-width:331px){
 
-    #main .contentwrap .calendar .cont.c1 .week ul li{
-        width: 33px;
-        font-size: 12px;
+@media only screen and (max-width:367px){
+
+
+    #main .contentwrap .arrow{
+        width: 140px;
+    }
+    #main .contentwrap .arrow ul li{
+        font-size: 17px;
+    }
+    #main .contentwrap .calendar .cont.c1 h2 {
+        margin-bottom: 23px;
+        font-size: 17px;
+    }
+    #main .contentwrap .calendar .cont.c1 .week ul li {
+        font-size: 11px;
     }
     #main .contentwrap .calendar .cont.c1 .date ul li{
-        margin: 5px;
+        width: 22px;
+        height: 22px;
+        margin: 10px;
+        font-size: 10px;
+        line-height: 22px;
     }
     #main .contentwrap .calendar .cont.c1 .date ul li:nth-child(7n+1){
-        margin-left: 5px;
+        margin-left: 7px;
     }
     #main .contentwrap .calendar .cont.c1 .date ul li:nth-child(7n+7){
-        margin-right: 5px;
+        margin-right: 7px;
     }
+    #main .contentwrap .calendar .cont.c2 .type ul li{
+        font-size: 10px;
+    }
+    #main .contentwrap .calendar .cont.c2 ul li span{
+        width: 13px;
+        height: 13px;
+        font-size: 7px;
+        font-weight: 700;
+        line-height: 13px;
+        left: -16px;
+    }
+    
 }
