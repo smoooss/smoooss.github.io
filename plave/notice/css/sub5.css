@@ -32,9 +32,6 @@
     font-size: 15px;
     font-weight: 500;
 }
-#main .contentwrap ul li:nth-child(n+11){
-    display: none;
-}
 #main .contentwrap ul li .more{
     width: 1050px;
     margin: 0 auto;
