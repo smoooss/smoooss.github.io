@@ -14,9 +14,10 @@
     justify-content: space-between;
     position: relative;
 }
+/*
 #main .contentwrap ul li:last-child{
     margin-right: 33.5%;
-}
+}*/
 #main .contentwrap ul li img{
     margin-bottom: 15px;
 }
