@@ -6,20 +6,13 @@
 
 
 #main .contentwrap .cont.c3 ul li{
-    margin-left: 25.25%;
+    margin: 0 auto;
 }
 
 
 
 
 
-@media only screen and (max-width:1400px){
-
-    #main .contentwrap .cont.c3 ul li{
-        margin-left: 280px;
-    }
-
-}
 @media only screen and (max-width:499px){
     
     #main .contentwrap .cont.c3 img{
