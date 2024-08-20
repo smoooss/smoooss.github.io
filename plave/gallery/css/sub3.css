@@ -43,12 +43,15 @@
 #main .contentwrap ul li:nth-child(n+51){
     width: 23.3%;
 }
-#main .contentwrap ul li:nth-child(53),
-#main .contentwrap ul li:nth-child(55){
+#main .contentwrap ul li:nth-child(53){
     width: 52.2%;
 }
-#main .contentwrap ul li:nth-child(55){
-    margin-right: 23.9%;
+#main .contentwrap ul li:nth-child(n+54){
+    width: 19.6%;
+}
+#main .contentwrap ul li:last-child{
+    width: 24.5%;
+    margin-right: 55.4%;
 }
 
 #main .contentwrap ul li a{
