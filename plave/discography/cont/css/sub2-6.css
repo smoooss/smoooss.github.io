@@ -23,15 +23,12 @@
 
 
 
-@media only screen and (max-width:1400px){
 
-    #main .contentwrap .cont.c3 ul li{
-        margin-left: 280px;
-    }
-
-}
 @media only screen and (max-width:499px){
     
+    #main .contentwrap .cont.c2 ul li .title {
+        width: 100%;
+    }
     #main .contentwrap .cont.c3 img{
         width: 100%;
         margin-left: 0;
