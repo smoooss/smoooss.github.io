@@ -62,15 +62,6 @@
 
 
 
-
-@media only screen and (max-width:1400px){
-   
-    #main .contentwrap ul li:last-child{
-        margin-right: 368px;
-    }
-
-}
-
 @media only screen and (max-width:499px){
 
     #main .contentwrap ul {
