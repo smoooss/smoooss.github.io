@@ -1,15 +1,21 @@
 $(document).ready(function(){
 
-    $('#main .contentwrap .cont.c2 ul li .title ul li').click(script);
     
-    function script(){
-        $('#main .contentwrap .cont.c2 ul li .script ul li').fadeIn(300)
-        $('#main .contentwrap .cont.c2 > ul').css({'height':'290px'})
+    a=$(window).width()
+
+    if(a>=500){
+
+        $('#main .contentwrap .cont.c2 ul li .title ul li').click(script);
+        
+        function script(){
+            $('#main .contentwrap .cont.c2 ul li .script ul li').fadeIn(300)
+            $('#main .contentwrap .cont.c2 > ul').css({'height':'290px'})
+        }
     }
 
-    a=$('#main .contentwrap .cont.c4 ul li > img').height()
+    b=$('#main .contentwrap .cont.c4 ul li > img').height()
             
-    $('#main .contentwrap .cont.c4 ul li').find('a').css({'height':a})
+    $('#main .contentwrap .cont.c4 ul li').find('a').css({'height':b})
         
 
     $('#main .contentwrap .cont.c4 ul li').mouseover(function(){
