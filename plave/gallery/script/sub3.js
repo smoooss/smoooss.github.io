@@ -36,7 +36,7 @@ $(document).ready(function(){
         $('#main .popup .popup-cont').css({'backgroundImage':url});
 
         if(index==1){
-            index = 56;
+            index = 60;
         }
     });
 
@@ -46,7 +46,7 @@ $(document).ready(function(){
         let url = 'url(img/content'+index+'.jpg)';
         $('#main .popup .popup-cont').css({'backgroundImage':url});
         
-        if(index==55){
+        if(index==59){
             index = 0;
         }
     });
