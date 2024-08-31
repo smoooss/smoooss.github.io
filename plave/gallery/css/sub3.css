@@ -49,9 +49,20 @@
 #main .contentwrap ul li:nth-child(n+54){
     width: 19.6%;
 }
+#main .contentwrap ul li:nth-child(64){
+    width: 24%;
+}
+#main .contentwrap ul li:nth-child(65){
+    width: 22%;
+}
+#main .contentwrap ul li:nth-child(66){
+    width: 30%;
+}
+#main .contentwrap ul li:nth-child(67){
+    width: 22.5%;
+}
 #main .contentwrap ul li:last-child{
-    width: 24.5%;
-    margin-right: 55.4%;
+    margin-right: 0;
 }
 
 #main .contentwrap ul li a{
