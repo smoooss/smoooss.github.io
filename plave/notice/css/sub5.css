@@ -56,10 +56,6 @@
 #main .contentwrap ul li .more iframe{
     padding-top: 20px;
 }
-#main .contentwrap ul li .more .video{
-    width: 888px;
-    height: 500px;
-}
 #main .contentwrap ul li .more a{
     display: block;
     position: relative;
@@ -152,6 +148,15 @@
 #main .contentwrap ul li .more .guidewrap .guide.g5 p span{
     color: #9500ff;
 }
+#main .contentwrap ul li .more .guidewrap .guide.g6 .title{
+    background-color: #ff9100;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g6{
+    border: solid 5px #ff9100;
+}
+#main .contentwrap ul li .more .guidewrap .guide.g6 p span{
+    color: #ff9100;
+}
 
 
 
@@ -191,10 +196,6 @@
     }
     #main .contentwrap ul li .more a{
         font-size: 14px;
-    }
-    #main .contentwrap ul li .more .video{
-        width: 296px;
-        height: 166px;
     }
     #main .contentwrap ul li .more a img:nth-child(2){
         transform: translate(-50%, -50%);
