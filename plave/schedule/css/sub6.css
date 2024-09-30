@@ -88,8 +88,8 @@
     font-weight: 600;
     line-height: 30px;
 }
-#main .contentwrap .calendar.c1 .cont.c1 .date ul li:nth-child(n+6),
-#main .contentwrap .calendar.c2 .cont.c1 .date ul li{
+#main .contentwrap .calendar.c1 .cont.c1 .date ul li,
+#main .contentwrap .calendar.c2 .cont.c1 .date ul li:nth-child(n+2){
     cursor: pointer;
 }
 #main .contentwrap .calendar.c2 .cont.c1 .date ul li:nth-child(n+31){
@@ -155,8 +155,8 @@
     width: 0;
     height: 0;
 }
-#main .contentwrap .calendar.c1 .cont.c2 .schedule ul:nth-child(n+5),
-#main .contentwrap .calendar.c2 .cont.c2 .schedule ul:nth-child(n+2){
+#main .contentwrap .calendar.c1 .cont.c2 .schedule ul:nth-child(n+2),
+#main .contentwrap .calendar.c2 .cont.c2 .schedule ul:nth-child(n+3){
     margin-bottom: 30px;
 }
 #main .contentwrap .calendar .cont.c2 .schedule ul li{
@@ -309,10 +309,10 @@
         margin-bottom: 15px;
         display: none;
     }
-    #main .contentwrap .calendar.c1 .cont.c2 .schedule ul:first-child{
+    #main .contentwrap .calendar.c1 .cont.c2 .schedule ul:nth-child(2){
         display: block;
     }
-    #main .contentwrap .calendar.c2 .cont.c2 .schedule ul:nth-child(2){
+    #main .contentwrap .calendar.c2 .cont.c2 .schedule ul:nth-child(3){
         display: block;
     }
     #main .contentwrap .calendar .cont.c2 .schedule ul li{
