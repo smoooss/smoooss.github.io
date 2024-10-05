@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+br[class="off"]{
+    display: none;
+}
+br[class="on"]{
+    display: block;
+}
 #main .contentwrap > ul{
     border-top: 2px solid #000000;
     border-bottom: 2px solid #000000;
@@ -33,10 +39,10 @@
     font-weight: 500;
 }
 #main .contentwrap ul li .more{
-    width: 1050px;
+    width: 100%;
+    min-width: 1050px;
     margin: 0 auto;
-    padding-bottom: 50px;
-    text-align: center;
+    padding: 0 0 50px 20px;
     display: none;
 }
 #main .contentwrap ul li .more p{
@@ -167,6 +173,15 @@
 
 @media only screen and (max-width:499px){
 
+    br[class="off"]{
+        display: block;
+    }
+    br[class="on"]{
+        display: none;
+    }
+    #main .contentwrap {
+        padding-bottom: 80px;
+    }
     #main .contentwrap > ul{
         padding: 0 7%;
         box-sizing: border-box;
@@ -184,7 +199,10 @@
         font-size: 12px;
     }
     #main .contentwrap ul li .more{
+        padding-left: 0;
+        min-width: unset;
         width: 100%;
+        text-align: center;
     }
     #main .contentwrap ul li .more p{
         font-size: 13px;
@@ -235,6 +253,10 @@
     }
     #main .contentwrap ul li .more .guidewrap .guide.g5{
         border: solid 3px #9500ff;
+    }
+    #main .contentwrap ul li .more.off p{
+        text-align: left;
+        padding-left: 10px;
     }
     
 }
