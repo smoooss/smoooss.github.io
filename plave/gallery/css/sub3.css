@@ -59,6 +59,9 @@
 #main .contentwrap ul li:nth-child(67){
     width: 23%;
 }
+#main .contentwrap ul li:nth-child(73){
+    width: 26%;
+}
 #main .contentwrap ul li:last-child{
     margin-right: 0;
 }
