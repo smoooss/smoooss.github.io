@@ -19,21 +19,16 @@ main .container ul li:last-child{
     margin-right: 33.5%;
 }*/
 main .container ul li img{
-    margin-bottom: 15px;
-}
-main .container ul li:first-child > img{
-    min-width: 348px;
-    width: calc(100% - 2px);
-    min-height: 348px;
-    height: calc(100% - 31px);
-    border: 1px solid #ababab;
+    margin-bottom: 10px;
 }
 main .container ul li span{
-    font-size: 12px;
+    width: 100%;
+    font-size: 15px;
     font-weight: 700;
+    line-height: 30px;
 }
 main .container ul li p{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
 }
 main .container ul li a{
@@ -71,6 +66,13 @@ footer{
         min-width: unset;
         width: 86%;
         margin-left: 7%;
+    }
+    main .container ul li span{
+        font-size: 13px;
+        line-height: 25px;
+    }
+    main .container ul li p{
+        font-size: 13px;
     }
     main .container ul li:first-child > img{
         min-width: unset;
