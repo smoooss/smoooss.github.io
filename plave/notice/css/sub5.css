@@ -6,162 +6,193 @@ br[class="off"]{
 br[class="on"]{
     display: block;
 }
-#main .contentwrap > ul{
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
+br[class="off-img"]{
+    display: none;
 }
-#main .contentwrap ul li{
-    width: 100%;
+.container{
+    padding-bottom: 70px;
 }
-#main .contentwrap ul li .content{
+.container .wrapper .title {
     border-top: 0.5px solid #000000;
     border-bottom: 0.5px solid #000000;
     cursor: pointer;
 }
-#main .contentwrap ul li:first-child .content{
-    border-top: 0;
+.container .wrapper .title:nth-child(10n+1) {
+    border-top: 2px solid #000000;
 }
-#main .contentwrap ul li:last-child .content{
-    border-bottom: 0;
+.container .wrapper .title:nth-child(10n+10) {
+    border-bottom: 2px solid #000000;
 }
-#main .contentwrap ul li .content span{
+.container .wrapper .title:last-child {
+    border-bottom: 2px solid #000000;
+}
+.container .wrapper .title > span {
     display: inline-block;
     padding-top: 20px;
     padding-left: 20px;
     font-size: 20px;
     font-weight: 800;
 }
-#main .contentwrap ul li .content p{
+.container .wrapper .title > p {
     margin-top: 5px;
     padding-left: 20px;
     padding-bottom: 20px;
     font-size: 15px;
     font-weight: 500;
 }
-#main .contentwrap ul li .more{
+.container .wrapper .title .content{
     width: 100%;
     min-width: 1050px;
     margin: 0 auto;
-    padding: 0 0 50px 20px;
+    border-top: 0.5px solid #000000;
+    border-bottom: 0.5px solid #000000;
+    box-sizing: border-box;
+    padding: 30px 20px 20px 20px;
+    cursor: auto;
     display: none;
 }
-#main .contentwrap ul li .more p{
-    padding-top: 20px;
+.container .wrapper .title .content p {
+    margin-bottom: 20px;
     font-size: 15px;
     line-height: 25px;
 }
-#main .contentwrap ul li .more img{
-    width: unset;
-    height: 500px;
-    padding-top: 20px;
-}
-#main .contentwrap ul li .more.m1 img:nth-child(2){
-    margin-left: 100px;
-    margin-right: 100px;
-}
-#main .contentwrap ul li .more iframe{
-    padding-top: 20px;
-}
-#main .contentwrap ul li .more a{
-    display: block;
-    position: relative;
-}
-#main .contentwrap ul li .more a img:nth-child(2){
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 8%;
-}
-#main .contentwrap ul li .more .seemore{
+.container .wrapper .title .content .seemore{
     display: inline-block;
     font-weight: 900;
     color: #0055ff;
     text-decoration-line: underline;
 }
-#main .contentwrap ul li .more .guidewrap{
+.container .wrapper .title .content img{
+    width: unset;
+    height: 595px;
+    padding-bottom: 20px;
+}
+.container .wrapper .title .content a{
+    display: block;
+    position: relative;
+}
+.container .wrapper .title .content a img:nth-child(2){
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 8%;
+}
+.container .wrapper .title .content .guidewrap{
     text-align: left;
 }
-#main .contentwrap ul li .more .guidewrap .guide{
+.container .wrapper .title .content .guidewrap .guide{
     margin-top: 20px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#main .contentwrap ul li .more .guidewrap .guide li{
+.container .wrapper .title .content .guidewrap .guide li{
     width: 33.5%;
 }
-#main .contentwrap ul li .more .guidewrap .guide li:last-child{
+.container .wrapper .title .content .guidewrap .guide li:last-child{
     width: 33%;
 }
-#main .contentwrap ul li .more .guidewrap .guide .title{
+.container .wrapper .title .content .guidewrap .guide .guidetitle{
     width: 100%;
     padding: 30px;
     font-size: 20px;
     font-weight: 700;
     color: #ffffff;
 }
-#main .contentwrap ul li .more .guidewrap .guide p{
+.container .wrapper .title .content .guidewrap .guide p{
     margin-top: 10px;
     margin-left: 30px;
     margin-bottom: 30px;
 }
-#main .contentwrap ul li .more .guidewrap .guide span{
+.container .wrapper .title .content .guidewrap .guide span{
     font-weight: 700;
 }
-#main .contentwrap ul li .more .guidewrap .guide.g1 .title{
-    background-color: #0055ff;
-}
-#main .contentwrap ul li .more .guidewrap .guide.g1{
-    border: solid 5px #0055ff;
-}
-#main .contentwrap ul li .more .guidewrap .guide.g1 p span{
-    color: #0055ff;
-}
-#main .contentwrap ul li .more .guidewrap .guide.g2 .title{
-    background-color: #06b500;
-}
-#main .contentwrap ul li .more .guidewrap .guide.g2{
-    border: solid 5px #06b500;
-}
-#main .contentwrap ul li .more .guidewrap .guide.g2 p span{
-    color: #06b500;
-}
-#main .contentwrap ul li .more .guidewrap .guide.g3 .title{
-    background-color: #ff0000;
-}
-#main .contentwrap ul li .more .guidewrap .guide.g3{
-    border: solid 5px #ff0000;
-}
-#main .contentwrap ul li .more .guidewrap .guide.g3 p span{
-    color: #ff0000;
-}
-#main .contentwrap ul li .more .guidewrap .guide.g4 .title{
-    background-color: #ff00cc;
-}
-#main .contentwrap ul li .more .guidewrap .guide.g4{
-    border: solid 5px #ff00cc;
-}
-#main .contentwrap ul li .more .guidewrap .guide.g4 p span{
-    color: #ff00cc;
-}
-#main .contentwrap ul li .more .guidewrap .guide.g5 .title{
+.container .wrapper .title .content .guidewrap .guide.g1 .guidetitle{
     background-color: #9500ff;
 }
-#main .contentwrap ul li .more .guidewrap .guide.g5{
+.container .wrapper .title .content .guidewrap .guide.g1{
     border: solid 5px #9500ff;
 }
-#main .contentwrap ul li .more .guidewrap .guide.g5 p span{
+.container .wrapper .title .content .guidewrap .guide.g1 p span{
     color: #9500ff;
 }
-#main .contentwrap ul li .more .guidewrap .guide.g6 .title{
+.container .wrapper .title .content .guidewrap .guide.g2 .guidetitle{
+    background-color: #ff00cc;
+}
+.container .wrapper .title .content .guidewrap .guide.g2{
+    border: solid 5px #ff00cc;
+}
+.container .wrapper .title .content .guidewrap .guide.g2 p span{
+    color: #ff00cc;
+}
+.container .wrapper .title .content .guidewrap .guide.g3 .guidetitle{
+    background-color: #ff0000;
+}
+.container .wrapper .title .content .guidewrap .guide.g3{
+    border: solid 5px #ff0000;
+}
+.container .wrapper .title .content .guidewrap .guide.g3 p span{
+    color: #ff0000;
+}
+.container .wrapper .title .content .guidewrap .guide.g4 .guidetitle{
+    background-color: #06b500;
+}
+.container .wrapper .title .content .guidewrap .guide.g4{
+    border: solid 5px #06b500;
+}
+.container .wrapper .title .content .guidewrap .guide.g4 p span{
+    color: #06b500;
+}
+.container .wrapper .title .content .guidewrap .guide.g5 .guidetitle{
+    background-color: #0055ff;
+}
+.container .wrapper .title .content .guidewrap .guide.g5{
+    border: solid 5px #0055ff;
+}
+.container .wrapper .title .content .guidewrap .guide.g5 p span{
+    color: #0055ff;
+}
+.container .wrapper .title .content .guidewrap .guide.g6 .guidetitle{
     background-color: #ff9100;
 }
-#main .contentwrap ul li .more .guidewrap .guide.g6{
+.container .wrapper .title .content .guidewrap .guide.g6{
     border: solid 5px #ff9100;
 }
-#main .contentwrap ul li .more .guidewrap .guide.g6 p span{
+.container .wrapper .title .content .guidewrap .guide.g6 p span{
     color: #ff9100;
+}
+.pagination {
+    width: 200px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transform: translate(-50%, 0);
+    left: 50%;
+}
+.arrow {
+    width: 13px;
+    cursor: pointer;
+}
+.first {
+    font-size: 19px;
+    font-weight: 700;
+    position: relative;
+}
+.first-last{
+    cursor: pointer;
+}
+#first::after {
+    content: "|";
+    font-size: 17px;
+    font-weight: 500;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 47%;
+    left: 51%;
 }
 
 
@@ -170,6 +201,30 @@ br[class="on"]{
 
 
 
+
+@media only screen and (max-width:1920px){
+
+    br[class="off-img"]{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:1400px) and (min-width: 500px){
+
+    main .link{
+        width: 250px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        bottom: -20px;
+    }
+    main .link a{
+        width: 20px;
+    }
+    main .link img{
+        margin-bottom: 0;
+    }
+}
 
 @media only screen and (max-width:499px){
 
@@ -179,88 +234,102 @@ br[class="on"]{
     br[class="on"]{
         display: none;
     }
-    #main .contentwrap {
+    .container {
         padding-bottom: 80px;
     }
-    #main .contentwrap > ul{
+    .container .wrapper{
         padding: 0 7%;
         box-sizing: border-box;
     }
-    #main .contentwrap ul li .content span{
+    .container .wrapper .title > span{
         padding-top: 15px;
         padding-left: 10px;
         font-size: 14px;
         font-weight: 700;
     }
-    #main .contentwrap ul li .content p{
+    .container .wrapper .title > p{
         margin-top: 2px;
         padding-left: 10px;
         padding-bottom: 15px;
         font-size: 12px;
     }
-    #main .contentwrap ul li .more{
-        padding-left: 0;
+    .container .wrapper .title .content{
+        padding: 20px 0 0 0;
         min-width: unset;
         width: 100%;
         text-align: center;
     }
-    #main .contentwrap ul li .more p{
+    .container .wrapper .title .content p{
         font-size: 13px;
         line-height: 20px;
     }
-    #main .contentwrap ul li .more img{
+    .container .wrapper .title .content img{
         width: 100%;
         height: unset;
     }
-    #main .contentwrap ul li .more a{
+    .container .wrapper .title .content a{
         font-size: 14px;
     }
-    #main .contentwrap ul li .more a img:nth-child(2){
+    .container .wrapper .title .content a img:nth-child(2){
         transform: translate(-50%, -50%);
         top: 50%;
     }
-    #main .contentwrap ul li .more .guidewrap .guide .title{
+    .container .wrapper .title .content .guidewrap .guide .title{
         padding: 20px;
         font-size: 15px;
         text-align: center;
     }
-    #main .contentwrap ul li .more .guidewrap .guide li{
+    .container .wrapper .title .content .guidewrap .guide li{
         width: 100%;
     }
-    #main .contentwrap ul li .more .guidewrap .guide li:last-child{
+    .container .wrapper .title .content .guidewrap .guide li:last-child{
         width: 100%;
     }
-    #main .contentwrap ul li .more .guidewrap .guide p{
+    .container .wrapper .title .content .guidewrap .guide p{
         margin-top: 0;
         margin-left: 0;
         margin-bottom: 0;
         text-align: center;
     }
-    #main .contentwrap ul li .more .guidewrap .guide p:last-child{
+    .container .wrapper .title .content .guidewrap .guide p:last-child{
         margin-bottom: 20px;
     }
-    #main .contentwrap ul li .more .guidewrap .guide.g1{
-        border: solid 3px #0055ff;
-    }
-    #main .contentwrap ul li .more .guidewrap .guide.g2{
-        border: solid 3px #06b500;
-    }
-    #main .contentwrap ul li .more .guidewrap .guide.g3{
-        border: solid 3px #ff0000;
-    }
-    #main .contentwrap ul li .more .guidewrap .guide.g4{
-        border: solid 3px #ff00cc;
-    }
-    #main .contentwrap ul li .more .guidewrap .guide.g5{
+    .container .wrapper .title .content .guidewrap .guide.g1{
         border: solid 3px #9500ff;
     }
-    #main .contentwrap ul li .more.off p{
+    .container .wrapper .title .content .guidewrap .guide.g2{
+        border: solid 3px #ff00cc;
+    }
+    .container .wrapper .title .content .guidewrap .guide.g3{
+        border: solid 3px #ff0000;
+    }
+    .container .wrapper .title .content .guidewrap .guide.g4{
+        border: solid 3px #06b500;
+    }
+    .container .wrapper .title .content .guidewrap .guide.g5{
+        border: solid 3px #0055ff;
+    }
+    .container .wrapper .title .content .guidewrap .guide.g6{
+        border: solid 3px #ff9100;
+    }
+    .container .wrapper .title .content.off p{
         text-align: left;
         padding-left: 10px;
     }
-    #main .contentwrap ul li .more .video{
+    .container .wrapper .title .content .video{
         width: 100%;
         height: 193px;
+    }
+    .pagination {
+        margin-bottom: 60px;
+        width: 130px;
+        font-size: 13px;
+    }
+    .arrow {
+        width: 9px;
+    }
+    #first::after {
+        font-size: 11px;
     }
     
 }
