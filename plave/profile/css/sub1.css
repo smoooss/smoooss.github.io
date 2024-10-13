@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-#main{
+main{
     height: calc(100vh - 70px);
     position: relative;
 }
-#main .contentwrap{
+main .container{
     min-width: unset;
     width: 650px;
     height: 550px;
@@ -14,20 +14,20 @@
     top: 53%;
     left: 50%;
 }
-#main .contentwrap .menu{
+main .container .menu{
     width: 47px;
 }
-#main .contentwrap .menu ul li{
+main .container .menu ul li{
     margin-bottom: 10px;
     font-size: 12px;
     font-weight: 500;
     text-align: right;
     cursor: pointer;
 }
-#main .contentwrap .menu ul li:first-child{
+main .container .menu ul li:first-child{
     font-weight: 700;
 }
-#main .contentwrap .content{
+main .container .content{
     width: 420px;
     height: 550px;
     position: absolute;
@@ -35,19 +35,19 @@
     top: 50%;
     left: 80px;
 }
-#main .contentwrap .content .back{
+main .container .content .back{
     width: 380px;
     height: 510px;
     background-color: #333333;
 }
-#main .contentwrap .content .front{
+main .container .content .front{
     width: 380px;
     height: 510px;
     position: absolute;
     right: 0;
     bottom: 0;
 }
-#main .contentwrap .content .front ul li{
+main .container .content .front ul li{
     width: 100%;
     height: 100%;
     background-position: center;
@@ -56,43 +56,43 @@
     position: absolute;
     display: none;
 }
-#main .contentwrap .content .front ul li:nth-child(1){
+main .container .content .front ul li:nth-child(1){
     display: block;
     background-image: url(../img/content1.jpg);
 }
-#main .contentwrap .content .front ul li:nth-child(2){
+main .container .content .front ul li:nth-child(2){
     background-image: url(../img/content2.jpg);
 }
-#main .contentwrap .content .front ul li:nth-child(3){
+main .container .content .front ul li:nth-child(3){
     background-image: url(../img/content3.jpg);
 }
-#main .contentwrap .content .front ul li:nth-child(4){
+main .container .content .front ul li:nth-child(4){
     background-image: url(../img/content4.jpg);
 }
-#main .contentwrap .content .front ul li:nth-child(5){
+main .container .content .front ul li:nth-child(5){
     background-image: url(../img/content5.jpg);
 }
-#main .contentwrap .textwrap{
+main .container .textwrap{
     width: 125px;
     height: 62px;
     position: absolute;
     right: 0;
     bottom: 0;
 }
-#main .contentwrap .textwrap .text{
+main .container .textwrap .text{
     width: 125px;
     position: absolute;
     display: none;
 }
-#main .contentwrap .textwrap .text span{
+main .container .textwrap .text span{
     font-size: 35px;
     font-weight: 700;
 }
-#main .contentwrap .textwrap .text p{
+main .container .textwrap .text p{
     font-size: 15px;
     font-weight: 500;
 }
-#main .contentwrap .textwrap .text.t1{
+main .container .textwrap .text.t1{
     display: block;
 }
 
@@ -101,7 +101,7 @@
 
 
 @media only screen and (max-width: 1400px) and (min-width: 500px){
-    #main .link {
+    main .link {
         position: absolute;
         bottom: -20px;
     }
@@ -109,17 +109,17 @@
 
 @media only screen and (max-width:499px){
 
-    #main{
+    main{
         height: 2300px;
         padding-bottom: 100px;
     }
-    #main .contentwrap{
+    main .container{
         width: 100%;
         height: 100%;
         transform: unset;
         position: unset;
     }
-    #main .contentwrap .content{
+    main .container .content{
         width: 100%;
         height: 2200px;
         transform: unset;
@@ -127,33 +127,33 @@
         top: 100px;
         left: unset;
     }
-    #main .contentwrap .menu,
-    #main .contentwrap .content .back{
+    main .container .menu,
+    main .container .content .back{
         display: none;
     }
-    #main .contentwrap .content .front{
+    main .container .content .front{
         width: 100%;
         height: 100%;
         position: relative;
         right: 0;
         bottom: 0;
     }
-    #main .contentwrap .content .front ul li{
+    main .container .content .front ul li{
         width: 300px;
         height: 400px;
         margin-bottom: 50px;
         position: relative;
         display: block;
     }
-    #main .contentwrap .content .front ul li:nth-child(2n+2){
+    main .container .content .front ul li:nth-child(2n+2){
         margin-left: calc(100% - 300px);
     }
-    #main .contentwrap .textwrap{
+    main .container .textwrap{
         width: 100%;
         height: 72px;
         top: 400px;
     }
-    #main .contentwrap .textwrap .text{
+    main .container .textwrap .text{
         width: 125px;
         padding: 13px;
         background-color: #ffffff;
@@ -161,32 +161,32 @@
         position: absolute;
         display: block;
     }
-    #main .contentwrap .textwrap .text.t1,
-    #main .contentwrap .textwrap .text.t3,
-    #main .contentwrap .textwrap .text.t5{
+    main .container .textwrap .text.t1,
+    main .container .textwrap .text.t3,
+    main .container .textwrap .text.t5{
         right: 0;
     }
-    #main .contentwrap .textwrap .text.t2{
+    main .container .textwrap .text.t2{
         top: 450px;
     }
-    #main .contentwrap .textwrap .text.t3{
+    main .container .textwrap .text.t3{
         top: 900px;
     }
-    #main .contentwrap .textwrap .text.t4{
+    main .container .textwrap .text.t4{
         top: 1350px;
     }
-    #main .contentwrap .textwrap .text.t5{
+    main .container .textwrap .text.t5{
         top: 1800px;
     }
-    #main .contentwrap .textwrap .text span{
+    main .container .textwrap .text span{
         font-size: 25px;
         font-weight: 700;
     }
-    #main .contentwrap .textwrap .text p{
+    main .container .textwrap .text p{
         font-size: 13px;
         font-weight: 500;
     }
-    #main .link {
+    main .link {
         bottom: 20px;
     }
 }
