@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-#main .contentwrap ul{
+main .container ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#main .contentwrap ul li{
+main .container ul li{
     min-width: 350px;
     width: 33%;
     margin-bottom: 50px;
@@ -15,35 +15,35 @@
     position: relative;
 }
 /*
-#main .contentwrap ul li:last-child{
+main .container ul li:last-child{
     margin-right: 33.5%;
 }*/
-#main .contentwrap ul li img{
+main .container ul li img{
     margin-bottom: 15px;
 }
-#main .contentwrap ul li:first-child > img{
+main .container ul li:first-child > img{
     min-width: 348px;
     width: calc(100% - 2px);
     min-height: 348px;
     height: calc(100% - 31px);
     border: 1px solid #ababab;
 }
-#main .contentwrap ul li span{
+main .container ul li span{
     font-size: 12px;
     font-weight: 700;
 }
-#main .contentwrap ul li p{
+main .container ul li p{
     font-size: 12px;
     font-weight: 400;
 }
-#main .contentwrap ul li a{
+main .container ul li a{
     display: block;
     width: 100%;
     background-color: rgba(1, 1, 1, 0.5);
     position: absolute;
     opacity: 0;
 }
-#main .contentwrap ul li a img{
+main .container ul li a img{
     width: 20%;
     position: relative;
     transform: translate(-50%, -50%);
@@ -56,7 +56,7 @@
 
 
 
-#footer{
+footer{
     position: relative;
 }
 
@@ -64,21 +64,21 @@
 
 @media only screen and (max-width:499px){
 
-    #main .contentwrap ul {
+    main .container ul {
         display: block;
     }
-    #main .contentwrap ul li{
+    main .container ul li{
         min-width: unset;
         width: 86%;
         margin-left: 7%;
     }
-    #main .contentwrap ul li:first-child > img{
+    main .container ul li:first-child > img{
         min-width: unset;
         width: calc(100% - 2px);
         min-height: unset;
         height: calc(100% - 2px);
     }
-    #main .contentwrap ul li a{
+    main .container ul li a{
         height: calc(100% - 29.5px);
     }
 }
