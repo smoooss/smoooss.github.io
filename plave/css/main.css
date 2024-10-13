@@ -32,12 +32,12 @@ img{
 
 
 
-#header{
+header{
     width: 100%;
     position: absolute;
     z-index: 1;
 }
-#header .header{
+.header{
     width: calc(100% - 80px);
     margin: 0 auto;
     display: flex;
@@ -45,37 +45,37 @@ img{
     justify-content: space-between;
     position: relative;
 }
-#header .header .logo{
+.header .logo{
     width: 100px;
     margin-top: 50px;
 }
-#header .header a{
+.header a{
     height: 20px;
     display: inline-block;
 }
-#header .header .logo img{
+.header .logo img{
     width: 100%;
 }
-#header .header .menu{
+.header .menu{
     display: block;
     width: 30px;
     height: 20px;
     margin-top: 45px;
     cursor: pointer;
 }
-#header .header .menu img{
+.header .menu img{
     width: 100%;
 }
 
 
 
 
-#main{
+main{
     width: 100%;
     height: 100vh;
     position: relative;
 }
-#main .contentwrap{
+main .container{
     width: 100%;
     height: 100%;
     background-image: url(../img/main3.jpg);
@@ -83,12 +83,12 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#main .contentwrap .content{
+main .container .content{
     width: 100%;
     height: 100%;
     background-color: rgba(1, 1, 1, 0.2);
 }
-#main .contentwrap .content .text{
+main .container .content .text{
     width: 425px;
     position: absolute;
     transform: translate(0, -50%);
@@ -97,30 +97,30 @@ img{
     transition: 0.5s;
     opacity: 0;
 }
-#main .contentwrap .content .text a{
+main .container .content .text a{
     display: inline-block;
     width: 100%;
     color: #ffffff;
     text-align: right;
     font-weight: 500;
 }
-#main .contentwrap .content .text a:nth-child(1){
+main .container .content .text a:nth-child(1){
     font-size: 50px;
     font-weight: 700;
 }
-#main .contentwrap .content .text a:nth-child(2){
+main .container .content .text a:nth-child(2){
     margin-top: 10px;
     font-size: 35px;
 }
-#main .contentwrap .content .text a:nth-child(4){
+main .container .content .text a:nth-child(4){
     font-size: 20px;
 }
-#main .contentwrap .content .text a:nth-child(5){
+main .container .content .text a:nth-child(5){
     margin-top: 10px;
     font-size: 15px;
     font-weight: 400;
 }
-#main .contentwrap .content .text span{
+main .container .content .text span{
     display: block;
     width: 300px;
     height: 2px;
@@ -129,13 +129,13 @@ img{
     position: relative;
     left: 30%;
 }
-#main .link{
+main .link{
     width: 20px;
     position: absolute;
     bottom: 35px;
     left: 40px;
 }
-#main .link img{
+main .link img{
     margin-bottom: 20px;
 }
 
@@ -143,7 +143,7 @@ img{
 
 
 
-#nav{
+nav{
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
@@ -152,7 +152,7 @@ img{
     z-index: 1;
     display: none;
 }
-#nav .top{
+nav .top{
     width: calc(100% - 80px);
     margin: 0 auto;
     display: flex;
@@ -160,28 +160,28 @@ img{
     justify-content: space-between;
     position: relative;
 }
-#nav .top .logo{
+nav .top .logo{
     width: 100px;
     margin-top: 50px;
 }
-#nav .top a{
+nav .top a{
     height: 20px;
     display: inline-block;
 }
-#nav .top .logo img{
+nav .top .logo img{
     width: 100%;
 }
-#nav .top .close{
+nav .top .close{
     display: block;
     width: 20px;
     height: 20px;
     margin-top: 50px;
     cursor: pointer;
 }
-#nav .top .close img{
+nav .top .close img{
     width: 100%;
 }
-#nav ul{
+nav ul{
     width: 275px;
     height: 275px;
     position: absolute;
@@ -189,21 +189,21 @@ img{
     top: 45%;
     left: 50%;
 }
-#nav ul li{
+nav ul li{
     margin: 20px 0;
     text-align: center;
 }
-#nav ul li a{
+nav ul li a{
     font-size: 35px;
     font-weight: 800;
 }
-#nav .link{
+nav .link{
     width: 20px;
     position: absolute;
     bottom: 35px;
     left: 40px;
 }
-#nav .link img{
+nav .link img{
     margin-bottom: 20px;
 }
 
@@ -211,14 +211,14 @@ img{
 
 
 
-#footer{
+footer{
     width: 100%;
     height: 70px;
     position: absolute;
     bottom: 0;
     z-index: 1;
 }
-#footer .footer{
+footer .footer{
     width: calc(100% - 80px);
     margin: 0 auto;
     display: flex;
@@ -226,12 +226,12 @@ img{
     justify-content: right;
     position: relative;
 }
-#footer .footer p{
+footer .footer p{
     color: #ffffff;
     font-size: 11px;
     font-weight: 500;
 }
-#footer .footer img{
+footer .footer img{
     width: 40px;
     margin: 0 5px;
 }
@@ -242,72 +242,88 @@ img{
 
 
 
+@media only screen and (max-width:1400px) and (min-width: 500px){
+
+    main .link{
+        width: 250px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        bottom: 70px;
+    }
+    main .link a{
+        width: 20px;
+    }
+    main .link img{
+        margin-bottom: 0;
+    }
+}
+
 @media only screen and (max-width:499px){
 
     #wrap{
         min-width: 100%;
     }
-    #header .header{
+    .header{
         width: 86%;
     }
-    #header .header .logo{
+    .header .logo{
         width: 80px;
         margin-top: 32px;
     }
-    #header .header .menu{
+    .header .menu{
         width: 25px;
         margin-top: 27px;
     }
-    #main .contentwrap{
+    main .container{
         background-image: url(../img/m_main3.jpg);
         background-position: bottom;
     }
-    #main .contentwrap .content .text{
+    main .container .content .text{
         width: 70%;
         top: 75%;
         right: 7%;
     }
-    #main .contentwrap .content .text a:nth-child(1){
+    main .container .content .text a:nth-child(1){
         font-size: 30px;
     }
-    #main .contentwrap .content .text a:nth-child(2){
+    main .container .content .text a:nth-child(2){
         margin-top: 10px;
         font-size: 25px;
     }
-    #main .contentwrap .content .text a:nth-child(n+3),
-    #main .link{
+    main .container .content .text a:nth-child(n+3),
+    main .link{
         display: none;
     }
-    #main .contentwrap .content .text span{
+    main .container .content .text span{
         width: 50%;
         left: unset;
         right: 0;
         position: absolute;
     }
-
-    #nav .top{
+    nav .top{
         width: 86%;
     }
-    #nav .top .logo{
+    nav .top .logo{
         width: 80px;
         margin-top: 32px;
     }
-    #nav .top .close{
+    nav .top .close{
         width: 17px;
         margin-top: 30px;
     }
-    #nav ul{
+    nav ul{
         width: 60%;
         height: unset;
     }
-    #nav ul li {
+    nav ul li {
         margin: 15px 0;
     }
-    #nav ul li a{
+    nav ul li a{
         font-size: 25px;
         font-weight: 700;
     }
-    #nav .link{
+    nav .link{
         width: 70%;
         position: fixed;
         bottom: 60px;
@@ -316,18 +332,17 @@ img{
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    #nav .link a{
+    nav .link a{
         display: block;
         width: 6%;
     }
-    #nav .link img{
+    nav .link img{
         margin-bottom: 0;
     }
-
-    #footer{
+    footer{
         height: 40px;
     }
-    #footer .footer{
+    footer .footer{
         width: 100%;
         justify-content: center;
     }
