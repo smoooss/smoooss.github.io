@@ -4,22 +4,26 @@ $(document).ready(function(){
 
     if(a>=500){
 
-        $('#main .contentwrap .cont.c2 ul li .title ul li').click(script);
+        $('main .container .cont.c2 ul li .title ul li').click(script);
         
         let index = 0
     
         function script(){
+            
             index = $(this).index()+1;
-            $('#main .contentwrap .cont.c2 ul li .script ul li').eq(index-1).fadeIn(300).siblings().fadeOut(100)
+            $('main .container .cont.c2 ul li .script ul li').eq(index-1).fadeIn(300).siblings().fadeOut(100)
+
+            d=$('main .container .cont.c2 ul li .script ul li').eq(index-1).height()
+            $('main .container .cont.c2 > ul').css({'height':(d+80)+'px'})
         }
     }
 
-    b=$('#main .contentwrap .cont.c4 ul li > img').height()
+    b=$('main .container .cont.c4 ul li > img').height()
             
-    $('#main .contentwrap .cont.c4 ul li').find('a').css({'height':b})
+    $('main .container .cont.c4 ul li').find('a').css({'height':b})
         
 
-    $('#main .contentwrap .cont.c4 ul li').mouseover(function(){
+    $('main .container .cont.c4 ul li').mouseover(function(){
         $(this).find('a').css({'opacity':'1'})
     }).mouseout(function(){
         $(this).find('a').css({'opacity':'0'})
@@ -27,9 +31,9 @@ $(document).ready(function(){
 
     $(window).on('resize',function(){
 
-        c=$('#main .contentwrap .cont.c4 ul li > img').height()
+        c=$('main .container .cont.c4 ul li > img').height()
 
-        $('#main .contentwrap .cont.c4 ul li').find('a').css({'height':c})
+        $('main .container .cont.c4 ul li').find('a').css({'height':c})
         
     });
 

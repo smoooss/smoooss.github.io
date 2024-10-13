@@ -5,20 +5,22 @@ $(document).ready(function(){
 
     if(a>=500){
 
-        $('#main .contentwrap .cont.c2 ul li .title ul li').click(script);
+        $('main .container .cont.c2 ul li .title ul li').click(script);
         
         function script(){
-            $('#main .contentwrap .cont.c2 ul li .script ul li').fadeIn(300)
-            $('#main .contentwrap .cont.c2 > ul').css({'height':'290px'})
+            c=$('main .container .cont.c2 ul li .script ul li').height()
+
+            $('main .container .cont.c2 ul li .script ul li').fadeIn(300)
+            $('main .container .cont.c2 > ul').css({'height':(c+80)+'px'})
         }
     }
 
-    b=$('#main .contentwrap .cont.c4 ul li > img').height()
+    b=$('main .container .cont.c4 ul li > img').height()
             
-    $('#main .contentwrap .cont.c4 ul li').find('a').css({'height':b})
+    $('main .container .cont.c4 ul li').find('a').css({'height':b})
         
 
-    $('#main .contentwrap .cont.c4 ul li').mouseover(function(){
+    $('main .container .cont.c4 ul li').mouseover(function(){
         $(this).find('a').css({'opacity':'1'})
     }).mouseout(function(){
         $(this).find('a').css({'opacity':'0'})
@@ -26,9 +28,9 @@ $(document).ready(function(){
 
     $(window).on('resize',function(){
 
-        b=$('#main .contentwrap .cont.c4 ul li > img').height()
+        b=$('main .container .cont.c4 ul li > img').height()
 
-        $('#main .contentwrap .cont.c4 ul li').find('a').css({'height':b})
+        $('main .container .cont.c4 ul li').find('a').css({'height':b})
         
     });
 
