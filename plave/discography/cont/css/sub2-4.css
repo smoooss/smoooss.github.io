@@ -3,8 +3,15 @@
 
 
 
-
-
+main .container .cont.c2 ul li .title{
+    width: 310px;
+}
+main .container .cont.c2 ul li .script{
+    width: calc(100% - 340px);
+}
+main .container .cont.c2 ul li .script ul li{
+    width: calc(100% - 340px);
+}
 main .container .cont.c3 ul li{
     margin: 0 auto;
 }
@@ -17,6 +24,5 @@ main .container .cont.c3 ul li{
     
     main .container .cont.c3 img{
         width: 100%;
-        margin-left: 0;
     }
 }

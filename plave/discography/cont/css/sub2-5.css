@@ -80,12 +80,10 @@ main .container .cont.c2 ul li .title span{
     top: -1px;
 }
 main .container .cont.c2 ul li .script{
-    min-width: 800px;
     width: calc(100% - 280px);
 }
 main .container .cont.c2 ul li .script ul li{
-    min-width: 780px;
-    width: calc(100% - 300px);
+    width: calc(100% - 280px);
     margin-top: 37px;
     font-size: 17px;
     line-height: 27px;
