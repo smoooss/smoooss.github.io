@@ -22,6 +22,9 @@ main .container .cont.c3 ul li{
 
 @media only screen and (max-width:499px){
     
+    main .container .cont.c2 ul li .title{
+        width: 100%;
+    }
     main .container .cont.c3 img{
         width: 100%;
     }
