@@ -234,9 +234,6 @@ br[class="off-img"]{
     br[class="on"]{
         display: none;
     }
-    .container {
-        padding-bottom: 80px;
-    }
     .container .wrapper{
         padding: 0 7%;
         box-sizing: border-box;
