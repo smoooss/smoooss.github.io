@@ -27,6 +27,15 @@ $(document).ready(function(){
     
     a=$(window).width()
     
+    if(a<500){
+        $('.header .menu').click(function(){
+            $('main .link').css({'position':'fixed','bottom':'60px'})
+        });
+        $('.close').click(function(){
+            $('main .link').css({'position':'absolute','bottom':'20px'})
+        });
+    }
+
     $(window).click(function(){
         
         if(currentPage==1){
