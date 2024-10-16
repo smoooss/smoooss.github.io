@@ -59,6 +59,9 @@ footer{
 
 @media only screen and (max-width:499px){
 
+    main .container {
+        padding-bottom: 50px;
+    }
     main .container ul {
         display: block;
     }
