@@ -56,37 +56,6 @@ $(document).ready(function(){
 
     if(f<500){
 
-        g=$('main .container .content .cont.c1').height()
-        h=$('main .container .content .cont.c2').height()
-        i=$('main .container .content .cont.c3').height()
-        j=$('main .container .content .cont.c4').height()
-        k=$('main .container .content .cont.c5').height()
-        
-        l=200
-
-        $('main').css({'height':g+l})
-
-        $('main .container .menu ul li').eq(0).click(function(){
-            $('main').css({'height':g+l})
-        })
-
-        $('main .container .menu ul li').eq(1).click(function(){
-            $('main').css({'height':h+l})
-        })
-
-        $('main .container .menu ul li').eq(2).click(function(){
-            $('main').css({'height':i+l})
-        })
-
-        $('main .container .menu ul li').eq(3).click(function(){
-            $('main').css({'height':j+l})
-        })
-
-        $('main .container .menu ul li').eq(4).click(function(){
-            $('main').css({'height':k+l})
-        })
-
-
         $('.header .menu').click(function(){
             $('#wrap').css({'height':'100vh'})
         });
