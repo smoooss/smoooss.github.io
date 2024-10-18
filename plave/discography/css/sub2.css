@@ -8,11 +8,13 @@ main .container ul{
 main .container ul li{
     min-width: 350px;
     width: 33%;
-    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
+}
+main .container ul li:nth-child(n+4){
+    margin-top: 50px;
 }
 /*
 main .container ul li:last-child{
@@ -59,9 +61,6 @@ footer{
 
 @media only screen and (max-width:499px){
 
-    main .container {
-        padding-bottom: 50px;
-    }
     main .container ul {
         display: block;
     }
@@ -69,6 +68,9 @@ footer{
         min-width: unset;
         width: 86%;
         margin-left: 7%;
+    }
+    main .container ul li:nth-child(n+2){
+        margin-top: 40px;
     }
     main .container ul li span{
         font-size: 13px;
