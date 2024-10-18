@@ -23,8 +23,7 @@ main .container .menu ul li:first-child{
     color: #333333;
 }
 main .container .content{
-    height: calc(100vh - 280px);
-    position: relative;
+    height: calc(100vh - 300px);
     overflow-y: scroll;
 }
 main .container .content::-webkit-scrollbar{
@@ -48,7 +47,6 @@ main .container .content::-webkit-scrollbar-corner{
 }
 main .container .content .cont{
     width: calc(100% - 10px);
-    position: absolute;
     display: none;
 }
 main .container .content .cont ul{
@@ -83,12 +81,12 @@ main .container .content .cont ul li a img{
     opacity: 0.7;
 }
 main .container .content .cont ul li img{
+    margin-bottom: 10px;
     border-radius: 10px;
 }
 main .container .content .cont ul li span{
-    display: inline-block;
-    margin-top: 10px;
     font-size: 14px;
+    line-height: 20px;
 }
 main .container .content .cont.c1{
     display: flex;
@@ -107,9 +105,17 @@ main .container .content .cont.c1{
 
 @media only screen and (max-width:499px){
     
-    main .container .menu{
-        width: 84%;
-        margin-left: 8%;
+    main {
+        height: unset;
+    }
+    main .container .menu {
+        width: 100%;
+        padding: 20px 8% 10px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        position: fixed;
+        top: 70px;
+        z-index: 2;
     }
     main .container .menu ul li{
         font-size: 13px;
@@ -118,6 +124,7 @@ main .container .content .cont.c1{
         width: 86%;
         height: unset;
         margin-left: 7%;
+        padding: 20px 0;
         overflow-y: unset;
     }
     main .container .content .cont{
@@ -128,12 +135,23 @@ main .container .content .cont.c1{
     }
     main .container .content .cont ul li{
         width: 100%;
+        margin-right: 0;
+    }
+    main .container .content .cont.c1 ul li:last-child,
+    main .container .content .cont.c2 ul li:last-child,
+    main .container .content .cont.c3 ul li:last-child,
+    main .container .content .cont.c4 ul li:last-child,
+    main .container .content .cont.c5 ul li:last-child{
+        margin-bottom: 0;
     }
     main .container .content .cont.c5 ul li{
         width: calc(100% - 2px);
     }
+    main .container .content .cont ul li img{
+        margin-bottom: 7px;
+    }
     main .container .content .cont ul li span{
-        margin-top: 7px;
         font-size: 12px;
+        line-height: 17px;
     }
 }
