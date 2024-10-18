@@ -21,7 +21,6 @@ main .container .wrapper{
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 3px;
     left: 174px;
     z-index: 1;
 }
@@ -73,18 +72,26 @@ main .container .calendar .cont.c1 .date ul:nth-child(n+2){
 }
 main .container .calendar .cont.c1 .date ul li{
     width: 30px;
-    height: 30px;
-    margin: 20px;
+    aspect-ratio: 1 / 1; /* 정사각형 비율 유지 */
+    margin: 24px;
+    box-sizing: border-box; /* padding 포함한 크기 계산 */
     font-size: 14px;
     font-weight: 600;
     line-height: 30px;
-}
-main .container .calendar.c1 .cont.c1 .date ul li,
-main .container .calendar.c2 .cont.c1 .date ul li:nth-child(n+2){
+    text-align: center;
+    align-items: center; /* 텍스트를 중앙에 배치 */
+    display: flex;
+    justify-content: center;
     cursor: pointer;
 }
+main .container .calendar .cont.c1 .date ul li:nth-child(7n+1){
+    margin-left: 20px;
+}
+main .container .calendar .cont.c1 .date ul li:nth-child(7n+7){
+    margin-right: 20px;
+}
 .have{
-    border-radius: 15px;
+    border-radius: 18px;
     background-color: #333333;
     color: #ffffff;
 }
@@ -239,8 +246,11 @@ main .container .calendar .cont.c2 .schedule ul li span{
     main .container .calendar .cont.c1 .week{
         width: 100%;
         margin: 20px auto;
+        padding: 0 3.5%;
+        box-sizing: border-box;
     }
     main .container .calendar .cont.c1 .week ul li{
+        width: unset;
         font-size: 14px;
         font-weight: 600;
     }
@@ -248,17 +258,16 @@ main .container .calendar .cont.c2 .schedule ul li span{
         width: 100%;
     }
     main .container .calendar .cont.c1 .date ul li{
-        width: 28px;
-        height: 28px;
-        margin: 15px;
+        width: 8%;
+        margin: 3.1%;
         font-size: 13px;
         line-height: 29px;
     }
     main .container .calendar .cont.c1 .date ul li:nth-child(7n+1){
-        margin-left: 5px;
+        margin-left: 3.3%;
     }
     main .container .calendar .cont.c1 .date ul li:nth-child(7n+7){
-        margin-right: 5px;
+        margin-right: 3.3%;
     }
     main .container .calendar .cont.c2{
         width: 86%;
@@ -340,9 +349,6 @@ main .container .calendar .cont.c2 .schedule ul li span{
         font-size: 19px;
     }
     main .container .calendar .cont.c1 .date ul li{
-        width: 26px;
-        height: 26px;
-        margin: 13px;
         font-size: 12px;
         line-height: 27px;
     }
@@ -372,9 +378,6 @@ main .container .calendar .cont.c2 .schedule ul li span{
         font-size: 12px;
     }
     main .container .calendar .cont.c1 .date ul li{
-        width: 24px;
-        height: 24px;
-        margin: 11px;
         font-size: 11px;
         line-height: 25px;
     }
@@ -400,17 +403,8 @@ main .container .calendar .cont.c2 .schedule ul li span{
         font-size: 11px;
     }
     main .container .calendar .cont.c1 .date ul li{
-        width: 22px;
-        height: 22px;
-        margin: 10px;
         font-size: 10px;
         line-height: 22px;
-    }
-    main .container .calendar .cont.c1 .date ul li:nth-child(7n+1){
-        margin-left: 7px;
-    }
-    main .container .calendar .cont.c1 .date ul li:nth-child(7n+7){
-        margin-right: 7px;
     }
     main .container .calendar .cont.c2 .type ul li{
         font-size: 10px;
