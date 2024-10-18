@@ -178,9 +178,6 @@ main .popup .popup-btn img:hover{
     main .container ul li:nth-child(55){
         margin-right: unset;
     }
-    main .container {
-        padding-bottom: 100px;
-    }
     main .popup .popup-cont{
         width: 100%;
     }
