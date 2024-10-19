@@ -3,12 +3,24 @@
 br[class="off"]{
     display: none;
 }
+.pagination{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.prev img{
+    width: 11px;
+    margin-right: 17px;
+}
 main .container .cont{
     margin-bottom: 150px;
 }
 main .container .cont h3{
     margin-bottom: 30px;
     text-align: center;
+}
+main .container .cont.c1{
+    margin-top: 30px;
 }
 main .container .cont.c1 ul{
     display: flex;
@@ -103,12 +115,15 @@ main .container .cont.c3 ul li{
 main .container .cont.c3 ul li:nth-child(2) {
     margin-left: 1%;
 }
-main .container .cont.c3 a{
+main .container .cont .more{
     position: absolute;
     top: 0;
     right: 0;
     font-size: 13px;
     font-weight: 500;
+}
+main .container .cont.c4{
+    margin-bottom: 0;
 }
 main .container .cont.c4 ul li{
     position: relative;
@@ -116,6 +131,7 @@ main .container .cont.c4 ul li{
 main .container .cont.c4 ul li a{
     display: block;
     width: 100%;
+    aspect-ratio: 1.779 / 1;
     background-color: rgba(1, 1, 1, 0.5);
     position: absolute;
     top: 0;
@@ -137,6 +153,7 @@ main .container .cont.c4 ul li span{
 
 
 
+
 footer{
     position: relative;
 }
@@ -149,13 +166,24 @@ footer{
     br[class="off"]{
         display: block;
     }
+    .pagination {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .prev{
+        margin-left: 7%;
+    }
+    .prev img {
+        width: 8px;
+        margin-right: 10px;
+    }
     main .container .cont{
         width: 86%;
         margin-bottom: 80px;
         padding-left: 7%;
     }
     main .container .cont.c1{
-        margin-bottom: 30px;
+        margin: 20px 0 30px 0;
         text-align: center;
     }
     main .container .cont.c1 ul,
