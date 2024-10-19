@@ -15,35 +15,6 @@ $(document).ready(function(){
         $('main .container .content .cont').eq(index-1).fadeIn(300).siblings().fadeOut(100)
     }
 
-    a=$('main .container .content .cont.c1 ul li > img').height()
-
-    $('main .container .content .cont ul li').find('a').css({'height':a})
-
-    $(window).on('resize, click, mousemove',function(){
-        
-        a=$('main .container .content .cont.c1 ul li > img').height()
-
-        $('main .container .content .cont.c1 ul li').find('a').css({'height':a})
-
-        b=$('main .container .content .cont.c2 ul li > img').height()
-
-        $('main .container .content .cont.c2 ul li').find('a').css({'height':b})
-
-        c=$('main .container .content .cont.c3 ul li > img').height()
-
-        $('main .container .content .cont.c3 ul li').find('a').css({'height':c})
-
-        d=$('main .container .content .cont.c4 ul li > img').height()
-
-        $('main .container .content .cont.c4 ul li').find('a').css({'height':d})
-
-        e=$('main .container .content .cont.c5 ul li > img').height()
-
-        $('main .container .content .cont.c5 ul li').find('a').css({'height':e})
-        
-    });
-
-
 
     $('main .container .content ul li').mouseover(function(){
         $(this).find('a').css({'opacity':'1'})
@@ -52,9 +23,9 @@ $(document).ready(function(){
     });
 
 
-    f=$(window).width()
+    a=$(window).width()
 
-    if(f<500){
+    if(a<500){
 
         $('.header .menu').click(function(){
             $('#wrap').css({'height':'100vh'})
