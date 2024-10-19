@@ -291,7 +291,7 @@ footer{
     main .container .content .text{
         width: fit-content;
         transform: translate(0, 0);
-        top: 10%;
+        top: 15%;
         right: 7%;
     }
     main .container .content .text a:nth-child(1){
