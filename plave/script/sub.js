@@ -16,6 +16,15 @@ $(document).ready(function(){
     });
 
     a=$(window).width()
+
+    if(a>=500 && a<1400){
+        $('.header .menu').click(function(){
+            $('main .link').css({'position':'fixed','bottom':'50px'})
+        });
+        $('.close').click(function(){
+            $('main .link').css({'position':'relative','bottom':'-20px'})
+        });
+    }
     if(a<500){
         $('main .container').css({'opacity':'1'})
 
