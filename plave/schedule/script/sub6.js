@@ -26,6 +26,7 @@ $(document).ready(function(){
     }
     
     a=$(window).width()
+    b=$(window).height()
     
     if(a<500){
         $('.header .menu').click(function(){
@@ -34,7 +35,20 @@ $(document).ready(function(){
         $('.close').click(function(){
             $('main .link').css({'position':'absolute','bottom':'20px'})
         });
+    }if(a<500 && b>715){
+        $('.header .menu').click(function(){
+            $('main .link').css({'position':'fixed','bottom':'60px'})
+            $('footer').css({'position':'fixed'})
+        });
+        $('.close').click(function(){
+            $('main .link').css({'position':'fixed','bottom':'60px'})
+            $('footer').css({'position':'fixed'})
+        });
+    }if(b>715){
+        $('main .link').css({'bottom':'60px','position':'fixed'})
+        $('footer').css({'position':'fixed'})
     }
+
 
     $(window).click(function(){
         
@@ -121,32 +135,4 @@ $(document).ready(function(){
 
     });
 
-/*
-    $('main .container .cont.c1 .date .btn li').eq(0).click(function(){
-        $(this).css({'display':'none'}).siblings().css({'display':'block'})
-        $('main .container .cont.c1 .date .month').css({'backgroundColor':'#dddddd'})
-        $('main .container .cont.c1 .date .month li').css({'display':'block'})
-        $('main .container .cont.c1 .date .month li:nth-child(n+2)').slideDown(100)
-    });
-    $('main .container .cont.c1 .date .btn li').eq(1).click(function(){
-        $(this).css({'display':'none'}).siblings().css({'display':'block'})
-        $('main .container .cont.c1 .date .month').css({'backgroundColor':'#ffffff'})
-        $('main .container .cont.c1 .date .month li:nth-child(n+2)').slideUp(100)
-    });
-
-
-    $('main .container .cont.c1 .date .month li').click(month);
-    
-    let idx = 0
- 
-    function month(){
-        idx = $(this).index()+1;
-        $('main .container .cont.c1 .date .btn li').eq(0).css({'display':'block'})
-        $('main .container .cont.c1 .date .btn li').eq(1).css({'display':'none'})
-        $('main .container .cont.c1 .date .month').css({'backgroundColor':'#ffffff'})
-        $('main .container .cont.c1 .date .month li').eq(idx-1).css({'display':'block'}).siblings().css({'display':'none'})
-        $('main .container .cont.c1 .calendar ul').eq(idx-1).css({'display':'flex'}).siblings().css({'display':'none'})
-        $('main .container .cont.c2 .scroll div').eq(idx-1).css({'display':'block'}).siblings().css({'display':'none'})
-    }
-*/
 });
