@@ -28,25 +28,31 @@ $(document).ready(function(){
     a=$(window).width()
     b=$(window).height()
     
-    if(a<500){
+    if(a>=500 && a<1400){
+
+        $('.close').click(function(){
+            $('main .link').css({'position':'absolute'})
+        });
+
+    }if(a<500){
         $('.header .menu').click(function(){
-            $('main .link').css({'position':'fixed','bottom':'60px'})
+            $('main .link').css({'bottom':'60px'})
         });
         $('.close').click(function(){
-            $('main .link').css({'position':'absolute','bottom':'20px'})
+            $('main .link').css({'bottom':'20px'})
         });
-    }if(a<500 && b>715){
-        $('.header .menu').click(function(){
+        if(b>715){
             $('main .link').css({'position':'fixed','bottom':'60px'})
             $('footer').css({'position':'fixed'})
-        });
-        $('.close').click(function(){
-            $('main .link').css({'position':'fixed','bottom':'60px'})
-            $('footer').css({'position':'fixed'})
-        });
-    }if(b>715){
-        $('main .link').css({'bottom':'60px','position':'fixed'})
-        $('footer').css({'position':'fixed'})
+    
+            $('.header .menu').click(function(){
+                $('footer').css({'position':'fixed'})
+            });
+            $('.close').click(function(){
+                $('main .link').css({'position':'fixed','bottom':'60px'})
+                $('footer').css({'position':'fixed'})
+            });
+        }
     }
 
 
