@@ -5,8 +5,8 @@ main{
     position: relative;
 }
 main .container{
+    width: 700px;
     min-width: unset;
-    width: 690px;
     height: 550px;
     margin: unset;
     padding: unset;
@@ -15,7 +15,7 @@ main .container{
     left: 50%;
 }
 main .container .menu{
-    width: 47px;
+    width: 55px;
 }
 main .container .menu ul li{
     margin-bottom: 15px;
@@ -25,7 +25,12 @@ main .container .menu ul li{
     cursor: pointer;
 }
 main .container .menu ul li:first-child{
+    font-size: 13px;
     font-weight: 700;
+}
+main .container .menu ul li:hover{
+    letter-spacing: 1px;
+    transition: 0.2s;
 }
 main .container .content{
     width: 420px;
@@ -33,7 +38,7 @@ main .container .content{
     position: absolute;
     transform: translate(0, -50%);
     top: 50%;
-    left: 80px;
+    left: 90px;
 }
 main .container .content .back{
     width: 380px;
@@ -151,7 +156,7 @@ main .container .textwrap .text.t1{
     }
     main .container .textwrap{
         width: 100%;
-        height: 140px;
+        height: unset;
         top: 330px;
     }
     main .container .textwrap .text{
