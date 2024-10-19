@@ -25,7 +25,13 @@ $(document).ready(function(){
 
     a=$(window).width()
 
-    if(a<500){
+    if(a>=500 && a<1400){
+
+        $('.close').click(function(){
+            $('main .link').css({'position':'absolute','bottom':'50px'})
+        });
+
+    }if(a<500){
 
         $('.header .menu').click(function(){
             $('#wrap').css({'height':'100vh'})
