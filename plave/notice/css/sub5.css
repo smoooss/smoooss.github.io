@@ -31,7 +31,7 @@ br[class="off-img"]{
     background-color: unset;
 }
 #search-btn {
-    width: 12px;
+    width: 15px;
     padding: 5px;
     position: relative;
 }
@@ -254,6 +254,9 @@ br[class="off-img"]{
     #search {
         height: 25px;
         font-size: 13px;
+    }
+    #search-btn {
+        width: 12px;
     }
     .container .wrapper{
         padding: 20px 7% 30px;
