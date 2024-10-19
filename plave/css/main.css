@@ -80,7 +80,7 @@ nav{
     height: 100vh;
     background-color: #ffffff;
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1;
 }
@@ -250,6 +250,12 @@ footer{
 
 @media only screen and (max-width:1400px) and (min-width: 500px){
 
+    nav .link{
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        bottom: 50px;
+    }
     main .link{
         width: 250px;
         position: relative;
@@ -257,10 +263,12 @@ footer{
         justify-content: space-between;
         bottom: 70px;
     }
-    main .link a{
+    main .link a,
+    nav .link a{
         width: 20px;
     }
-    main .link img{
+    main .link img,
+    nav .link img{
         margin-bottom: 0;
     }
 }
