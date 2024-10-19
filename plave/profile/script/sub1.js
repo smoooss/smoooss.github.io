@@ -6,7 +6,7 @@ $(document).ready(function(){
  
     function menu(){
         index = $(this).index()+1;
-        $(this).css({'fontWeight':'700'}).siblings().css({'fontWeight':'500'})
+        $(this).css({'fontSize':'13px','fontWeight':'700'}).siblings().css({'fontSize':'12px','fontWeight':'500'})
         $('main .container .content .front ul li').eq(index-1).css({'display':'block'}).siblings().css({'display':'none'})
         $('main .container .textwrap .text.t'+index).css({'display':'block'}).siblings().css({'display':'none'})
     }
