@@ -155,4 +155,7 @@ main .container .content .cont.c1{
         font-size: 12px;
         line-height: 17px;
     }
+    main .container .content .cont ul li a img{
+        display: none;
+    }
 }
