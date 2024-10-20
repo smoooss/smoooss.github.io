@@ -272,6 +272,9 @@ footer{
     main .container .cont.c4{
         padding-bottom: 30px;
     }
+    main .container .cont.c4 ul li a img{
+        display: none;
+    }
     main .container .cont.c4 ul li span{
         font-size: 13px;
     }
