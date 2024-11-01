@@ -9,9 +9,6 @@ br[class="on"]{
 br[class="off-img"]{
     display: none;
 }
-.highlight {
-    background-color: yellow; /* 검색된 타이틀에 하이라이트 추가 */
-}
 
 
 /* 검색창 스타일 */
@@ -29,11 +26,6 @@ br[class="off-img"]{
     height: 30px;
     font-size: 16px;
     background-color: unset;
-}
-#search-btn {
-    width: 15px;
-    padding: 5px;
-    position: relative;
 }
 .container .wrapper {
     padding-top: 60px;
@@ -194,18 +186,17 @@ br[class="off-img"]{
     left: 50%;
 }
 .arrow {
+    padding: 10px;
     cursor: pointer;
 }
 .pagination span:nth-child(2) {
-    padding: 0 17px;
+    padding: 12px;
 }
 #prev img{
     width: 13px;
-    margin-right: 17px;
 }
 #next img{
     width: 13px;
-    margin-left: 17px;
 }
 
 
@@ -254,9 +245,6 @@ br[class="off-img"]{
     #search {
         height: 25px;
         font-size: 13px;
-    }
-    #search-btn {
-        width: 12px;
     }
     .container .wrapper{
         padding: 20px 7% 30px;
@@ -345,11 +333,12 @@ br[class="off-img"]{
         font-size: 13px;
     }
     .pagination span:nth-child(2) {
-        padding: 0 13px;
+        padding: 6px;
     }
     .arrow {
-        width: 60px;
+        width: 20px;
         cursor: pointer;
+        padding: 5px;
     }
     #prev img{
         width: 9px;
