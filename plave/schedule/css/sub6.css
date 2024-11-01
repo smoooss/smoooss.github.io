@@ -304,6 +304,9 @@ main .container .calendar .cont.c2 .schedule ul li span{
     main .container .calendar.c5 .cont.c2 .schedule ul:nth-child(3){
         display: block;
     }
+    main .container .calendar.c6 .cont.c2 .schedule ul:nth-child(6){
+        display: block;
+    }
     main .container .calendar .cont.c2 .schedule ul li{
         font-size: 2.7vw;
         font-weight: 600;
