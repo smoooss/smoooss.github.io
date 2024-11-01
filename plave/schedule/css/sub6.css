@@ -289,22 +289,7 @@ main .container .calendar .cont.c2 .schedule ul li span{
     main .container .calendar .cont.c2 .schedule ul{
         display: none;
     }
-    main .container .calendar.c1 .cont.c2 .schedule ul:nth-child(9){
-        display: block;
-    }
-    main .container .calendar.c2 .cont.c2 .schedule ul:nth-child(2){
-        display: block;
-    }
-    main .container .calendar.c3 .cont.c2 .schedule ul:nth-child(5){
-        display: block;
-    }
-    main .container .calendar.c4 .cont.c2 .schedule ul:nth-child(2){
-        display: block;
-    }
-    main .container .calendar.c5 .cont.c2 .schedule ul:nth-child(3){
-        display: block;
-    }
-    main .container .calendar.c6 .cont.c2 .schedule ul:nth-child(6){
+    main .container .calendar .cont.c2 .schedule .first{
         display: block;
     }
     main .container .calendar .cont.c2 .schedule ul li{
