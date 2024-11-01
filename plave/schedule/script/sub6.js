@@ -98,6 +98,8 @@ $(document).ready(function(){
                     $('main .container .calendar.c4 .cont.c2 .schedule ul').eq(1).css({'display':'block'})
                 }else if(currentPage==5){
                     $('main .container .calendar.c5 .cont.c2 .schedule ul').eq(2).css({'display':'block'})
+                }else if(currentPage==6){
+                    $('main .container .calendar.c6 .cont.c2 .schedule ul').eq(5).css({'display':'block'})
                 }
             }
         }
@@ -135,6 +137,8 @@ $(document).ready(function(){
                     $('main .container .calendar.c4 .cont.c2 .schedule ul').eq(1).css({'display':'block'})
                 }else if(currentPage==5){
                     $('main .container .calendar.c5 .cont.c2 .schedule ul').eq(2).css({'display':'block'})
+                }else if(currentPage==6){
+                    $('main .container .calendar.c6 .cont.c2 .schedule ul').eq(5).css({'display':'block'})
                 }
             }
         }
