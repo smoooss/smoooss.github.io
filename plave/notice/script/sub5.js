@@ -1,105 +1,84 @@
-$(document).ready(function(){
+$(document).ready(function () {
+    const titlesPerPage = 10; // 페이지 당 타이틀 개수
+    let currentPage = 1; // 페이지 넘버
+    let filteredTitles = $(".title"); // 초기에는 모든 타이틀을 포함
 
-
-    let openContent = null; // 현재 열려 있는 콘텐츠
-    let currentPage = 1; // 현재 페이지
-    const titlesPerPage = 10; // 페이지당 타이틀 수
-    let searchQuery = ''; // 검색어를 저장하는 변수
-
-    // 페이지 로드 시 첫 10개 타이틀만 보이도록 설정
-    function showTitles(page) {
-        $('.title').hide(); // 모든 타이틀 숨김
-        const filteredTitles = $('.title').filter(function() {
-            return $(this).find('span').text().toLowerCase().includes(searchQuery);
-            // 타이틀의 텍스트를 소문자로 변환한 후 검색어에 포함되면 표시
-            // .filter 안에 return을 사용하면 ture 또는 false로 값을 반환해 줌
-        });
-
-        const start = (page - 1) * titlesPerPage;
-        const end = start + titlesPerPage;
-        filteredTitles.slice(start, end).show(); // 해당 페이지 타이틀만 표시
-
-        // 페이지 슬라이드 작동 조건
-        if (filteredTitles.length <= titlesPerPage) { // 필터링 된 타이틀의 개수가 전체 타이틀의 개수보다 작거나 같을 경우
-            currentPage = 1; // 필터링 된 현재 페이지를 1로 리셋
-            $('#prev').prop('disabled', true); // 비활성화
-            $('#next').prop('disabled', true); // 비활성화
-        } else {
-            $('#prev').prop('disabled', page === 1);
-            $('#next').prop('disabled', page === Math.ceil(filteredTitles.length / titlesPerPage));
-        }
+    // 페이지 정보 업데이트
+    function updatePageInfo() {
+        const totalPages = Math.ceil(filteredTitles.length / titlesPerPage); // 검색어가 필터링 된 타이틀을 기준으로 페이지 업데이트
+        $("#pageInfo").text(currentPage + " / " + totalPages); // 페이지 개수 표시
+        $("#prev").prop("disabled", currentPage === 1);
+        $("#next").prop("disabled", currentPage === totalPages);
     }
 
-    // 첫 페이지 로드 시 타이틀 10개 보여주기
-    showTitles(currentPage);
+    function showPage(page) {
+        const start = (page - 1) * titlesPerPage; // 시작 페이지
+        const end = start + titlesPerPage; // 마지막 페이지
+        $(".title").hide(); // 모든 타이틀 숨기고
+        filteredTitles.slice(start, end).show(); // 시작과 마지막 페이지 범위의 타이틀만 표시
+        updatePageInfo(); // 페이지 정보 업데이트
+    }
 
-    // 타이틀 클릭 시 슬라이드 동작
-    $('.title').click(function(event) {
-        event.stopPropagation(); // 부모 요소로 이벤트 전파 방지
-        const content = $(this).find('.content'); // 클릭된 타이틀의 콘텐츠
+    function resetPagination() {
+        currentPage = 1; // currentPage 변수를 1로 초기화하여 첫 페이지로 이동
+        showPage(currentPage); // 첫 페이지를 화면에 표시하기 위해 showPage 함수 호출
+    }
 
-        // 이미 열려 있는 콘텐츠라면 변화 없음
-        if (content.is(openContent)) {
-            return;
+    // 초기 화면 설정
+    showPage(currentPage);
+
+    // 타이틀 클릭 시
+    $(".title").click(function (event) {
+        event.stopPropagation(); // 이벤트 부모 요소 전파 방지
+        var $content = $(this).find(".content"); // 클릭된 title의 content 찾기
+
+        if (!$content.is(":visible")) { // content가 보이지 않는 경우
+            $(".content").slideUp(); // 모든 content 숨기기
+            $content.slideDown(); // 찾은 content 보이기
         }
-
-        // 열려 있는 콘텐츠가 있으면 slideUp()
-        if (openContent) {
-            openContent.slideUp();
-        }
-
-        // 클릭된 타이틀의 콘텐츠를 slideDown()
-        content.slideDown();
-        openContent = content; // 현재 열려 있는 콘텐츠로 업데이트
     });
-
+    
     // 검색창 클릭 시 이벤트 전파 방지
     $('.search-container').click(function(event) {
         event.stopPropagation(); // 콘텐츠 슬라이드업 방지
     });
 
-    // main 영역 클릭 시 열려 있는 콘텐츠를 slideUp()
-    $('main').click(function() {
-        if (openContent) {
-            openContent.slideUp();
-            openContent = null; // 열려 있는 콘텐츠 초기화
+    // main 클릭 시 모든 content 닫기
+    $("main").click(function () {
+        $(".content").slideUp();
+    });
+
+    // 이전 버튼 클릭 시
+    $("#prev").click(function () {
+        if (currentPage > 1) { // 현재 페이지가 2 이상일 때
+            currentPage--; // 감소
+            showPage(currentPage); // 감소된 페이지 보이기
         }
     });
 
-    // 다음 페이지로 이동
-    $('#next').click(function() {
-        if (currentPage < Math.ceil($('.title').filter(function() {
-            return $(this).find('span').text().toLowerCase().includes(searchQuery);
-        }).length / titlesPerPage)) {
-            currentPage++;
-            showTitles(currentPage);
+    // 다음 버튼 클릭 시
+    $("#next").click(function () {
+        const totalPages = Math.ceil(filteredTitles.length / titlesPerPage); // 필터링 된 title 개수를 10개로 나누어 전체 페이지 수 재설정
+        if (currentPage < totalPages) { // 현재 페이지가 전체 페이지보다 작을 경우
+            currentPage++; // 증가
+            showPage(currentPage); // 증가된 페이지 보이기
         }
     });
 
-    // 이전 페이지로 이동
-    $('#prev').click(function() {
-        if (currentPage > 1) {
-            currentPage--;
-            showTitles(currentPage);
+    // 검색 기능
+    $("#search").on("keydown", function (event) {
+        if (event.key === "Enter") { // 엔터키 눌렀을 때
+            const query = $(this).val().toLowerCase(); // 검색어를 소문자로 변환
+            $(".title").hide(); // 모든 타이틀 숨기기
+
+            if (query === "") {
+                filteredTitles = $(".title"); // 검색어가 없으면 모든 타이틀 보이기
+            } else {
+                filteredTitles = $(".title").filter(function () {
+                    return $(this).text().toLowerCase().includes(query); // 소문자로 변환한 검색어가 포함된 title만 보이기
+                });
+            }
+            resetPagination(); // 첫 페이지 보이기
         }
     });
-
-    // 검색 기능 추가
-    function highlightTitles() {
-        searchQuery = $('#search').val().toLowerCase(); // 입력된 검색어
-        currentPage = 1; // 검색 시 페이지를 첫 페이지로 리셋
-        showTitles(currentPage); // 검색어에 따라 제목 표시
-    }
-
-    // 검색 버튼 클릭 시 하이라이트 적용
-    $('#search-btn').click(highlightTitles);
-
-    // 엔터 키 입력 시 하이라이트 적용
-    $('#search').on('keypress', function(event) {
-        if (event.which === 13) { // Enter 키가 눌렸을 때
-            event.preventDefault(); // 기본 동작 방지
-            highlightTitles();
-        }
-    });
-
 });
