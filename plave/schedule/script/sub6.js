@@ -87,20 +87,8 @@ $(document).ready(function(){
             }
 
             if(a<500){
-                
-                if(currentPage==1){
-                    $('main .container .calendar.c1 .cont.c2 .schedule ul').eq(8).css({'display':'block'})
-                }else if(currentPage==2){
-                    $('main .container .calendar.c2 .cont.c2 .schedule ul').eq(1).css({'display':'block'})
-                }else if(currentPage==3){
-                    $('main .container .calendar.c3 .cont.c2 .schedule ul').eq(4).css({'display':'block'})
-                }else if(currentPage==4){
-                    $('main .container .calendar.c4 .cont.c2 .schedule ul').eq(1).css({'display':'block'})
-                }else if(currentPage==5){
-                    $('main .container .calendar.c5 .cont.c2 .schedule ul').eq(2).css({'display':'block'})
-                }else if(currentPage==6){
-                    $('main .container .calendar.c6 .cont.c2 .schedule ul').eq(5).css({'display':'block'})
-                }
+                $('.calendar.c'+currentPage).find('.schedule ul').css({'display':'none'})
+                $('.calendar.c'+currentPage).find('.first').css({'display':'block'})
             }
         }
     });
@@ -126,20 +114,8 @@ $(document).ready(function(){
             }
             
             if(a<500){
-                
-                if(currentPage==1){
-                    $('main .container .calendar.c1 .cont.c2 .schedule ul').eq(8).css({'display':'block'})
-                }else if(currentPage==2){
-                    $('main .container .calendar.c2 .cont.c2 .schedule ul').eq(1).css({'display':'block'})
-                }else if(currentPage==3){
-                    $('main .container .calendar.c3 .cont.c2 .schedule ul').eq(4).css({'display':'block'})
-                }else if(currentPage==4){
-                    $('main .container .calendar.c4 .cont.c2 .schedule ul').eq(1).css({'display':'block'})
-                }else if(currentPage==5){
-                    $('main .container .calendar.c5 .cont.c2 .schedule ul').eq(2).css({'display':'block'})
-                }else if(currentPage==6){
-                    $('main .container .calendar.c6 .cont.c2 .schedule ul').eq(5).css({'display':'block'})
-                }
+                $('.calendar.c'+currentPage).find('.schedule ul').css({'display':'none'})
+                $('.calendar.c'+currentPage).find('.first').css({'display':'block'})
             }
         }
 
