@@ -138,8 +138,8 @@ main .container .cont.c4 ul li a{
     opacity: 0;
 }
 main .container .cont.c4 ul li a img{
-    width: 8%;
-    position: relative;
+    width: 10%;
+    position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
@@ -271,9 +271,6 @@ footer{
     }
     main .container .cont.c4{
         padding-bottom: 30px;
-    }
-    main .container .cont.c4 ul li a img{
-        display: none;
     }
     main .container .cont.c4 ul li span{
         font-size: 13px;
