@@ -75,6 +75,7 @@ $(document).ready(function(){
             currentPage++;
             $('.calendar').hide()
             $('.calendar.c'+currentPage).css({'display':'flex'})
+            $('.calendar.c'+currentPage).find('.schedule ul').css({'display':'block'})
 
             $('.calendar.c'+currentPage).find('.date ul li').click(date);
     
@@ -102,7 +103,8 @@ $(document).ready(function(){
             $('#next').show()
             $('.calendar').hide()
             $('.calendar.c'+currentPage).css({'display':'flex'})
-
+            $('.calendar.c'+currentPage).find('.schedule ul').css({'display':'block'})
+            
             $('.calendar.c'+currentPage).find('.date ul li').click(date);
     
             let index = 0
