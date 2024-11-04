@@ -205,28 +205,10 @@ br[class="off-img"]{
 
 
 
-
 @media only screen and (max-width:1920px){
 
     br[class="off-img"]{
         display: block;
-    }
-}
-
-@media only screen and (max-width:1400px) and (min-width: 500px){
-
-    main .link{
-        width: 250px;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        bottom: -20px;
-    }
-    main .link a{
-        width: 20px;
-    }
-    main .link img{
-        margin-bottom: 0;
     }
 }
 
