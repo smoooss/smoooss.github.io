@@ -208,6 +208,9 @@ main .link{
     left: 40px;
     z-index: 2;
 }
+main .link .bl{
+    display: none;
+}
 main .link img{
     margin-bottom: 20px;
 }
@@ -311,13 +314,26 @@ footer{
     }
     main .container .content .text a:nth-child(n+4),
     main .link{
+        width: 70%;
+        position: fixed;
+        bottom: 60px;
+        left: 15%;
         display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     main .container .content .text span{
         width: 50%;
         margin: 8% 0;
         right: 0;
         position: absolute;
+    }
+    main .link a{
+        display: block;
+        width: 6%;
+    }
+    main .link img{
+        margin-bottom: 0;
     }
     nav .top{
         width: 86%;
@@ -336,22 +352,6 @@ footer{
     nav ul li a{
         font-size: 25px;
         font-weight: 700;
-    }
-    nav .link{
-        width: 70%;
-        position: fixed;
-        bottom: 60px;
-        left: 15%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    nav .link a{
-        display: block;
-        width: 6%;
-    }
-    nav .link img{
-        margin-bottom: 0;
     }
     footer{
         height: 40px;
