@@ -32,7 +32,7 @@ $(document).ready(function(){
             }
         }
         if(a<500){
-            $('main .link').css({'position':'fixed','bottom':'60px'})
+            $('main .link').css({'position':'fixed','bottom':'50px'})
         }
     });
 
@@ -42,14 +42,8 @@ $(document).ready(function(){
         $('nav').fadeOut(100).removeClass('on')
         $('main .link .bl').css({'display':'none'})
         $('main .link .wh').css({'display':'block'})
-        $('footer').css({'position':'absolute'})
         $('footer .footer p').css({'color':'#ffffff'})
 
-        a=$(window).width();
-
-        if(a<500){
-            $('main .link').css({'display':'none'})
-        }
     });
 
 
