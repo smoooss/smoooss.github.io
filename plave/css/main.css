@@ -149,7 +149,7 @@ main{
 main .container{
     width: 100%;
     height: 100%;
-    background-image: url(https://smoooss.github.io/plave/img/main3.jpg);
+    background-image: url(../img/main3.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,7 +271,7 @@ footer{
 @media only screen and (max-width:1024px){
 
     main .container{
-        background-image: url(https://smoooss.github.io/plave/img/main4.jpg);
+        background-image: url(../img/main4.jpg);
         background-position: center top;
     }
     main .container .content .text a:nth-child(1) {
@@ -351,6 +351,9 @@ footer{
         font-size: 25px;
         font-weight: 700;
     }
+    main{
+        min-height: unset;
+    }
     main .container{
         background-image: url(../img/m_main3.jpg);
         background-position: bottom;
@@ -390,8 +393,10 @@ footer{
         right: 0;
         position: absolute;
     }
-    footer{
+    footer {
         height: 40px;
+        position: fixed;
+        bottom: 0;
     }
     .footer p {
         font-size: 2.5vw;
