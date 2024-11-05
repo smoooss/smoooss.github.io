@@ -13,10 +13,10 @@ main .container ul li{
     justify-content: space-between;
     position: relative;
 }
-main .container ul li:nth-child(n+12){
+main .container ul li:nth-child(n+11){
     width: 36.3%;
 }
-main .container ul li:nth-child(11),
+main .container ul li:nth-child(13),
 main .container ul li:nth-child(14){
     width: 26%;
 }
@@ -24,10 +24,10 @@ main .container ul li:nth-child(n+17){
     width: 33%;
 }
 main .container ul li:nth-child(35),
-main .container ul li:nth-child(37){
+main .container ul li:nth-child(36){
     width: 31%;
 }
-main .container ul li:nth-child(36){
+main .container ul li:nth-child(37){
     width: 37.4%;
 }
 main .container ul li:nth-child(n+38){
@@ -95,7 +95,7 @@ main .popup{
 main .popup .popup-cont{
     width: 80%;
     height: 90vh;
-    background-image: url(../img/content31.jpg);
+    background-image: url(https://smoooss.github.io/plave/img/content31.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -128,9 +128,44 @@ main .popup .popup-btn img:hover{
 
 
 
+footer {
+    position: relative;
+}
 
 
 
+
+
+
+@media only screen and (max-width:1400px){
+
+    main .link {
+        position: relative;
+        bottom: -15px;
+    }
+}
+
+@media only screen and (max-width:950px){
+
+    main .container ul li,
+    main .container ul li:nth-child(n+13){
+        width: 49.55%
+    }
+    main .container ul li:nth-child(11),
+    main .container ul li:nth-child(12),
+    main .container ul li:nth-child(15),
+    main .container ul li:nth-child(16),
+    main .container ul li:nth-child(35),
+    main .container ul li:nth-child(36),
+    main .container ul li:nth-child(37),
+    main .container ul li:nth-child(48),
+    main .container ul li:nth-child(49),
+    main .container ul li:nth-child(50),
+    main .container ul li:nth-child(53),
+    main .container ul li:nth-child(66){
+        width: 100%
+    }
+}
 
 @media only screen and (max-width:499px){
 
@@ -138,45 +173,14 @@ main .popup .popup-btn img:hover{
         display: block;
     }
     main .container ul li{
-        width: 86%;
+        width: 86% !important;
         margin-left: 7%;
-    }
-    main .container ul li:nth-child(n+12){
-        width: 86%;
-    }
-    main .container ul li:nth-child(11),
-    main .container ul li:nth-child(14){
-        width: 86%;
-    }
-    main .container ul li:nth-child(n+17){
-        width: 86%;
-    }
-    main .container ul li:nth-child(35),
-    main .container ul li:nth-child(37){
-        width: 86%;
-    }
-    main .container ul li:nth-child(36){
-        width: 86%;
-    }
-    main .container ul li:nth-child(n+38){
-        width: 86%;
-    }
-    main .container ul li:nth-child(48),
-    main .container ul li:nth-child(49){
-        width: 86%;
-    }
-    main .container ul li:nth-child(50){
-        width: 86%;
-    }
-    main .container ul li:nth-child(n+51){
-        width: 86%;
-    }
-    main .container ul li:nth-child(53),
-    main .container ul li:nth-child(55){
-        width: 86%;
     }
     main .container ul li:nth-child(55){
         margin-right: unset;
+    }
+    main .link {
+        bottom: 20px;
     }
     main .popup .popup-cont{
         width: 100%;
