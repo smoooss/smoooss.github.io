@@ -32,7 +32,7 @@ $(document).ready(function(){
             }
         }
         if(a<500){
-            $('main .link').css({'position':'fixed','bottom':'50px'})
+            $('main .link').css({'position':'fixed','bottom':'60px'})
         }
     });
 
@@ -44,6 +44,10 @@ $(document).ready(function(){
         $('main .link .wh').css({'display':'block'})
         $('footer .footer p').css({'color':'#ffffff'})
 
+        if(a<500){
+            $('main .link').css({'position':'relative','bottom':'75px'})
+            $('footer').css({'position':'relative'})
+        }
     });
 
 
