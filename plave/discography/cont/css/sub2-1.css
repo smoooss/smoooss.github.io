@@ -177,6 +177,11 @@ footer{
         width: 8px;
         margin-right: 10px;
     }
+    main .link {
+        position: relative;
+        transform: translate(-50%, 0);
+        bottom: 20px;
+    }
     main .container .cont{
         width: 86%;
         margin-bottom: 80px;
