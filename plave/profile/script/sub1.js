@@ -29,7 +29,7 @@ $(document).ready(function(){
             $('main .link').css({'position':'absolute','bottom':'20px'})
         }
         if(a<500){
-            $('main .link').css({'position':'absolute'})
+            $('main .link').css({'position':'absolute','bottom':'20px'})
         }
     });
 
