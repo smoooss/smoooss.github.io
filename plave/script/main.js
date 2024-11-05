@@ -31,6 +31,9 @@ $(document).ready(function(){
                 $('footer').css({'position':'fixed'})
             }
         }
+        if(a<500){
+            $('main .link').css({'position':'fixed','bottom':'60px'})
+        }
     });
 
     $('.close').click(function(){
