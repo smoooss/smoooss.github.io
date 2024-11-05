@@ -156,7 +156,7 @@ main .container .calendar .cont.c2 .scroll::-webkit-scrollbar-corner{
 main .container .calendar .cont.c2 .schedule ul li:last-child{
     margin-bottom: 30px;
 }
-main .container .calendar .cont.c2 .schedule .on.last{
+main .container .calendar .cont.c2 .schedule .last{
     margin-bottom: 0;
     padding-left: 27px;
 }
