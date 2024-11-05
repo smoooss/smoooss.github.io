@@ -84,7 +84,7 @@ nav{
     display: none;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
 }
 nav .top{
     width: calc(100% - 80px);
@@ -256,6 +256,9 @@ footer{
     nav ul li a{
         font-size: 25px;
         font-weight: 700;
+    }
+    main{
+        min-height: unset;
     }
     main .container{
         width: 100%;
