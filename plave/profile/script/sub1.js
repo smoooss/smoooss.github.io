@@ -9,24 +9,48 @@ $(document).ready(function(){
         $(this).css({'fontSize':'13px','fontWeight':'700'}).siblings().css({'fontSize':'12px','fontWeight':'500'})
         $('main .container .content .front ul li').eq(index-1).css({'display':'block'}).siblings().css({'display':'none'})
         $('main .container .textwrap .text.t'+index).css({'display':'block'}).siblings().css({'display':'none'})
+    
+        a=$(window).width();
+        
+        if(a>=500 && a<950){
+            $('main .container .textwrap .text.t'+index).css({'display':'flex'}).siblings().css({'display':'none'})
+        }
+
     }
 
-    a=$(window).width()
+    $('.close').click(function(){
 
-    if(a>=500 && a<1400){
+        a=$(window).width();
 
-        $('.close').click(function(){
-            $('main .link').css({'position':'absolute','bottom':'-20px'})
-        });
+        if(a>=700 && a<1400){
+            $('main .link').css({'position':'absolute','bottom':'-15px'})
+        }
+        if(a>=500 && a<700){
+            $('main .link').css({'position':'absolute','bottom':'20px'})
+        }
+    });
 
-    }if(a<500){
 
-        $('.header .menu').click(function(){
-            $('main .link').css({'bottom':'60px'})
-        });
-        $('.close').click(function(){
-            $('main .link').css({'bottom':'20px'})
-        });
-    }
+    $(window).resize(function(){
 
+        a=$(window).width();
+        b=$('nav').hasClass('on')
+
+        if(b==false){
+            if(a>=950 && a<1400){
+                $('main .container .textwrap .text.t'+index).css({'display':'block'}).siblings().css({'display':'none'})
+                $('main .link').css({'position':'absolute','bottom':'-15px'})
+            }
+            if(a>=700 && a<950){
+                $('main .container .textwrap .text.t'+index).css({'display':'flex'}).siblings().css({'display':'none'})
+                $('main .link').css({'position':'absolute','bottom':'-15px'})
+            }
+            if(a>=500 && a<700){
+                $('main .container .textwrap .text.t'+index).css({'display':'flex'}).siblings().css({'display':'none'})
+                $('main .link').css({'position':'absolute','bottom':'20px'})
+            }
+        }
+    });
+
+    
 });
