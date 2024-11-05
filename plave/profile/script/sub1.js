@@ -28,6 +28,9 @@ $(document).ready(function(){
         if(a>=500 && a<700){
             $('main .link').css({'position':'absolute','bottom':'20px'})
         }
+        if(a<500){
+            $('main .link').css({'position':'absolute'})
+        }
     });
 
 
