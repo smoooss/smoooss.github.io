@@ -54,7 +54,6 @@ br[class="off-img"]{
 }
 .container .wrapper .title .content{
     width: 100%;
-    min-width: 1050px;
     margin: 0 auto;
     border-top: 0.5px solid #000000;
     border-bottom: 0.5px solid #000000;
@@ -75,8 +74,7 @@ br[class="off-img"]{
     text-decoration-line: underline;
 }
 .container .wrapper .title .content img{
-    width: unset;
-    height: 595px;
+    width: 100%;
     padding-bottom: 20px;
 }
 .container .wrapper .title .content a{
@@ -202,6 +200,11 @@ br[class="off-img"]{
 
 
 
+footer{
+    position: relative;
+}
+
+
 
 
 
@@ -212,7 +215,15 @@ br[class="off-img"]{
     }
 }
 
-@media only screen and (max-width:499px){
+@media only screen and (max-width:1400px){
+
+    main .link {
+        position: relative;
+        bottom: -15px;
+    }
+}
+
+@media only screen and (max-width:700px){
 
     br[class="off"]{
         display: block;
@@ -220,6 +231,29 @@ br[class="off-img"]{
     br[class="on"]{
         display: none;
     }
+    .container .wrapper .title > span{
+        padding: 15px 0 0 10px;
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .container .wrapper .title > p{
+        font-size: 13px;
+    }
+    .container .wrapper .title .content{
+        padding: 20px 0 0 0;
+        text-align: center;
+    }
+    .container .wrapper .title .content.off p{
+        text-align: left;
+        padding-left: 20px;
+    }
+    main .link {
+        bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:499px){
+
     .search-container {
         height: 25px;
         top: -20px;
@@ -243,12 +277,6 @@ br[class="off-img"]{
         margin-top: 5px;
         padding: 0 0 15px 10px;
         font-size: 12px;
-    }
-    .container .wrapper .title .content{
-        padding: 20px 0 0 0;
-        min-width: unset;
-        width: 100%;
-        text-align: center;
     }
     .container .wrapper .title .content p{
         font-size: 13px;
@@ -304,7 +332,6 @@ br[class="off-img"]{
         border: solid 3px #ff9100;
     }
     .container .wrapper .title .content.off p{
-        text-align: left;
         padding-left: 10px;
     }
     .container .wrapper .title .content .video{
