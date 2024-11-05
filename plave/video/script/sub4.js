@@ -11,6 +11,7 @@ $(document).ready(function(){
 
     function menu(){
         index = $(this).index()+1;
+        $('html,body').animate({scrollTop:0},0)
         $('main .container .menu ul li').eq(index-1).css({'fontWeight':'700','color':'#333333'}).siblings().css({'fontWeight':'500','color':'#bbbbbb'})
         $('main .container .content .cont').eq(index-1).fadeIn(300).siblings().fadeOut(100)
     }
@@ -23,25 +24,21 @@ $(document).ready(function(){
     });
 
 
-    a=$(window).width()
+    $(window).resize(function(){
 
-    if(a>=500 && a<1400){
+        a=$(window).width();
+        b=$('nav').hasClass('on')
+        c=$(window).height();
 
-        $('.close').click(function(){
-            $('main .link').css({'position':'absolute','bottom':'50px'})
-        });
-
-    }if(a<500){
-
-        $('.header .menu').click(function(){
-            $('#wrap').css({'height':'100vh'})
-        });
-        $('.close').click(function(){
-            $('#wrap').css({'height':'unset'})
-        });
-
-    }
-
+        if(a>=500 && a<700){
+            if(c<700){
+                if(b==false){
+                    $('main .link').css({'position':'relative','bottom':'20px'})
+                }
+            }
+        }
+    });
+    
     
 
 });
