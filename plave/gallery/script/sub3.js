@@ -11,7 +11,7 @@ $(document).ready(function(){
             $(this).find('a').css({'opacity':'0'})
         })
     }
-    
+
     $('.wrapper ul li').click(popup);
     
     let index = 0
@@ -43,7 +43,6 @@ $(document).ready(function(){
             let url = 'url(https://smoooss.github.io/plave/gallery/img/content'+index+'.jpg)';
             $('main .popup .popup-cont').css({'backgroundImage':url});
         }
-
     });
 
     $('main .popup .popup-btn ul li').eq(2).click(function(){
@@ -52,8 +51,11 @@ $(document).ready(function(){
         let url = 'url(https://smoooss.github.io/plave/gallery/img/content'+index+'.jpg)';
         $('main .popup .popup-cont').css({'backgroundImage':url});
         
-        if(index==totalItems){
-            index = 0;
+        if(index > totalItems){
+            index = 1;
+
+            let url = 'url(https://smoooss.github.io/plave/gallery/img/content'+index+'.jpg)';
+            $('main .popup .popup-cont').css({'backgroundImage':url});
         }
     });
 
