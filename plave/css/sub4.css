@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+main .container .menu {
+    max-width: 1280px;
+    width: 76%;
+    padding: 20px 10%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    position: fixed;
+    transform: translate(-50%, 0);
+    top: 100px;
+    left: 50%;
+    z-index: 1;
+}
+main .container .menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .container .menu ul li{
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    color: #dddddd;
+}
+main .container .menu ul li:first-child{
+    font-weight: 700;
+    color: #333333;
+}
+main .container .content::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+main .container .content::-webkit-scrollbar-trac{
+    background-color:transparent;
+}
+main .container .content::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: #666666;
+}
+main .container .content::-webkit-scrollbar-button{
+    width: 0;
+    height: 0;
+}
+main .container .content::-webkit-scrollbar-corner{
+    width: 0;
+    height: 0;
+}
+main .container .content{
+    position: relative;
+    top: 40px;
+}
+main .container .content .cont{
+    display: none;
+}
+main .container .content .cont ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .container .content .cont ul li{
+    width: 32.5%;
+    margin-bottom: 30px;
+    position: relative;
+}
+main .container .content .cont ul li:nth-child(3n+3){
+    margin-right: 0;
+}
+main .container .content .cont ul li a{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.775 / 1;
+    background-color: rgba(1, 1, 1, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+main .container .content .cont ul li a img{
+    width: 15%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+main .container .content .cont ul li img{
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+main .container .content .cont ul li span{
+    font-size: 13px;
+    line-height: 18px;
+}
+main .container .content .cont.c1{
+    display: flex;
+}
+
+
+
+footer{
+    position: relative;
+}
+
+
+
+
+@media only screen and (max-width: 1400px){
+    
+    main .link{
+        position: relative;
+        bottom: -10px;
+    }
+}
+
+@media only screen and (max-width:1100px){
+
+    main .container .content .cont ul li {
+        width: 49%;
+    }
+}
+
+@media only screen and (max-width:700px){
+
+    main .container .menu {
+        padding: 20px 10px;
+    }
+    main .container .menu ul li {
+        font-size: 14px;
+    }
+    main .container .content .cont ul li {
+        width: 100%;
+    }
+    main .link{
+        bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:499px){
+    
+    main {
+        height: unset;
+    }
+    main .container .menu {
+        width: 100%;
+        padding: 20px 8% 10px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        position: fixed;
+        top: 70px;
+        z-index: 2;
+    }
+    main .container .menu ul li{
+        font-size: 13px;
+    }
+    main .container .content{
+        width: 86%;
+        margin-left: 7%;
+        padding-bottom: 30px;
+        top: 40px;
+    }
+    main .container .content .cont{
+        width: 100%;
+    }
+    main .container .content .cont ul{
+        display: block;
+    }
+    main .container .content .cont ul li{
+        width: 100%;
+        margin-right: 0;
+    }
+    main .container .content .cont.c1 ul li:last-child,
+    main .container .content .cont.c2 ul li:last-child,
+    main .container .content .cont.c3 ul li:last-child,
+    main .container .content .cont.c4 ul li:last-child,
+    main .container .content .cont.c5 ul li:last-child{
+        margin-bottom: 0;
+    }
+    main .container .content .cont.c5 ul li{
+        width: calc(100% - 2px);
+    }
+    main .container .content .cont ul li img{
+        margin-bottom: 7px;
+    }
+    main .container .content .cont ul li span{
+        font-size: 12px;
+        line-height: 17px;
+    }
+}

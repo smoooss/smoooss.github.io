@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+main{
+    height: calc(100vh - 70px);
+    position: relative;
+}
+main .container{
+    width: 700px;
+    height: 550px;
+    margin: unset;
+    padding: unset;
+    transform: translate(-50%, -50%);
+    top: 53%;
+    left: 50%;
+}
+main .container .menu{
+    width: 55px;
+}
+main .container .menu ul li{
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+    cursor: pointer;
+}
+main .container .menu ul li:first-child{
+    font-size: 13px;
+    font-weight: 700;
+}
+main .container .menu ul li:hover{
+    letter-spacing: 0.5px;
+    transition: 0.2s;
+}
+main .container .content{
+    width: 420px;
+    height: 550px;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 90px;
+}
+main .container .content .back{
+    width: 380px;
+    height: 510px;
+    background-color: #333333;
+}
+main .container .content .front{
+    width: 380px;
+    height: 510px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+main .container .content .front ul li{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    display: none;
+}
+main .container .content .front ul li:nth-child(1){
+    display: block;
+    background-image: url(../img/content1.jpg);
+}
+main .container .content .front ul li:nth-child(2){
+    background-image: url(../img/content2.jpg);
+}
+main .container .content .front ul li:nth-child(3){
+    background-image: url(../img/content3.jpg);
+}
+main .container .content .front ul li:nth-child(4){
+    background-image: url(../img/content4.jpg);
+}
+main .container .content .front ul li:nth-child(5){
+    background-image: url(../img/content5.jpg);
+}
+main .container .textwrap{
+    width: 160px;
+    height: 130px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+main .container .textwrap .text{
+    position: absolute;
+    display: none;
+}
+main .container .textwrap .text dt{
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-weight: 700;
+}
+main .container .textwrap .text dd{
+    margin-top: 7px;
+    font-size: 15px;
+    font-weight: 500;
+}
+main .container .textwrap .text.t1{
+    display: block;
+}
+
+
+
+
+
+@media only screen and (max-width:1400px){
+
+    main{
+        min-height: 950px;
+    }
+    main .link{
+        position: absolute;
+        bottom: -15px;
+    }
+}
+
+@media only screen and (max-width:950px){
+
+    main .container {
+        width: 375px;
+        height: unset;
+        top: 50%;
+    }
+    main .container .menu{
+        width: 350px;
+    }
+    main .container .menu ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    main .container .menu ul li{
+        text-align: left;
+    }
+    main .container .content{
+        width: 375px;
+        height: unset;
+        aspect-ratio: 1 / 1.35;
+        position: relative;
+        transform: unset;
+        top: 0;
+        left: 0;
+    }
+    main .container .content .back,
+    main .container .content .front {
+        width: 350px;
+        height: unset;
+        aspect-ratio: 1 / 1.37;
+    }
+    main .container .textwrap {
+        width: unset;
+        height: unset;
+        position: unset;
+    }
+    main .container .textwrap .text {
+        width: 375px;
+        margin-top: 15px;
+        position: unset;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: right;
+    }
+    main .container .textwrap .text.t1{
+        display: flex;
+    }
+    main .container .textwrap .text dt {
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 30px;
+        text-align: right;
+    }
+    main .container .textwrap .text dd {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    main .container .textwrap .text dd:nth-child(2){
+        margin-left: 45%;
+    }
+}
+
+@media only screen and (max-width:700px){
+
+    main .container {
+        width: 375px;
+        height: unset;
+        top: 50%;
+    }
+    main .container .menu{
+        width: 350px;
+    }
+    main .container .menu ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    main .container .menu ul li{
+        text-align: left;
+    }
+    main .container .content{
+        width: 375px;
+        height: unset;
+        aspect-ratio: 1 / 1.35;
+        position: relative;
+        transform: unset;
+        top: 0;
+        left: 0;
+    }
+    main .container .content .back,
+    main .container .content .front {
+        width: 350px;
+        height: unset;
+        aspect-ratio: 1 / 1.37;
+    }
+    main .container .textwrap {
+        width: unset;
+        height: unset;
+        position: unset;
+    }
+    main .container .textwrap .text {
+        width: 375px;
+        margin-top: 15px;
+        position: unset;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: right;
+    }
+    main .container .textwrap .text.t1{
+        display: flex;
+    }
+    main .container .textwrap .text dt {
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 30px;
+        text-align: right;
+    }
+    main .container .textwrap .text dd {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    main .container .textwrap .text dd:nth-child(2){
+        margin-left: 45%;
+    }
+    main .link{
+        bottom: 20px;
+    }
+    footer{
+        position: relative;
+    }
+}
+
+@media only screen and (max-width:499px){
+
+    main{
+        height: 2300px;
+        padding-bottom: 100px;
+    }
+    main .container{
+        width: 100%;
+        height: 100%;
+        transform: unset;
+        position: unset;
+    }
+    main .container .content{
+        width: 100%;
+        height: 2200px;
+        transform: unset;
+        position: relative;
+        top: 80px;
+        left: unset;
+    }
+    main .container .menu,
+    main .container .content .back{
+        display: none;
+    }
+    main .container .content .front{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        right: 0;
+        bottom: 0;
+    }
+    main .container .content .front ul li{
+        width: 300px;
+        height: 400px;
+        margin-bottom: 50px;
+        position: relative;
+        display: block;
+    }
+    main .container .content .front ul li:nth-child(2n+2){
+        margin-left: calc(100% - 300px);
+    }
+    main .container .textwrap{
+        width: 100%;
+        height: unset;
+        position: absolute;
+        top: 310px;
+    }
+    main .container .textwrap .text{
+        width: unset;
+        padding: 13px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        position: absolute;
+        display: block;
+    }
+    main .container .textwrap .text.t1,
+    main .container .textwrap .text.t3,
+    main .container .textwrap .text.t5{
+        right: 0;
+        display: block;
+    }
+    main .container .textwrap .text.t2{
+        top: 450px;
+    }
+    main .container .textwrap .text.t3{
+        top: 900px;
+    }
+    main .container .textwrap .text.t4{
+        top: 1350px;
+    }
+    main .container .textwrap .text.t5{
+        top: 1800px;
+    }
+    main .container .textwrap .text dt{
+        width: unset;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: left;
+    }
+    main .container .textwrap .text dd{
+        margin-left: unset;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    main .container .textwrap .text dd:nth-child(2) {
+        margin-left: unset;
+    }
+    main .link {
+        bottom: 20px;
+    }
+}
