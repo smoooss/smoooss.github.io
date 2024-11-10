@@ -27,7 +27,7 @@ $(document).ready(function(){
         }
         if(a<700){
             if(b==true){
-                $('main .link').css({'position':'fixed','bottom':'80px'})
+                $('main .link').css({'position':'fixed','bottom':'90px'})
                 $('footer').css({'position':'fixed'})
             }
         }
@@ -63,10 +63,10 @@ $(document).ready(function(){
         }
         if(a<700){
             if(b==true){
-                $('main .link').css({'position':'fixed','bottom':'80px'})
+                $('main .link').css({'position':'fixed','bottom':'90px'})
             }
             if(b==false){
-                $('main .link').css({'position':'relative','bottom':'100px'})
+                $('main .link').css({'position':'relative','bottom':'110px'})
             }
         }
     });
