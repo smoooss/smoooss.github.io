@@ -58,20 +58,14 @@ main .container .cont.c1 ul li p{
 
 
 main .container .cont.c2 .list {
+    padding: 20px 0;
     border-top: 2px solid #000000;
     border-bottom: 2px solid #000000;
 }
 main .container .cont.c2 .title {
     display: flex;
 }
-main .container .cont.c2 .title:first-child {
-    margin-top: 20px;
-}
-main .container .cont.c2 .title:last-child {
-    margin-bottom: 20px;
-}
 main .container .cont.c2 .title span {
-    min-width: 200px;
     margin: 10px;
     padding: 10px;
     font-size: 20px;
@@ -161,11 +155,88 @@ footer{
 
 
 
-@media only screen and (max-width:499px){
+
+
+@media only screen and (max-width:1400px){
+
+    main .container .cont {
+        margin-bottom: 120px;
+    }
+    main .container .cont.c1 ul {
+        display: block;
+    }
+    main .container .cont.c1 ul li {
+        width: 100%;
+    }
+    main .container .cont.c1 ul li:nth-child(2) {
+        padding: 30px 0 0 10px;
+    }
+    main .link {
+        position: relative;
+        bottom: -15px;
+    }
+    main .container .cont.c2 .title {
+        display: block;
+    }
+    main .container .cont.c2 .title .content {
+        margin: 0 20px;
+        border-bottom: 1px solid #b5b5b5;
+    }
+    main .container .cont.c2 .title .content p {
+        margin: 10px 0 30px;
+    }
+}
+
+@media only screen and (max-width:950px){
 
     br[class="off"]{
         display: block;
     }
+}
+
+@media only screen and (max-width:700px){
+
+    main .container .cont {
+        margin-bottom: 100px;
+    }
+    main .container .cont.c1 ul li .name {
+        font-size: 17px;
+    }
+    main .container .cont.c1 ul li h2 {
+        font-size: 30px;
+    }
+    main .container .cont.c1 ul li .date {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    main .container .cont.c1 ul li p {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    main .container .cont.c2 .list {
+        padding: 15px 0;
+    }
+    main .container .cont.c2 .title span {
+        font-size: 18px;
+    }
+    main .container .cont.c2 .title strong {
+        font-size: 14px;
+    }
+    main .container .cont.c2 .title .content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    main .container .cont.c4 ul li span{
+        font-size: 15px;
+    }
+    main .link {
+        bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:499px){
+
     .pagination {
         margin-top: 10px;
         font-size: 15px;
@@ -204,8 +275,7 @@ footer{
         padding: 40px 0;
     }
     main .container .cont.c1 ul li .name{
-        font-size: 13px;
-        font-weight: 500;
+        font-size: 15px;
     }
     main .container .cont.c1 ul li h2{
         margin: 7px 0;
@@ -213,7 +283,6 @@ footer{
         line-height: 30px;
     }
     main .container .cont.c1 ul li .date{
-        margin-bottom: 15px;
         font-size: 13px;
     }
     main .container .cont.c1 ul li p{
@@ -231,12 +300,6 @@ footer{
     }
     main .container .cont.c2 .title {
         display: block;
-    }
-    main .container .cont.c2 .title:first-child {
-        margin-top: 15px;
-    }
-    main .container .cont.c2 .title:last-child {
-        margin-bottom: 15px;
     }
     main .container .cont.c2 .title span {
         width: 100%;
@@ -256,7 +319,6 @@ footer{
     }
     main .container .cont.c2 .title .content {
         margin: 0 10px 10px;
-        border-bottom: 1px solid #b5b5b5;
         text-align: center;
     }
     main .container .cont.c2 .title .content p {
