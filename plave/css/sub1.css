@@ -62,19 +62,19 @@ main .container .content .front ul li{
 }
 main .container .content .front ul li:nth-child(1){
     display: block;
-    background-image: url(https://smoooss.github.io/plave/profile/img/content1.jpg);
+    background-image: url(https://smoooss.github.io/plave/gallery/img/content54.jpg);
 }
 main .container .content .front ul li:nth-child(2){
-    background-image: url(https://smoooss.github.io/plave/profile/img/content2.jpg);
+    background-image: url(https://smoooss.github.io/plave/gallery/img/content55.jpg);
 }
 main .container .content .front ul li:nth-child(3){
-    background-image: url(https://smoooss.github.io/plave/profile/img/content3.jpg);
+    background-image: url(https://smoooss.github.io/plave/gallery/img/content56.jpg);
 }
 main .container .content .front ul li:nth-child(4){
-    background-image: url(https://smoooss.github.io/plave/profile/img/content4.jpg);
+    background-image: url(https://smoooss.github.io/plave/gallery/img/content57.jpg);
 }
 main .container .content .front ul li:nth-child(5){
-    background-image: url(https://smoooss.github.io/plave/profile/img/content5.jpg);
+    background-image: url(https://smoooss.github.io/plave/gallery/img/content58.jpg);
 }
 main .container .textwrap{
     width: 160px;
