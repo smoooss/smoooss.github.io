@@ -6,6 +6,10 @@
     padding: 0;
     color: #333333;
     font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+}
+html{
+    font-size: 100%;
 }
 li{
     list-style: none;
@@ -25,6 +29,8 @@ body {
 
 
 
+
+
 #wrap{
     width: 100%;
     overflow: hidden;
@@ -33,8 +39,7 @@ body {
 
 
 
-
-
+/*   header   */
 header{
     width: 100%;
     position: fixed;
@@ -74,7 +79,7 @@ header{
 
 
 
-
+/*   nav   */
 nav{
     width: 100vw;
     height: 100vh;
@@ -120,27 +125,18 @@ nav ul{
     left: 50%;
 }
 nav ul li{
-    margin: 20px 0;
+    margin: 0.5rem 0;
     text-align: center;
 }
 nav ul li a{
-    font-size: 35px;
+    font-size: 2.5rem;
     font-weight: 800;
 }
-nav .link{
-    width: 20px;
-    position: absolute;
-    bottom: 35px;
-    left: 40px;
-}
-nav .link img{
-    margin-bottom: 20px;
-}
 
 
 
 
-
+/*   main   */
 main{
     width: 100%;
     height: 100vh;
@@ -175,29 +171,25 @@ main .container .content .text a{
     display: block;
 }
 main .container .content .text a:nth-child(1){
-    font-size: 50px;
+    font-size: 2.8rem;
     font-weight: 700;
-    line-height: 60px;
 }
 main .container .content .text a:nth-child(2){
-    margin-top: 15px;
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 2.2rem;
 }
 main .container .content .text a:nth-child(4){
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 700;
-    line-height: 25px;
 }
 main .container .content .text a:nth-child(5){
-    margin-top: 10px;
-    font-size: 15px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 main .container .content .text span{
     width: 50%;
     height: 2px;
-    margin: 40px 0 40px 50%;
+    margin: 2.5rem 0 2.5rem 50%;
     background-color: #ffffff;
     display: block;
 }
@@ -220,7 +212,7 @@ main .link img{
 
 
 
-
+/*   footer   */
 footer{
     width: 100%;
     height: 70px;
@@ -237,12 +229,12 @@ footer{
 }
 .footer p{
     color: #ffffff;
-    font-size: 11px;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 .footer img{
-    width: 40px;
-    margin: 0 5px;
+    width: 3rem;
+    margin: 0 0.5rem;
 }
 
 
@@ -270,33 +262,20 @@ footer{
 
 @media only screen and (max-width:1024px){
 
+    html{
+        font-size: 90%;
+    }
     main .container{
         background-image: url(https://smoooss.github.io/plave/img/main/bg04.jpg);
         background-position: center top;
-    }
-    main .container .content .text a:nth-child(1) {
-        font-size: 35px;
-        line-height: 55px;
-    }
-    main .container .content .text a:nth-child(2) {
-        margin-top: 10px;
-        font-size: 30px;
-        line-height: 30px;
-    }
-    main .container .content .text span{
-        margin: 30px 0 30px 50%;
-    }
-    main .container .content .text a:nth-child(4){
-        font-size: 18px;
-        line-height: 20px;
-    }
-    main .container .content .text a:nth-child(5) {
-        font-size: 13px;
     }
 }
 
 @media only screen and (max-width:700px){
 
+    html{
+        font-size: 80%;
+    }
     main{
         min-height: 950px;
     }
@@ -319,6 +298,9 @@ footer{
 
 @media only screen and (max-width:499px){
 
+    html{
+        font-size: 60%;
+    }
     #wrap{
         min-width: 100%;
     }
@@ -347,10 +329,6 @@ footer{
     nav ul{
         top: 45%;
     }
-    nav ul li a{
-        font-size: 25px;
-        font-weight: 700;
-    }
     main{
         min-height: unset;
     }
@@ -365,27 +343,18 @@ footer{
         right: 7%;
         bottom: 25%;
     }
-    main .container .content .text a:nth-child(1){
-        font-size: 6vw;
-        line-height: 40px;
-    }
-    main .container .content .text a:nth-child(2) {
-        margin-top: 2%;
-        font-size: 4.5vw;
-        line-height: unset;
-    }
     main .container .content .text a:nth-child(n+4){
         width: 70%;
         bottom: 60px;
         display: none;
     }
     main .link{
-        width: 70%;
+        width: 60%;
         bottom: 75px;
     }
     main .link a{
         display: block;
-        width: 6%;
+        width: 7%;
     }
     main .link img{
         margin-bottom: 0;
@@ -399,11 +368,5 @@ footer{
     footer {
         height: 0;
         bottom: 40px;
-    }
-    .footer p {
-        font-size: 2.5vw;
-    }
-    .footer img {
-        width: 9%;
     }
 }
