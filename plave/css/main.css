@@ -171,11 +171,11 @@ main .container .content .text a{
     display: block;
 }
 main .container .content .text a:nth-child(1){
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 main .container .content .text a:nth-child(2){
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 main .container .content .text a:nth-child(4){
     font-size: 1.3rem;
@@ -299,7 +299,7 @@ footer{
 @media only screen and (max-width:499px){
 
     html{
-        font-size: 60%;
+        font-size: 70%;
     }
     #wrap{
         min-width: 100%;
@@ -361,7 +361,6 @@ footer{
     }
     main .container .content .text span{
         width: 50%;
-        margin: 8% 0;
         right: 0;
         position: absolute;
     }
