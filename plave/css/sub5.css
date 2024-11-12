@@ -58,7 +58,7 @@ br[class="off-img"]{
     border-top: 0.5px solid #000000;
     border-bottom: 0.5px solid #000000;
     box-sizing: border-box;
-    padding: 30px 20px 20px 20px;
+    padding: 2vw 1vw 1vw;
     cursor: auto;
     display: none;
 }
@@ -74,7 +74,9 @@ br[class="off-img"]{
     text-decoration-line: underline;
 }
 .container .wrapper .title .content img{
-    width: 100%;
+    width: unset;
+    height: 41vw;
+    max-height: 695px;
     padding-bottom: 20px;
 }
 .container .wrapper .title .content a{
