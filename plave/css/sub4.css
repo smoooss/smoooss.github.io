@@ -19,7 +19,7 @@ main .container .menu ul{
 }
 main .container .menu ul li{
     cursor: pointer;
-    font-size: 17px;
+    font-size: 1.1rem;
     font-weight: 500;
     color: #dddddd;
 }
@@ -48,7 +48,7 @@ main .container .content::-webkit-scrollbar-corner{
 }
 main .container .content{
     position: relative;
-    top: 40px;
+    top: 50px;
 }
 main .container .content .cont{
     display: none;
@@ -60,7 +60,7 @@ main .container .content .cont ul{
 }
 main .container .content .cont ul li{
     width: 32.5%;
-    margin-bottom: 30px;
+    margin-bottom: 2.5rem;
     position: relative;
 }
 main .container .content .cont ul li:nth-child(3n+3){
@@ -86,12 +86,11 @@ main .container .content .cont ul li a img{
     opacity: 0.7;
 }
 main .container .content .cont ul li img{
-    margin-bottom: 10px;
+    margin-bottom: 0.8rem;
     border-radius: 10px;
 }
 main .container .content .cont ul li span{
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 0.9rem;
 }
 main .container .content .cont.c1{
     display: flex;
@@ -124,10 +123,10 @@ footer{
 @media only screen and (max-width:700px){
 
     main .container .menu {
-        padding: 20px 10px;
+        padding: 15px 10px;
     }
-    main .container .menu ul li {
-        font-size: 14px;
+    main .container .content {
+        top: 40px;
     }
     main .container .content .cont ul li {
         width: 100%;
@@ -139,9 +138,6 @@ footer{
 
 @media only screen and (max-width:499px){
     
-    main {
-        height: unset;
-    }
     main .container .menu {
         width: 100%;
         padding: 20px 8% 10px;
@@ -157,8 +153,6 @@ footer{
     main .container .content{
         width: 86%;
         margin-left: 7%;
-        padding-bottom: 30px;
-        top: 40px;
     }
     main .container .content .cont{
         width: 100%;
@@ -180,11 +174,7 @@ footer{
     main .container .content .cont.c5 ul li{
         width: calc(100% - 2px);
     }
-    main .container .content .cont ul li img{
-        margin-bottom: 7px;
-    }
     main .container .content .cont ul li span{
-        font-size: 12px;
-        line-height: 17px;
+        font-size: 1rem;
     }
 }
