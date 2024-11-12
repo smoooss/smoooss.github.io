@@ -62,8 +62,11 @@ main .container ul li:nth-child(67){
 main .container ul li:nth-child(73){
     width: 26%;
 }
+main .container ul li:nth-child(74){
+    width: 34.6%;
+}
 main .container ul li:last-child{
-    margin-right: 0;
+    margin-right: 38.7%;
 }
 
 main .container ul li a{
@@ -75,7 +78,7 @@ main .container ul li a{
     opacity: 0;
 }
 main .container ul li a img{
-    width: 30px;
+    width: 20%;
     position: relative;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -162,8 +165,12 @@ footer {
     main .container ul li:nth-child(49),
     main .container ul li:nth-child(50),
     main .container ul li:nth-child(53),
-    main .container ul li:nth-child(66){
+    main .container ul li:nth-child(66),
+    main .container ul li:nth-child(74){
         width: 100%
+    }
+    main .container ul li:last-child{
+        margin-right: 0;
     }
 }
 
