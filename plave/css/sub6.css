@@ -240,6 +240,9 @@ main .container .calendar .cont.c2 .schedule ul li span{
     main .container .calendar .cont.c2 h2{
         display: none;
     }
+    main .container .calendar .cont.c2 .type ul li {
+        margin: 0 0 3% 3%;
+    }
     main .container .calendar .cont.c2 .scroll {
         padding: 0 0.7rem;
         aspect-ratio: 1.6 / 1;
@@ -318,7 +321,7 @@ main .container .calendar .cont.c2 .schedule ul li span{
     main .container .calendar .cont.c2 ul li span{
         width: 3.4vw;
         font-weight: 700;
-        top: -2px;
+        top: -1px;
     }
     main .container .calendar .cont.c2 .scroll{
         overflow-y: unset;
@@ -328,6 +331,9 @@ main .container .calendar .cont.c2 .schedule ul li span{
     }
     main .container .calendar .cont.c2 .schedule .first{
         display: block;
+    }
+    main .container .calendar .cont.c2 .schedule ul li span{
+        top: 5px;
     }
     main .container .calendar .cont.c2 .schedule ul li{
         line-height: 2.5;
