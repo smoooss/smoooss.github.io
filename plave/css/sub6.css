@@ -267,6 +267,9 @@ main .container .calendar .cont.c2 .schedule ul li span{
 
 @media only screen and (max-width:499px){
 
+    html{
+        font-size: 80%;
+    }
     main{
         min-width: 100%;
         min-height: unset;
