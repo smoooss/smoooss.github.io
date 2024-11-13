@@ -24,7 +24,7 @@ br[class="off-img"]{
     padding: 5px;
     box-sizing: border-box;
     height: 30px;
-    font-size: 16px;
+    font-size: 1.2rem;
     background-color: unset;
 }
 .container .wrapper {
@@ -41,15 +41,14 @@ br[class="off-img"]{
     cursor: pointer;
 }
 .container .wrapper .title > span {
-    display: inline-block;
-    padding: 20px 0 0 20px;
-    font-size: 20px;
+    padding: 1.3rem 0 0 1.3rem;
+    font-size: 1.3rem;
     font-weight: 800;
 }
 .container .wrapper .title > p {
-    margin-top: 5px;
-    padding: 0 0 20px 20px;
-    font-size: 15px;
+    margin-top: 0.3rem;
+    padding: 0 1.3rem 1.3rem 0;
+    font-size: 1rem;
     font-weight: 500;
 }
 .container .wrapper .title .content{
@@ -63,9 +62,8 @@ br[class="off-img"]{
     display: none;
 }
 .container .wrapper .title .content p {
-    margin-bottom: 20px;
-    font-size: 15px;
-    line-height: 25px;
+    margin-bottom: 1.3rem;
+    font-size: 1rem;
 }
 .container .wrapper .title .content .seemore{
     display: inline-block;
@@ -77,10 +75,10 @@ br[class="off-img"]{
     width: unset;
     height: 41vw;
     max-height: 695px;
-    padding-bottom: 20px;
+    padding-bottom: 1.3rem;
 }
 .container .wrapper .title .content a{
-    width: 1058px;
+    width: fit-content;
     display: block;
     position: relative;
 }
@@ -94,7 +92,7 @@ br[class="off-img"]{
     text-align: left;
 }
 .container .wrapper .title .content .guidewrap .guide{
-    margin-top: 20px;
+    margin-top: 1.3rem;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -108,15 +106,13 @@ br[class="off-img"]{
 }
 .container .wrapper .title .content .guidewrap .guide .guidetitle{
     width: 100%;
-    padding: 30px;
-    font-size: 20px;
+    padding: 2rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #ffffff;
 }
 .container .wrapper .title .content .guidewrap .guide p{
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin: 0.5rem 0 2rem 2rem;
 }
 .container .wrapper .title .content .guidewrap .guide span{
     font-weight: 700;
@@ -177,8 +173,8 @@ br[class="off-img"]{
 }
 .pagination {
     width: 200px;
-    margin-top: 40px;
-    font-size: 20px;
+    margin-top: 2.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
@@ -187,16 +183,13 @@ br[class="off-img"]{
     left: 50%;
 }
 .arrow {
-    padding: 10px;
+    padding: 0.5rem;
     cursor: pointer;
 }
 .pagination span:nth-child(2) {
-    padding: 12px;
+    padding: 0.6rem;
 }
-#prev img{
-    width: 13px;
-}
-#next img{
+.arrow img{
     width: 13px;
 }
 
@@ -233,21 +226,12 @@ footer{
     br[class="on"]{
         display: none;
     }
-    .container .wrapper .title > span{
-        padding: 15px 0 0 10px;
-        font-size: 17px;
-        line-height: 22px;
-    }
-    .container .wrapper .title > p{
-        font-size: 13px;
-    }
     .container .wrapper .title .content{
-        padding: 20px 0 0 0;
         text-align: center;
     }
     .container .wrapper .title .content.off p{
         text-align: left;
-        padding-left: 20px;
+        padding-left: 1.3rem;
     }
     main .link {
         bottom: 20px;
@@ -263,7 +247,6 @@ footer{
     }
     #search {
         height: 25px;
-        font-size: 13px;
     }
     main .container {
         padding-top: 100px;
@@ -272,36 +255,18 @@ footer{
         padding: 20px 7% 30px;
         box-sizing: border-box;
     }
-    .container .wrapper .title > span{
-        padding: 15px 0 0 10px;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 18px;
-    }
-    .container .wrapper .title > p{
-        margin-top: 5px;
-        padding: 0 0 15px 10px;
-        font-size: 12px;
-    }
-    .container .wrapper .title .content p{
-        font-size: 13px;
-        line-height: 20px;
-    }
     .container .wrapper .title .content img{
         width: 100%;
         height: unset;
     }
     .container .wrapper .title .content a{
         width: 100%;
-        font-size: 14px;
     }
     .container .wrapper .title .content a img:nth-child(2){
         transform: translate(-50%, -50%);
         top: 50%;
     }
     .container .wrapper .title .content .guidewrap .guide .guidetitle{
-        padding: 20px;
-        font-size: 15px;
         text-align: center;
     }
     .container .wrapper .title .content .guidewrap .guide li{
@@ -316,7 +281,7 @@ footer{
         text-align: center;
     }
     .container .wrapper .title .content .guidewrap .guide p:last-child{
-        margin-bottom: 20px;
+        margin-bottom: 1.3rem;
     }
     .container .wrapper .title .content .guidewrap .guide.g1{
         border: solid 3px #9500ff;
@@ -337,7 +302,7 @@ footer{
         border: solid 3px #ff9100;
     }
     .container .wrapper .title .content.off p{
-        padding-left: 10px;
+        padding-left: 0.5rem;
     }
     .container .wrapper .title .content .video{
         width: 100%;
@@ -346,15 +311,13 @@ footer{
     .pagination {
         margin: 0;
         width: 130px;
-        font-size: 13px;
+        font-size: 1rem;
     }
     .pagination span:nth-child(2) {
-        padding: 6px;
+        padding: 0.5rem;
     }
     .arrow {
         width: 20px;
-        cursor: pointer;
-        padding: 5px;
     }
     #prev img{
         width: 9px;
