@@ -43,6 +43,7 @@ main .container .calendar .cont.c1{
 main .container .calendar .cont.c1 h2{
     margin-bottom: 3rem;
     font-size: 1.6rem;
+    line-height: 1;
 }
 main .container .calendar .cont.c1 .week{
     margin: 1.5rem auto;
@@ -211,42 +212,10 @@ main .container .calendar .cont.c2 .schedule ul li span{
     .arrow {
         width: 11px;
     }
-    main .container .calendar .cont.c1 h2 {
-        margin-bottom: 40px;
-        font-size: 21px;
-    }
-    main .container .calendar .cont.c1 .week ul li {
-        font-size: 13px;
-    }
     main .container .calendar .cont.c1 .date ul li {
         width: 8%;
         margin: 3.1%;
-        font-size: 12px;
     }
-    main .container .calendar .cont.c2 h2 {
-        margin-bottom: 20px;
-        font-size: 21px;
-    }
-    main .container .calendar .cont.c2 .type {
-        margin-bottom: 50px;
-    }
-    main .container .calendar .cont.c2 .type ul li {
-        padding-left: 20px;
-        font-size: 11px;
-    }
-    main .container .calendar .cont.c2 ul li span {
-        width: 15px;
-        font-size: 9px;
-    }
-    main .container .calendar .cont.c2 .schedule ul li {
-        font-size: 12px;
-        line-height: 22px;
-    }
-    main .container .calendar .cont.c2 .schedule ul li:last-child {
-        margin-bottom: 25px;
-    }
-    
-    
 }
 
 @media only screen and (max-width: 950px){
