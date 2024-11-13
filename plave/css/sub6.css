@@ -41,11 +41,11 @@ main .container .calendar .cont.c1{
     text-align: center;
 }
 main .container .calendar .cont.c1 h2{
-    margin-bottom: 50px;
-    font-size: 25px;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
 }
 main .container .calendar .cont.c1 .week{
-    margin: 30px auto;
+    margin: 1.5rem auto;
 }
 main .container .calendar .cont.c1 .week ul{
     display: flex;
@@ -54,7 +54,7 @@ main .container .calendar .cont.c1 .week ul{
 }
 main .container .calendar .cont.c1 .week ul li{
     width: 14%;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 700;
 }
 main .container .calendar .cont.c1 .date ul{
@@ -69,10 +69,11 @@ main .container .calendar .cont.c1 .date ul li{
     width: 7%;
     aspect-ratio: 1 / 1;
     margin: 3.6%;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 600;
     text-align: center;
     align-items: center;
+    line-height: 0;
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -90,12 +91,12 @@ main .container .calendar .cont.c2{
     height: 100%;
 }
 main .container .calendar .cont.c2 h2{
-    margin-bottom: 30px;
-    font-size: 25px;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 main .container .calendar .cont.c2 .type{
-    margin-bottom: 57px;
+    margin-bottom: 10%;
     border-bottom: 1px solid #333333;
 }
 main .container .calendar .cont.c2 .type ul{
@@ -105,8 +106,8 @@ main .container .calendar .cont.c2 .type ul{
 }
 main .container .calendar .cont.c2 .type ul li{
     margin: 0 0 10px 15px;
-    padding-left: 22px;
-    font-size: 12px;
+    padding-left: 1.5rem;
+    font-size: 0.8rem;
     font-weight: 500;
     position: relative;
 }
@@ -115,22 +116,22 @@ main .container .calendar .cont.c2 .type ul li:first-child{
 }
 main .container .calendar .cont.c2 ul li span{
     display: grid;
-    width: 16px;
+    width: 1rem;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     color: #ffffff;
-    font-size: 10px;
+    font-size: 0.6rem;
     font-weight: 700;
     text-align: center;
     align-items: center;
     position: absolute;
-    top: -2px;
+    top: 1px;
     left: 0px;
 }
 main .container .calendar .cont.c2 .scroll{
     width: 100%;
     aspect-ratio: 2.15 / 1;
-    padding-right: 20px;
+    padding-right: 1.5rem;
     box-sizing: border-box;
     overflow-y: scroll;
 }
@@ -153,25 +154,26 @@ main .container .calendar .cont.c2 .scroll::-webkit-scrollbar-corner{
     width: 0;
     height: 0;
 }
+main .container .calendar .cont.c2 .schedule ul li:first-child{
+    margin-bottom: 0.3rem;
+}
 main .container .calendar .cont.c2 .schedule ul li:last-child{
     margin-bottom: 30px;
 }
 main .container .calendar .cont.c2 .schedule .last{
-    margin-bottom: 0;
-    padding-left: 27px;
+    margin-bottom: 0 !important;
 }
 main .container .calendar .cont.c2 .schedule ul li{
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 600;
-    line-height: 27px;
     position: relative;
 }
 main .container .calendar .cont.c2 .schedule ul li span{
     line-height: 0;
-    top: 5px;
+    top: 3px;
 }
 .schedule .have{
-    padding-left: 27px;
+    padding-left: 1.7rem;
 }
 .radio{
     background-color: #0055ff50;
