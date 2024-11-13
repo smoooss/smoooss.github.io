@@ -23,7 +23,7 @@ main .container .wrapper{
     z-index: 1;
 }
 .arrow {
-    width: 13px;
+    width: 5%;
     cursor: pointer;
 }
 main .container .calendar{
@@ -207,13 +207,6 @@ main .container .calendar .cont.c2 .schedule ul li span{
     .pagination {
         top: 2px;
     }
-    .arrow {
-        width: 11px;
-    }
-    main .container .calendar .cont.c1 .date ul li {
-        width: 8%;
-        margin: 3.1%;
-    }
 }
 
 @media only screen and (max-width: 950px){
@@ -229,17 +222,11 @@ main .container .calendar .cont.c2 .schedule ul li span{
         left: unset;
     }
     .pagination {
-        width: 200px;
+        width: 40%;
         left: 50%;
-    }
-    .arrow {
-        width: 10px;
     }
     main .container .calendar {
         display: block;
-    }
-    main .container .calendar .cont.c1 .date ul li {
-        margin: 2.3%;
     }
     main .container .calendar .cont.c1,
     main .container .calendar .cont.c2 {
@@ -293,12 +280,7 @@ main .container .calendar .cont.c2 .schedule ul li span{
         padding: 100px 0;
     }
     .pagination{
-        width: 45%;
         left: 50%;
-    }
-    .pagination .arrow {
-        width: 6%;
-        max-width: 9px;
     }
     main .container .calendar .cont{
         width: 86%;
@@ -312,9 +294,6 @@ main .container .calendar .cont.c2 .schedule ul li span{
     main .container .calendar .cont.c1 .week ul li{
         width: 8%;
         font-weight: 600;
-    }
-    main .container .calendar .cont.c1 .date ul li{
-        margin: 3.5%;
     }
     main .container .calendar .cont.c1 .date ul li:nth-child(7n+1){
         margin-left: 0.5%;
