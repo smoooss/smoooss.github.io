@@ -15,16 +15,14 @@ br[class="off-img"]{
 .search-container {
     border: 1px solid #cccccc;
     position: absolute;
-    height: 30px;
     top: 10px;
     right: 0;
 }
 #search {
     border: none;
-    padding: 5px;
+    padding: 0.2rem;
     box-sizing: border-box;
-    height: 30px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: unset;
 }
 .container .wrapper {
