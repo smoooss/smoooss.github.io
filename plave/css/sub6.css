@@ -92,12 +92,12 @@ main .container .calendar .cont.c2{
     height: 100%;
 }
 main .container .calendar .cont.c2 h2{
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     font-size: 1.6rem;
     text-align: center;
 }
 main .container .calendar .cont.c2 .type{
-    margin-bottom: 10%;
+    margin-bottom: 9%;
     border-bottom: 1px solid #333333;
 }
 main .container .calendar .cont.c2 .type ul{
@@ -240,12 +240,6 @@ main .container .calendar .cont.c2 .schedule ul li span{
     main .container .calendar {
         display: block;
     }
-    main .container .calendar .cont.c1 .week {
-        margin: 25px auto;
-    }
-    main .container .calendar .cont.c1 h2 {
-        margin-bottom: 35px;
-    }
     main .container .calendar .cont.c1 .date ul li {
         margin: 2.3%;
     }
@@ -256,16 +250,13 @@ main .container .calendar .cont.c2 .schedule ul li span{
         margin: 0 auto;
     }
     main .container .calendar .cont.c2{
-        margin-top: 80px;
+        margin-top: 6rem;
     }
     main .container .calendar .cont.c2 h2{
         display: none;
     }
-    main .container .calendar .cont.c2 .type {
-        margin-bottom: 30px;
-    }
     main .container .calendar .cont.c2 .scroll {
-        padding: 0 10px;
+        padding: 0 0.7rem;
         aspect-ratio: 1.6 / 1;
     }
     main .link {
@@ -318,29 +309,14 @@ main .container .calendar .cont.c2 .schedule ul li span{
     }
     main .container .calendar .cont.c1{
         width: 86%;
-        margin: 0 0 50px 0;
-    }
-    main .container .calendar .cont.c1 h2{
-        margin-bottom: 8%;
-        font-size: 5vw;
-        text-align: center;
-    }
-    main .container .calendar .cont.c1 .week{
-        width: 100%;
-        margin: 5% auto;
-        box-sizing: border-box;
+        margin: 0 0 4.5rem 0;
     }
     main .container .calendar .cont.c1 .week ul li{
         width: 8%;
-        font-size: 3vw;
         font-weight: 600;
-    }
-    main .container .calendar .cont.c1 .date{
-        width: 100%;
     }
     main .container .calendar .cont.c1 .date ul li{
         margin: 3.5%;
-        font-size: 3vw;
     }
     main .container .calendar .cont.c1 .date ul li:nth-child(7n+1){
         margin-left: 0.5%;
@@ -359,19 +335,12 @@ main .container .calendar .cont.c2 .schedule ul li span{
     main .container .calendar .cont.c2 .type{
         margin-bottom: 5%;
     }
-    main .container .calendar .cont.c2 .type ul li{
-        margin: 0 0 10px 3%;
-        padding-left: 5%;
-        font-size: 2.4vw;
-    }
     main .container .calendar .cont.c2 ul li span{
         width: 3.4vw;
-        font-size: 2vw;
         font-weight: 700;
         top: -2px;
     }
     main .container .calendar .cont.c2 .scroll{
-        padding: 0 5px;
         overflow-y: unset;
     }
     main .container .calendar .cont.c2 .schedule ul{
@@ -381,16 +350,7 @@ main .container .calendar .cont.c2 .schedule ul li span{
         display: block;
     }
     main .container .calendar .cont.c2 .schedule ul li{
-        font-size: 2.7vw;
-        font-weight: 600;
-        line-height: 6vw;
-    }
-    main .container .calendar .cont.c2 .schedule ul li span{
-        width: 5%;
-        top: 3px;
-    }
-    .schedule .have{
-        padding-left: 8%;
+        line-height: 2.5;
     }
     main .link{
         bottom: 20px;
