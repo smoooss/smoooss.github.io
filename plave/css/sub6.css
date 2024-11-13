@@ -45,7 +45,7 @@ main .container .calendar .cont.c1 h2{
     line-height: 1;
 }
 main .container .calendar .cont.c1 .week{
-    margin: 1.5rem auto;
+    margin: 2rem auto 1.5rem;
 }
 main .container .calendar .cont.c1 .week ul{
     display: flex;
@@ -95,7 +95,7 @@ main .container .calendar .cont.c2 h2{
     text-align: center;
 }
 main .container .calendar .cont.c2 .type{
-    margin: 0.8rem auto 6%;
+    margin: 1rem auto 7%;
     border-bottom: 1px solid #333333;
 }
 main .container .calendar .cont.c2 .type ul{
