@@ -39,13 +39,14 @@ br[class="off-img"]{
     cursor: pointer;
 }
 .container .wrapper .title > span {
+    display: inline-block;
     padding: 1.3rem 0 0 1.3rem;
     font-size: 1.3rem;
     font-weight: 800;
 }
 .container .wrapper .title > p {
     margin-top: 0.3rem;
-    padding: 0 1.3rem 1.3rem 0;
+    padding: 0 0 1.3rem 1.3rem;
     font-size: 1rem;
     font-weight: 500;
 }
@@ -110,7 +111,7 @@ br[class="off-img"]{
     color: #ffffff;
 }
 .container .wrapper .title .content .guidewrap .guide p{
-    margin: 0.5rem 0 2rem 2rem;
+    margin: 2rem 0 2rem 2rem;
 }
 .container .wrapper .title .content .guidewrap .guide span{
     font-weight: 700;
