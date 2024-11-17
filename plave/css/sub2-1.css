@@ -1,26 +1,31 @@
 @charset "UTF-8";
 
+p{
+    word-spacing: 1.5px;
+    letter-spacing: -0.5px;
+}
 br[class="off"]{
     display: none;
 }
 .pagination{
-    margin-top: 30px;
-    font-size: 20px;
+    margin-top: 2rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 .prev img{
-    width: 11px;
-    margin-right: 17px;
+    width: 0.7rem;
+    margin: 0.3rem 1.3rem 0 0;
 }
 main .container .cont{
-    margin-bottom: 150px;
+    margin-bottom: 8rem;
 }
 main .container .cont h3{
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 main .container .cont.c1{
-    margin-top: 30px;
+    margin-top: 2rem;
 }
 main .container .cont.c1 ul{
     display: flex;
@@ -31,34 +36,31 @@ main .container .cont.c1 ul li{
     width: 50%;
 }
 main .container .cont.c1 ul li:nth-child(2){
-    padding: 30px 0 0 40px;
+    padding: 1.8rem 0 0 2.5rem;
     box-sizing: border-box;
 }
 main .container .cont.c1 ul li .name{
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 main .container .cont.c1 ul li h2{
-    margin: 13px 0;
-    font-size: 35px;
+    margin: 0.5rem 0;
+    font-size: 2.2rem;
 }
 main .container .cont.c1 ul li .date{
     display: inline-block;
-    margin-bottom: 20px;
-    font-size: 15px;
+    margin-bottom: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 main .container .cont.c1 ul li p{
-    margin-top: 20px;
-    font-size: 17px;
-    line-height: 27px;
-    word-spacing: 1.5px;
-    letter-spacing: -0.5px;
+    margin-top: 1.3rem;
+    font-size: 1.1rem;
 }
 
 
 main .container .cont.c2 .list {
-    padding: 20px 0;
+    padding: 1.3rem 0;
     border-top: 2px solid #000000;
     border-bottom: 2px solid #000000;
 }
@@ -66,32 +68,28 @@ main .container .cont.c2 .title {
     display: flex;
 }
 main .container .cont.c2 .title span {
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
+    margin: 0.6rem;
+    padding: 0.6rem;
+    font-size: 1.3rem;
     font-weight: 800;
     cursor: pointer;
     display: inline-block;
     position: relative;
 }
 main .container .cont.c2 .title strong {
-    margin-left: 10px;
-    font-size: 15px;
+    margin-left: 0.6rem;
+    font-size: 1rem;
     font-weight: 900;
     color: #DB1D64;
     position: relative;
-    top: -1px;
 }
 main .container .cont.c2 .title .content {
-    margin-left: 30px;
+    margin-left: 2rem;
     display: none;
 }
 main .container .cont.c2 .title .content p {
-    margin: 20px 0;
-    font-size: 17px;
-    line-height: 27px;
-    word-spacing: 1.5px;
-    letter-spacing: -0.5px;
+    margin: 1.3rem 0;
+    font-size: 1.1rem;
 }
 main .container .cont.c3{
     position: relative;
@@ -102,7 +100,6 @@ main .container .cont.c3 ul{
     justify-content: space-between;
 }
 main .container .cont.c3 ul li{
-    min-width: 540px;
     width: 49.5%;
     margin: 0 auto;
 }
@@ -110,11 +107,11 @@ main .container .cont.c3 ul li:nth-child(2) {
     margin-left: 1%;
 }
 main .container .cont .more{
+    font-size: 1rem;
+    font-weight: 500;
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 13px;
-    font-weight: 500;
 }
 main .container .cont.c4{
     margin-bottom: 0;
@@ -141,8 +138,8 @@ main .container .cont.c4 ul li a img{
 }
 main .container .cont.c4 ul li span{
     display: inline-block;
-    margin-top: 15px;
-    font-size: 17px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
 }
 
 
@@ -159,9 +156,6 @@ footer{
 
 @media only screen and (max-width:1400px){
 
-    main .container .cont {
-        margin-bottom: 120px;
-    }
     main .container .cont.c1 ul {
         display: block;
     }
@@ -169,7 +163,7 @@ footer{
         width: 100%;
     }
     main .container .cont.c1 ul li:nth-child(2) {
-        padding: 30px 0 0 10px;
+        padding: 1.8rem 0 0 0.6rem;
     }
     main .link {
         position: relative;
@@ -179,12 +173,9 @@ footer{
         display: block;
     }
     main .container .cont.c2 .title .content {
-        margin: 0 20px;
         border-bottom: 1px solid #b5b5b5;
     }
-    main .container .cont.c2 .title .content p {
-        margin: 10px 0 30px;
-    }
+    
 }
 
 @media only screen and (max-width:950px){
@@ -196,39 +187,12 @@ footer{
 
 @media only screen and (max-width:700px){
 
-    main .container .cont {
-        margin-bottom: 100px;
+    main .container .cont.c3 ul li{
+        width: 100%;
     }
-    main .container .cont.c1 ul li .name {
-        font-size: 17px;
-    }
-    main .container .cont.c1 ul li h2 {
-        font-size: 30px;
-    }
-    main .container .cont.c1 ul li .date {
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
-    main .container .cont.c1 ul li p {
-        margin-top: 15px;
-        font-size: 14px;
-        line-height: 24px;
-    }
-    main .container .cont.c2 .list {
-        padding: 15px 0;
-    }
-    main .container .cont.c2 .title span {
-        font-size: 18px;
-    }
-    main .container .cont.c2 .title strong {
-        font-size: 14px;
-    }
-    main .container .cont.c2 .title .content p {
-        font-size: 14px;
-        line-height: 24px;
-    }
-    main .container .cont.c4 ul li span{
-        font-size: 15px;
+    main .container .cont.c3 ul li:nth-child(2) {
+        margin-top: 5%;
+        margin-left: 0;
     }
     main .link {
         bottom: 20px;
@@ -238,15 +202,8 @@ footer{
 @media only screen and (max-width:499px){
 
     .pagination {
-        margin-top: 10px;
-        font-size: 15px;
-    }
-    .prev{
+        width: 86%;
         margin-left: 7%;
-    }
-    .prev img {
-        width: 8px;
-        margin-right: 10px;
     }
     main .link {
         position: relative;
@@ -255,11 +212,9 @@ footer{
     }
     main .container .cont{
         width: 86%;
-        margin-bottom: 80px;
         padding-left: 7%;
     }
     main .container .cont.c1{
-        margin: 20px 0 30px 0;
         text-align: center;
     }
     main .container .cont.c1 ul,
@@ -270,29 +225,6 @@ footer{
     main .container .cont.c3 ul li{
         min-width: unset;
         width: 100%;
-    }
-    main .container .cont.c1 ul li:nth-child(2){
-        padding: 40px 0;
-    }
-    main .container .cont.c1 ul li .name{
-        font-size: 15px;
-    }
-    main .container .cont.c1 ul li h2{
-        margin: 7px 0;
-        font-size: 22px;
-        line-height: 30px;
-    }
-    main .container .cont.c1 ul li .date{
-        font-size: 13px;
-    }
-    main .container .cont.c1 ul li p{
-        margin-top: 10px;
-        font-size: 12px;
-        line-height: 20px;
-    }
-    main .container .cont h3{
-        margin-bottom: 20px;
-        font-size: 15px;
     }
     main .container .cont.c2 .list {
         border-top: 1px solid #000000;
@@ -305,41 +237,16 @@ footer{
         width: 100%;
         min-width: unset;
         margin: 0;
-        padding: 15px 0;
-        font-size: 15px;
         font-weight: 700;
         text-align: center;
-    }
-    main .container .cont.c2 .title strong {
-        font-size: 12px;
-        font-weight: 800;
     }
     main .container .cont.c2 .title:last-child .content {
         border-bottom: unset;
     }
     main .container .cont.c2 .title .content {
-        margin: 0 10px 10px;
         text-align: center;
-    }
-    main .container .cont.c2 .title .content p {
-        margin: 10px 0 20px 0;
-        font-size: 13px;
-        line-height: 22px;
-    }
-    main .container .cont.c3 ul li:first-child{
-        margin-bottom: 10px;
     }
     main .container .cont.c3 ul li:nth-child(2) {
         margin-left: 0;
-    }
-    main .container .cont.c4 iframe{
-        width: 335px;
-        height: 188px;
-    }
-    main .container .cont.c4{
-        padding-bottom: 30px;
-    }
-    main .container .cont.c4 ul li span{
-        font-size: 13px;
     }
 }
