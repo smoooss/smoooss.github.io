@@ -60,10 +60,10 @@ main .container ul li:nth-child(67){
     width: 23%;
 }
 main .container ul li:nth-child(73){
-    width: 26%;
+    width: 27%;
 }
-main .container ul li:nth-child(74){
-    width: 34.6%;
+main .container ul li:nth-child(n+74){
+    width: 36%;
 }
 main .container ul li:last-child{
     margin-right: 38.7%;
@@ -166,7 +166,7 @@ footer {
     main .container ul li:nth-child(50),
     main .container ul li:nth-child(53),
     main .container ul li:nth-child(66),
-    main .container ul li:nth-child(74){
+    main .container ul li:nth-child(n+74){
         width: 100%
     }
     main .container ul li:last-child{
