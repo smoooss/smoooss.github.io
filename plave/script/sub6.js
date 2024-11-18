@@ -98,11 +98,11 @@ $(document).ready(function(){
 
     if(a>=500 && a<550){
         $('main .link').css({'position':'absolute'})
-        if(c>=950){
+        if(c>=1050){
             $('main .link').css({'position':'fixed','bottom':'90px'})
             $('footer').css({'position':'fixed'})
         }
-        if(c<950){
+        if(c<1050){
             $('main .link').css({'position':'absolute'})
             $('footer').css({'position':'relative'})
         }
@@ -118,11 +118,11 @@ $(document).ready(function(){
         }
         if(a>=500 && a<550){
             $('main .link').css({'position':'absolute'})
-            if(c>=950){
+            if(c>=1050){
                 $('main .link').css({'position':'fixed','bottom':'90px'})
                 $('footer').css({'position':'fixed'})
             }
-            if(c<950){
+            if(c<1050){
                 $('main .link').css({'position':'absolute'})
                 $('footer').css({'position':'relative'})
             }
@@ -153,11 +153,11 @@ $(document).ready(function(){
         }
         if(a>=500 && a<550){
             if(b==false){
-                if(c>=950){
+                if(c>=1050){
                     $('main .link').css({'position':'fixed','bottom':'90px'})
                     $('footer').css({'position':'fixed'})
                 }
-                if(c<950){
+                if(c<1050){
                     $('main .link').css({'position':'absolute'})
                     $('footer').css({'position':'relative'})
                 }
