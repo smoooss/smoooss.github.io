@@ -1234,6 +1234,10 @@
         #video .cont ul li span{
             font-size: 1rem;
         }
+        #video .link {
+            position: relative;
+            bottom: 20px;
+        }
     }  
 /**-------------------------------------**/
 
