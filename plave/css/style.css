@@ -223,7 +223,7 @@ table {
             flex-wrap: wrap;
             justify-content: space-between;
             position: relative;
-            bottom: -15px;
+            bottom: -20px;
         }
         main .link a{
             width: 20px;
@@ -405,6 +405,7 @@ table {
     @media only screen and (max-width:1400px){
 
         #foyer .link{
+            position: fixed;
             bottom: 50px;
         }
     }
@@ -581,7 +582,7 @@ table {
         }
         #profile .link{
             position: absolute;
-            bottom: -15px;
+            bottom: -20px;
         }
     }
     @media only screen and (max-width: 950px){
@@ -632,9 +633,6 @@ table {
         }
         #profile .text dd:nth-child(2){
             margin-left: 10rem;
-        }
-        #profile .link{
-            bottom: 20px;
         }
     }
     @media only screen and (max-width: 499px){
@@ -1158,7 +1156,7 @@ table {
         left: 50%;
         opacity: 0.7;
     }
-    .popup{
+    .modal{
         width: 100vw;
         height: 100vh;
         background-color: rgba(1, 1, 1, 0.5);
@@ -1168,7 +1166,7 @@ table {
         z-index: 2;
         display: none;
     }
-    .popup .popup-cont{
+    .modal .modal-cont{
         width: 80%;
         height: 90vh;
         background-image: url(../img/content31.jpg);
@@ -1180,7 +1178,7 @@ table {
         top: 50%;
         left: 50%;
     }
-    .popup .popup-btn{
+    .modal .modal-btn{
         width: 40px;
         height: 120px;
         position: absolute;
@@ -1188,16 +1186,16 @@ table {
         top: 50%;
         right: 0;
     }
-    .popup .popup-btn ul li{
+    .modal .modal-btn ul li{
         cursor: pointer;
     }
-    .popup .popup-btn img{
+    .modal .modal-btn img{
         padding: 5px;
         box-sizing: border-box;
         background-color: rgba(1, 1, 1, 0.5);
         opacity: 0.5;
     }
-    .popup .popup-btn img:hover{
+    .modal .modal-btn img:hover{
         opacity: 1;
     }
 
@@ -1242,10 +1240,10 @@ table {
         #gallery  .link {
             position: relative;
         }
-        .popup .popup-cont{
+        .modal .modal-cont{
             width: 100%;
         }
-        .popup .popup-btn{
+        .modal .modal-btn{
             width: 120px;
             height: 40px;
             transform: translate(0, 0);
@@ -1253,25 +1251,25 @@ table {
             right: 0;
             z-index: 1;
         }
-        .popup .popup-btn ul{
+        .modal .modal-btn ul{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
-        .popup .popup-btn ul li{
+        .modal .modal-btn ul li{
             width: 40px;
             position: absolute;
         }
-        .popup .popup-btn ul li:nth-child(2){
+        .modal .modal-btn ul li:nth-child(2){
             right: 80px;
         }
-        .popup .popup-btn ul li:nth-child(3){
+        .modal .modal-btn ul li:nth-child(3){
             right: 40px;
         }
-        .popup .popup-btn ul li:first-child{
+        .modal .modal-btn ul li:first-child{
             right: 0;
         }
-        .popup .popup-btn img{
+        .modal .modal-btn img{
             opacity: 1;
         }   
     }
@@ -1441,6 +1439,9 @@ table {
         }
         #video .cont ul li span{
             font-size: 1rem;
+        }
+        #video .link{
+            position: relative;
         }
     }  
 /**-------------------------------------**/
@@ -1994,7 +1995,7 @@ table {
         }
         #schedule .link {
             position: relative;
-            bottom: -15px;
+            bottom: -20px;
         }
         #schedule footer {
             position: relative;
