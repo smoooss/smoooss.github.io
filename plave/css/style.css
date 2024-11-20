@@ -1652,7 +1652,6 @@ table {
         }
         #notice .content.off p{
             text-align: left;
-            padding-left: 1.3rem;
         }
         #notice .link {
             bottom: 20px;
@@ -1723,9 +1722,6 @@ table {
         }
         .guide.g6{
             border: solid 3px #ff9100;
-        }
-        #notice .content.off p{
-            padding-left: 0.5rem;
         }
         #notice .video{
             width: 100%;
