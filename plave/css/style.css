@@ -1534,6 +1534,11 @@ table {
         transform: translate(-50%, 0);
         width: 8%;
     }
+    #notice .content iframe{
+        height: 41vw;
+        max-height: 695px;
+        aspect-ratio: 0.56 / 1;
+    }
     .guidewrap{
         text-align: left;
     }
@@ -1677,7 +1682,8 @@ table {
             padding: 20px 0 30px;
             box-sizing: border-box;
         }
-        #notice .content img{
+        #notice .content img,
+        #notice .content iframe{
             width: 100%;
             height: unset;
         }
