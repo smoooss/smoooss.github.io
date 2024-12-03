@@ -31,7 +31,8 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 
-body {
+html, body {
+    min-height: 700px;
 	touch-action: manipulation; /* 확대나 기타 터치 제스처 방지 */
 }
 article, aside, details, figcaption, figure, 
@@ -113,9 +114,10 @@ table {
     nav{
         width: 100vw;
         height: 100vh;
+        min-height: 700px;
         background-color: #ffffff;
         display: none;
-        position: fixed;
+        position: relative;
         top: 0;
         z-index: 3;
     }
@@ -344,7 +346,7 @@ table {
         height: 100%;
         margin: unset;
         padding: unset;
-        background: url(https://smoooss.github.io/plave/img/main/bg03.jpg) center top/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/img/main/bg04.jpg) center/cover no-repeat;
         position: unset;
         opacity: unset;
         transition: unset;
@@ -440,14 +442,13 @@ table {
             min-height: 700px;
         }
         #foyer .container{
-            background: url(https://smoooss.github.io/plave/img/main/m_bg03.jpg) bottom/cover no-repeat;
+            background: url(https://smoooss.github.io/plave/img/main/m_bg04.jpg) bottom/cover no-repeat;
         }
         #foyer .text{
             width: fit-content;
             transform: translate(0, 0);
-            top: unset;
+            top: 20%;
             right: 7%;
-            bottom: 25%;
         }
         #foyer .text a:nth-child(n+4){
             width: 70%;
