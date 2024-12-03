@@ -411,12 +411,6 @@ table {
             bottom: 50px;
         }
     }
-    @media only screen and (max-width:1024px){
-    
-        #foyer .container{
-            background: url(https://smoooss.github.io/plave/img/main/bg04.jpg) center top/cover no-repeat;
-        }
-    }
     @media only screen and (max-width:700px){
     
         #foyer main{
