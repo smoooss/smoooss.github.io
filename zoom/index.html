@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://s.eventservice.kr/2024/zoom/1119_zoom_experience_day/stamp/resource/css/style.css">
+		<title>Zoom Experience Day Seoul 2024</title>
+	</head>
+
+	<body>
+        <div id="wrap">
+            <main>
+                <section class="container">
+                    <h1>Zoom<br>
+                        Experience Day<br>
+                        Seoul 2024
+                    </h1>
+                    <div class="input">
+                        <p>등록하신 이름과 전화번호를 <br class="off">입력해주시기 바랍니다.</p>
+                        <p>로그인이 안되시는 분들은 등록대로 오시면 안내 드리겠습니다.</p>
+                        <form>
+                            <label for="name">이름</label><input name="name" type="text" id="name" placeholder="이름">
+                            <label for="hphone">전화번호</label><input name="hphone" type="text" id="hphone" placeholder="전화번호" oninput="handleOnInput(this,13)">
+                            <input type="button" id="btn" value="로그인" onclick="openEvent()">
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script>
+            function openEvent() {
+                window.open("https://smoooss.github.io/zoom/event.html", "_blank");
+            }
+        </script>
+	</body>
+</html>
