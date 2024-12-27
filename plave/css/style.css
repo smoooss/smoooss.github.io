@@ -1530,7 +1530,7 @@ table {
         width: 8%;
     }
     #notice .content iframe{
-        height: 41vw;
+        height: 46vw;
         max-height: 695px;
         aspect-ratio: 0.56 / 1;
     }
