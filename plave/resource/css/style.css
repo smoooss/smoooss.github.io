@@ -1457,7 +1457,7 @@ table {
     #notice .search-container {
         border: 1px solid #cccccc;
         position: absolute;
-        top: 10px;
+        top: 13px;
         right: 0;
     }
     #notice .search-container input {
@@ -1467,8 +1467,21 @@ table {
         font-size: 1rem;
         background-color: unset;
     }
+    #notice .menu a {
+        margin: 1.3rem 0.65rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #dddddd;
+        display: inline-block;
+    }
+    #notice .menu .first {
+        font-weight: 700;
+        color: #333333;
+    }
+    #notice .menu a:first-child{
+        margin-left: 1.3rem;
+    }
     #notice .container .wrapper {
-        padding-top: 60px;
         position: relative;
     }
     #notice .titlewrapper {
@@ -1660,11 +1673,10 @@ table {
     @media only screen and (max-width: 499px){
 
         #notice .search-container {
-            height: 25px;
-            top: 20px;
+            top: 30px;
         }
         #notice .search-container input {
-            height: 25px;
+            height: 22px;
         }
         #notice .titlewrapper {
             border-top: 1px solid #000000;
