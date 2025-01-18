@@ -225,7 +225,7 @@ table {
         }
 	nav {
             height: unset;
-            min-height: 730px;
+            min-height: 740px;
     	}
         footer{
             height: 70px;
@@ -300,9 +300,6 @@ table {
         .header .menu{
             width: 25px;
             margin-top: 27px;
-        }
-        nav{
-            min-height: 700px;
         }
         nav .top{
             width: 86%;
