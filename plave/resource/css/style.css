@@ -1044,6 +1044,12 @@ table {
 
 
 /**------------- 3.gallery -------------**/
+    #gallery main{
+	max-width: unset;
+    }
+    #gallery .container {
+	max-width: 1700px;
+    }
     #gallery .container ul{
         display: flex;
         flex-wrap: wrap;
