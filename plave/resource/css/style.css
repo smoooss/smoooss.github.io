@@ -224,8 +224,8 @@ table {
             display: block;
         }
 	nav {
-            height: unset;
-            min-height: 740px;
+            height: calc(100vh - 70px);
+            min-height: 670px;
     	}
         footer{
             height: 70px;
