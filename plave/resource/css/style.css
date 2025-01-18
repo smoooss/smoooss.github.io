@@ -355,7 +355,7 @@ table {
     #foyer main{
         max-width: unset;
         height: 100vh;
-        min-height: 1000px;
+        min-height: 740px;
         margin: unset;
         position: relative;
         z-index: 1;
@@ -428,9 +428,6 @@ table {
     }
     @media only screen and (max-width:499px){
 
-        #foyer main {
-            min-height: 700px;
-        }
         #foyer .container{
             background: url(https://smoooss.github.io/plave/resource/img/main/m_bg04.jpg) bottom/cover no-repeat;
         }
