@@ -111,7 +111,7 @@ table {
 /**   nav   **/
     nav{
         width: 100vw;
-        height: calc(100vh - 70px);
+        height: 100vh;
         min-height: 730px;
         background-color: #ffffff;
         display: none;
@@ -223,6 +223,10 @@ table {
         br[class="off-img"]{
             display: block;
         }
+	nav {
+            height: unset;
+            min-height: 730px;
+    	}
         footer{
             height: 70px;
             position: relative;
