@@ -208,23 +208,22 @@ table {
         position: relative;
     }
     .footer p{
-        padding-top: 0.1rem;
         font-size: 0.8rem;
         font-weight: 500;
     }
     .footer img{
         width: 3rem;
-        margin: 0 0.5rem;
+        height: fit-content;
+        margin: 0.2rem 0.5rem;
+        position: relative;
+        top: 0px;
     }
 
-    @media only screen and (max-width:1920px){
+    @media only screen and (max-width:1900px){
 
         br[class="off-img"]{
             display: block;
         }
-    }
-    @media only screen and (max-width:1400px){
-    
         nav {
             height: unset;
             min-height: 930px;
@@ -251,13 +250,6 @@ table {
         }
         .footer{
             bottom: unset;
-        }
-        .footer p {
-            padding-top: 0.3rem;
-        }
-        .footer img {
-            margin: 0.5rem;
-            height: fit-content;
         }
     }
     @media only screen and (max-width:1024px){
@@ -1673,6 +1665,9 @@ table {
         }
         #notice .pagination {
             margin: 0;
+        }
+        #notice footer{
+            z-index: 3;
         }
     }
 /**-------------------------------------**/
