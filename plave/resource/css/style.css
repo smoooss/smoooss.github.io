@@ -212,8 +212,8 @@ table {
         font-weight: 500;
     }
     .footer img{
+        display: block;
         width: 3rem;
-        height: fit-content;
         margin: 0.2rem 0.5rem;
         position: relative;
         top: 0px;
