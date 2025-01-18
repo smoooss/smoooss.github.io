@@ -35,7 +35,7 @@ $(document).ready(function(){
 
         a=$(window).width();
 
-        if(a<1400){
+        if(a<1900){
             $('#foyer footer').css({'position':'relative'})
         }
         if(a<500){
@@ -53,7 +53,7 @@ $(document).ready(function(){
 
         a=$(window).width();
 
-        if(a<1400){
+        if(a<1900){
             $('#foyer footer').css({'position':'absolute'})
         }
         if(a<700){
@@ -131,7 +131,7 @@ $(document).ready(function(){
             $('footer').css({'bottom':0})
             $('#foyer footer').css({'position':'absolute'})
 
-            if(a<1400){
+            if(a<1900){
                 $('#foyer footer').css({'position':'relative'})
             }
             if(a<500){
@@ -143,7 +143,7 @@ $(document).ready(function(){
 
             $('footer').css({'bottom':0})
             
-            if(a<1400){
+            if(a<1900){
                 $('#foyer footer').css({'position':'absolute'})
                 $('#profile .container .textwrap .text.t'+index).css({'display':'block'}).siblings().css({'display':'none'})
             }
