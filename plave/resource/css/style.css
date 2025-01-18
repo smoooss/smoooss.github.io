@@ -1865,6 +1865,13 @@ table {
         background-color: #06b50050;
     }
 
+    @media only screen and (max-width: 1900px){
+
+        #schedule main {
+            height: calc(100vh - 70px);
+            min-height: 730px;
+        }
+    }
     @media only screen and (max-width: 1400px){
 
         #schedule main {
