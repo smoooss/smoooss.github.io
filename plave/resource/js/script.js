@@ -26,6 +26,7 @@ $(document).ready(function(){
 
     $('.header .menu').click(function(){
 
+        $('html,body').animate({scrollTop:0},0);
         $('header, main').css({'display':'none'})
         $('nav').fadeIn(150).addClass('on')
         $('footer').css({'bottom':0})
