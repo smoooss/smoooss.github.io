@@ -223,8 +223,9 @@ table {
         br[class="off-img"]{
             display: block;
         }
-	nav {
-            min-height: 740px;
+	    nav {
+            height: calc(100vh - 70px);
+            min-height: 670px;
     	}
         footer{
             height: 70px;
@@ -296,6 +297,10 @@ table {
         .header .menu{
             width: 25px;
             margin-top: 27px;
+        }
+        nav {
+            height: 100vh;
+            min-height: unset;
         }
         nav .top{
             width: 86%;
@@ -421,6 +426,9 @@ table {
     }
     @media only screen and (max-width:499px){
 
+        #foyer main {
+            min-height: unset;
+        }
         #foyer .container{
             background: url(https://smoooss.github.io/plave/resource/img/main/m_bg04.jpg) bottom/cover no-repeat;
         }
@@ -1866,15 +1874,11 @@ table {
 
         #schedule main {
             height: calc(100vh - 70px);
-            min-height: 730px;
+            min-height: 930px;
         }
     }
     @media only screen and (max-width: 1400px){
 
-        #schedule main {
-            height: calc(100vh - 70px);
-            min-height: 930px;
-        }
         #schedule .container{
             width: 86%;
         }
