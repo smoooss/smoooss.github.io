@@ -1,4 +1,4 @@
-<? include "../resource/include/header.php";?>
+<? include "../include/header.php";?>
         
                 <main>
                     <section class="container">
@@ -63,4 +63,4 @@
                     </section>
                 </main>
 
-<? include "../resource/include/footer.php";?>
+<? include "../include/footer.php";?>
