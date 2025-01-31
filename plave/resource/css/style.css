@@ -1764,6 +1764,9 @@ table {
         justify-content: center;
         cursor: pointer;
     }
+    #schedule .date .none{
+        cursor: auto;
+    }
     #schedule .date .have{
         border-radius: 50%;
         background-color: #333333;
