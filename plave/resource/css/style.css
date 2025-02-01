@@ -195,11 +195,11 @@ table {
         position: relative;
         z-index: 1;
     }
-    footer .link .bl{
-        display: none;
-    }
     footer .link img{
         margin-bottom: 20px;
+    }
+    footer .link .bl{
+        display: none;
     }
     .footer{
         height: fit-content;
@@ -349,7 +349,7 @@ table {
 
 
 
-/**-------------- 0.foyer ------------**/
+/**-------------- 0.main ------------**/
     #main header{
         background-color: unset;
     }
@@ -421,7 +421,7 @@ table {
         color: #ffffff;
     }
 
-    @media only screen and (max-width:1400px){
+    @media only screen and (max-width:1900px){
 
         #main footer{
             position: absolute;
@@ -1052,9 +1052,6 @@ table {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
-    #gallery .container ul h2{
-        width: 100%;
     }
     #gallery .container ul li{
         width: 19.6%;
