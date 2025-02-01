@@ -363,7 +363,7 @@ table {
         height: 100%;
         margin: unset;
         padding: unset;
-        background: url(https://smoooss.github.io/plave/resource/img/main/bg05.jpg) center/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/resource/img/main/bg04.jpg) center/cover no-repeat;
         position: unset;
         opacity: unset;
         transition: unset;
@@ -430,7 +430,7 @@ table {
             min-height: unset;
         }
         #main .container{
-            background: url(https://smoooss.github.io/plave/resource/img/main/m_bg05.jpg) bottom/cover no-repeat;
+            background: url(https://smoooss.github.io/plave/resource/img/main/m_bg04.jpg) bottom/cover no-repeat;
         }
         #main .text{
             width: fit-content;
@@ -520,19 +520,19 @@ table {
     }
     #profile .front ul li:nth-child(1){
         display: block;
-        background: url(https://smoooss.github.io/plave/resource/img/gallery/image76.jpg) center/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/resource/img/gallery/image54.jpg) center/cover no-repeat;
     }
     #profile .front ul li:nth-child(2){
-        background: url(https://smoooss.github.io/plave/resource/img/gallery/image77.jpg) center/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/resource/img/gallery/image55.jpg) center/cover no-repeat;
     }
     #profile .front ul li:nth-child(3){
-        background: url(https://smoooss.github.io/plave/resource/img/gallery/image78.jpg) center/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/resource/img/gallery/image56.jpg) center/cover no-repeat;
     }
     #profile .front ul li:nth-child(4){
-        background: url(https://smoooss.github.io/plave/resource/img/gallery/image79.jpg) center/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/resource/img/gallery/image57.jpg) center/cover no-repeat;
     }
     #profile .front ul li:nth-child(5){
-        background: url(https://smoooss.github.io/plave/resource/img/gallery/image80.jpg) center/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/resource/img/gallery/image58.jpg) center/cover no-repeat;
     }
     #profile .textwrap{
         position: absolute;
