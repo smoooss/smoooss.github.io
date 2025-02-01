@@ -37,7 +37,7 @@ $(document).ready(function(){
         a=$(window).width();
 
         if(a<1900){
-            $('#foyer footer').css({'position':'relative'})
+            $('#main footer').css({'position':'relative'})
         }
         if(a<500){
             $('footer').css({'position':'absolute','bottom':'10px'})
@@ -50,20 +50,20 @@ $(document).ready(function(){
         $('nav').fadeOut(100).removeClass('on')
         $('footer .link .bl').css({'display':'none'})
         $('footer .link .wh').css({'display':'block'})
-        $('#foyer .footer p').css({'color':'#ffffff'})
+        $('#main .footer p').css({'color':'#ffffff'})
 
         a=$(window).width();
 
         if(a<1900){
-            $('#foyer footer').css({'position':'absolute'})
+            $('#main footer').css({'position':'absolute'})
         }
         if(a<700){
             $('footer').css({'bottom':'10px'})
-            $('#foyer footer').css({'position':'absolute'})
+            $('#main footer').css({'position':'absolute'})
         }
         if(a<500){
             $('footer').css({'position':'relative'})
-            $('#foyer footer').css({'position':'absolute'})
+            $('#main footer').css({'position':'absolute'})
         }
     });
 
@@ -130,10 +130,10 @@ $(document).ready(function(){
         if(b==true){
 
             $('footer').css({'bottom':0})
-            $('#foyer footer').css({'position':'absolute'})
+            $('#main footer').css({'position':'absolute'})
 
             if(a<1900){
-                $('#foyer footer').css({'position':'relative'})
+                $('#main footer').css({'position':'relative'})
             }
             if(a<500){
                 $('footer').css({'position':'absolute'})
@@ -145,7 +145,7 @@ $(document).ready(function(){
             $('footer').css({'bottom':0})
             
             if(a<1900){
-                $('#foyer footer').css({'position':'absolute'})
+                $('#main footer').css({'position':'absolute'})
                 $('#profile .container .textwrap .text.t'+index).css({'display':'block'}).siblings().css({'display':'none'})
             }
             if(a<950){
@@ -153,11 +153,11 @@ $(document).ready(function(){
             }
             if(a<700){
                 $('footer').css({'bottom':'10px'})
-                $('#foyer footer').css({'position':'absolute'})
+                $('#main footer').css({'position':'absolute'})
             }
             if(a<500){
                 $('footer').css({'position':'relative'})
-                $('#foyer footer').css({'position':'absolute'})
+                $('#main footer').css({'position':'absolute'})
             }
         }
         
