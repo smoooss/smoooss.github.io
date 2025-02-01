@@ -195,6 +195,9 @@ table {
         position: relative;
         z-index: 1;
     }
+    footer .link .bl{
+        display: none;
+    }
     footer .link img{
         margin-bottom: 20px;
     }
