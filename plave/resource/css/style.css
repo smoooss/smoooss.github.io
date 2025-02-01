@@ -1082,13 +1082,17 @@ table {
         width: 19.6%;
     }
     #gallery .container ul li:nth-child(48),
-    #gallery .container ul li:nth-child(49){
-        width: 37%;
+    #gallery .container ul li:nth-child(49),
+    #gallery .container ul li:nth-child(86),
+    #gallery .container ul li:nth-child(87){
+        width: 37% !important;
     }
-    #gallery .container ul li:nth-child(50){
-        width: 24.7%;
+    #gallery .container ul li:nth-child(50),
+    #gallery .container ul li:nth-child(88){
+        width: 24.7% !important;
     }
-    #gallery .container ul li:nth-child(n+51){
+    #gallery .container ul li:nth-child(51),
+    #gallery .container ul li:nth-child(52){
         width: 23.3%;
     }
     #gallery .container ul li:nth-child(53){
@@ -1110,7 +1114,8 @@ table {
     #gallery .container ul li:nth-child(73){
         width: 27%;
     }
-    #gallery .container ul li:nth-child(n+74){
+    #gallery .container ul li:nth-child(74),
+    #gallery .container ul li:nth-child(75){
         width: 36%;
     }
     #gallery .container ul li a{
