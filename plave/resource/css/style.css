@@ -347,10 +347,10 @@ table {
 
 
 /**-------------- 0.foyer ------------**/
-    #foyer header{
+    #main header{
         background-color: unset;
     }
-    #foyer main{
+    #main main{
         max-width: unset;
         height: 100vh;
         min-height: 740px;
@@ -358,22 +358,22 @@ table {
         position: relative;
         z-index: 1;
     }
-    #foyer .container{
+    #main .container{
         width: 100%;
         height: 100%;
         margin: unset;
         padding: unset;
-        background: url(https://smoooss.github.io/plave/resource/img/main/bg04.jpg) center/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/resource/img/main/bg05.jpg) center/cover no-repeat;
         position: unset;
         opacity: unset;
         transition: unset;
     }
-    #foyer .content{
+    #main .content{
         width: 100%;
         height: 100%;
         background-color: rgba(1, 1, 1, 0.2);
     }
-    #foyer .text{
+    #main .text{
         position: absolute;
         transform: translate(0, -50%);
         top: 50%;
@@ -381,69 +381,69 @@ table {
         opacity: 0;
         transition: 0.5s;
     }
-    #foyer .text a{
+    #main .text a{
         width: 100%;
         color: #ffffff;
         font-weight: 500;
         text-align: right;
         display: block;
     }
-    #foyer .text a:nth-child(1){
+    #main .text a:nth-child(1){
         font-size: 2.5rem;
         font-weight: 700;
     }
-    #foyer .text a:nth-child(2){
+    #main .text a:nth-child(2){
         font-size: 2rem;
     }
-    #foyer .text a:nth-child(4){
+    #main .text a:nth-child(4){
         font-size: 1.3rem;
         font-weight: 700;
     }
-    #foyer .text a:nth-child(5){
+    #main .text a:nth-child(5){
         margin-top: 0.5rem;
         font-size: 1rem;
         font-weight: 400;
     }
-    #foyer .text span{
+    #main .text span{
         width: 50%;
         height: 2px;
         margin: 2.5rem 0 2.5rem 50%;
         background-color: #ffffff;
         display: block;
     }
-    #foyer .link .bl{
+    #main .link .bl{
         display: none;
     }
-    #foyer .footer p{
+    #main .footer p{
         color: #ffffff;
     }
 
     @media only screen and (max-width:1400px){
 
-        #foyer footer{
+        #main footer{
             position: absolute;
         }
     }
     @media only screen and (max-width:499px){
 
-        #foyer main {
+        #main main {
             min-height: unset;
         }
-        #foyer .container{
-            background: url(https://smoooss.github.io/plave/resource/img/main/m_bg04.jpg) bottom/cover no-repeat;
+        #main .container{
+            background: url(https://smoooss.github.io/plave/resource/img/main/m_bg05.jpg) bottom/cover no-repeat;
         }
-        #foyer .text{
+        #main .text{
             width: fit-content;
             transform: translate(0, 0);
             top: 20%;
             right: 7%;
         }
-        #foyer .text a:nth-child(n+4){
+        #main .text a:nth-child(n+4){
             width: 70%;
             bottom: 60px;
             display: none;
         }
-        #foyer .text span{
+        #main .text span{
             width: 50%;
             right: 0;
             position: absolute;
@@ -461,7 +461,7 @@ table {
 
 
 /**-------------- 1.profile ------------**/
-    #profile main{
+    #profile{
         height: 100vh;
         min-height: 1000px;
         position: relative;
@@ -520,19 +520,19 @@ table {
     }
     #profile .front ul li:nth-child(1){
         display: block;
-        background: url(https://smoooss.github.io/plave/resource/img/gallery/image54.jpg) center/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/resource/img/gallery/image76.jpg) center/cover no-repeat;
     }
     #profile .front ul li:nth-child(2){
-        background: url(https://smoooss.github.io/plave/resource/img/gallery/image55.jpg) center/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/resource/img/gallery/image77.jpg) center/cover no-repeat;
     }
     #profile .front ul li:nth-child(3){
-        background: url(https://smoooss.github.io/plave/resource/img/gallery/image56.jpg) center/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/resource/img/gallery/image78.jpg) center/cover no-repeat;
     }
     #profile .front ul li:nth-child(4){
-        background: url(https://smoooss.github.io/plave/resource/img/gallery/image57.jpg) center/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/resource/img/gallery/image79.jpg) center/cover no-repeat;
     }
     #profile .front ul li:nth-child(5){
-        background: url(https://smoooss.github.io/plave/resource/img/gallery/image58.jpg) center/cover no-repeat;
+        background: url(https://smoooss.github.io/plave/resource/img/gallery/image80.jpg) center/cover no-repeat;
     }
     #profile .textwrap{
         position: absolute;
@@ -556,7 +556,7 @@ table {
 
     @media only screen and (max-width: 1900px){
 
-        #profile main {
+        #profile {
             height: calc(100vh - 70px);
             min-height: 930px;
         }
@@ -614,14 +614,14 @@ table {
 
     @media only screen and (max-width: 700px){
         
-        #profile main {
+        #profile {
             height: calc(100vh - 80px);
         }
     }
     
     @media only screen and (max-width: 499px){
     
-        #profile main{
+        #profile{
             height: unset;
             min-height: unset;
             padding: 80px 0 120px;
@@ -1039,7 +1039,7 @@ table {
 
 
 /**------------- 3.gallery -------------**/
-    #gallery main{
+    #gallery{
 	max-width: unset;
     }
     #gallery .container {
@@ -1049,6 +1049,9 @@ table {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    #gallery .container ul h2{
+        width: 100%;
     }
     #gallery .container ul li{
         width: 19.6%;
@@ -1682,7 +1685,7 @@ table {
 
 
 /**------------- 6.schedule ------------**/
-    #schedule main{
+    #schedule{
         height: 100vh;
         min-height: 1000px;
         position: relative;
@@ -1875,7 +1878,7 @@ table {
 
     @media only screen and (max-width: 1900px){
 
-        #schedule main {
+        #schedule {
             height: calc(100vh - 70px);
             min-height: 930px;
         }
@@ -1888,7 +1891,7 @@ table {
     }
     @media only screen and (max-width: 950px){
 
-        #schedule main{
+        #schedule{
             min-height: 1100px;
             position: relative;
         }
@@ -1926,10 +1929,7 @@ table {
     }
     @media only screen and (max-width: 499px){
 
-        #schedule{
-            min-width: 100%;
-        }
-        #schedule main {
+        #schedule {
             min-height: 670px;
         }
         #schedule .container{
