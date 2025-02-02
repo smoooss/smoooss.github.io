@@ -1801,6 +1801,9 @@ table {
         top: 0.15rem;
         left: 0px;
     }
+    #schedule .cont.c2 .type ul li span{
+        top: 0.1rem;
+    }
     #schedule .type{
         margin: 1.3rem auto 8%;
         border-bottom: 1px solid #333333;
@@ -1819,9 +1822,6 @@ table {
     }
     #schedule .type ul li:first-child{
         margin-left: 0;
-    }
-    #schedule .type ul li span{
-        top: 0.1rem;
     }
     #schedule .scroll{
         width: 100%;
