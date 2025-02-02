@@ -723,17 +723,17 @@ table {
     #discography .container ul{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
     #discography .container ul li{
         width: 32%;
+        margin-right: 2%;
         position: relative;
     }
     #discography .container ul li:nth-child(n+4){
         margin-top: 3rem;
     }
-    #discography .container ul li:last-child{
-        margin-right: 34%;
+    #discography .container ul li:nth-child(3n+3){
+        margin-right: 0;
     }
     #discography .container ul li img{
         margin-bottom: 0.8rem;
