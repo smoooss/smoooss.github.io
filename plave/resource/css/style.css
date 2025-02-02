@@ -1787,6 +1787,20 @@ table {
         width: 55%;
         height: 100%;
     }
+    #schedule .cont.c2 ul li span{
+        display: grid;
+        width: 1rem;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        color: #ffffff;
+        font-size: 0.6rem;
+        font-weight: 700;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        top: 0.15rem;
+        left: 0px;
+    }
     #schedule .type{
         margin: 1.3rem auto 8%;
         border-bottom: 1px solid #333333;
@@ -1806,19 +1820,8 @@ table {
     #schedule .type ul li:first-child{
         margin-left: 0;
     }
-    #schedule .cont.c2 ul li span{
-        display: grid;
-        width: 1rem;
-        aspect-ratio: 1 / 1;
-        border-radius: 50%;
-        color: #ffffff;
-        font-size: 0.6rem;
-        font-weight: 700;
-        text-align: center;
-        align-items: center;
-        position: absolute;
-        top: 1px;
-        left: 0px;
+    #schedule .type ul li span{
+        top: 0.1rem;
     }
     #schedule .scroll{
         width: 100%;
