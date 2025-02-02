@@ -1063,18 +1063,18 @@ table {
         width: 33%;
     }
     #gallery .container ul li:nth-child(11),
-    #gallery .container ul li:nth-child(14){
-        width: 28.6%;
-    }
-    #gallery .container ul li:nth-child(12),
     #gallery .container ul li:nth-child(13){
         width: 20.5%;
     }
+    #gallery .container ul li:nth-child(12),
+    #gallery .container ul li:nth-child(14){
+        width: 28.6%;
+    }
     #gallery .container ul li:nth-child(33),
-    #gallery .container ul li:nth-child(34){
+    #gallery .container ul li:nth-child(35){
         width: 30.8%;
     }
-    #gallery .container ul li:nth-child(35){
+    #gallery .container ul li:nth-child(34){
         width: 37.2%;
     }
     #gallery .container ul li:nth-child(n+36){
