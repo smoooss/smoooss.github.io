@@ -1063,59 +1063,63 @@ table {
         width: 33%;
     }
     #gallery .container ul li:nth-child(11),
-    #gallery .container ul li:nth-child(13){
-        width: 20.5%;
+    #gallery .container ul li:nth-child(14){
+        width: 22%;
     }
     #gallery .container ul li:nth-child(12),
-    #gallery .container ul li:nth-child(14){
-        width: 28.6%;
+    #gallery .container ul li:nth-child(15){
+        width: 46.1%;
     }
-    #gallery .container ul li:nth-child(33),
-    #gallery .container ul li:nth-child(35){
-        width: 30.8%;
-    }
-    #gallery .container ul li:nth-child(34){
-        width: 37.2%;
-    }
-    #gallery .container ul li:nth-child(n+36){
-        width: 19.6%;
-    }
-    #gallery .container ul li:nth-child(46),
-    #gallery .container ul li:nth-child(47){
-        width: 37.2%;
-    }
-    #gallery .container ul li:nth-child(48){
-        width: 24.8%;
-    }
-    #gallery .container ul li:nth-child(49),
-    #gallery .container ul li:nth-child(50){
-        width: 23.3%;
-    }
-    #gallery .container ul li:nth-child(51){
-        width: 52.2%;
-    }
-    #gallery .container ul li:nth-child(62),
-    #gallery .container ul li:nth-child(63){
-        width: 22.5%;
-    }
-    #gallery .container ul li:nth-child(64){
+    #gallery .container ul li:nth-child(13),
+    #gallery .container ul li:nth-child(16){
         width: 30.7%;
     }
+    #gallery .container ul li:nth-child(35),
+    #gallery .container ul li:nth-child(37){
+        width: 29.7%;
+    }
+    #gallery .container ul li:nth-child(36){
+        width: 39.6%;
+    }
+    #gallery .container ul li:nth-child(n+38){
+        width: 19.6%;
+    }
+    #gallery .container ul li:nth-child(48),
+    #gallery .container ul li:nth-child(49){
+        width: 37.2%;
+    }
+    #gallery .container ul li:nth-child(50){
+        width: 24.8%;
+    }
+    #gallery .container ul li:nth-child(51),
+    #gallery .container ul li:nth-child(52){
+        width: 23.3%;
+    }
+    #gallery .container ul li:nth-child(53){
+        width: 52.2%;
+    }
+    #gallery .container ul li:nth-child(64),
     #gallery .container ul li:nth-child(65){
+        width: 22.5%;
+    }
+    #gallery .container ul li:nth-child(66){
+        width: 30.7%;
+    }
+    #gallery .container ul li:nth-child(67){
         width: 23%;
     }
-    #gallery .container ul li:nth-child(71){
+    #gallery .container ul li:nth-child(73){
         width: 27%;
     }
-    #gallery .container ul li:nth-child(72),
-    #gallery .container ul li:nth-child(73){
+    #gallery .container ul li:nth-child(74),
+    #gallery .container ul li:nth-child(75){
         width: 36%;
     }
-    #gallery .container ul li:nth-child(84),
-    #gallery .container ul li:nth-child(85){
+    #gallery .container ul li:nth-child(86),
+    #gallery .container ul li:nth-child(87){
         width: 37.4%;
     }
-    #gallery .container ul li:nth-child(86){
+    #gallery .container ul li:nth-child(88){
         width: 24.6%;
     }
     #gallery .container ul li a{
