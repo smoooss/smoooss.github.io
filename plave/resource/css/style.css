@@ -1798,7 +1798,7 @@ table {
         text-align: center;
         align-items: center;
         position: absolute;
-        top: 0.15rem;
+        top: 0.2rem;
         left: 0px;
     }
     #schedule .cont.c2 .type ul li span{
@@ -1868,16 +1868,16 @@ table {
     #schedule .schedule .have{
         padding-left: 1.7rem;
     }
-    #schedule .radio{
+    #schedule .live{
         background-color: #0055ff50;
     }
-    #schedule .live{
+    #schedule .content{
         background-color: #9500ff50;
     }
-    #schedule .content{
+    #schedule .show{
         background-color: #ff00cc50;
     }
-    #schedule .show{
+    #schedule .releases{
         background-color: #ff000050;
     }
     #schedule .anniversary{
@@ -1975,6 +1975,9 @@ table {
         #schedule .cont.c2 ul li span{
             width: 3.4vw;
             font-weight: 700;
+            top: 0.1rem;
+        }
+        #schedule .cont.c2 .type ul li span{
             top: 0;
         }
         #schedule .scroll{
