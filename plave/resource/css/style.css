@@ -1501,7 +1501,7 @@ table {
     .guide li:last-child{
         width: 33%;
     }
-    .guidetitle{
+    .guide .guidetitle{
         width: 100%;
         padding: 2rem;
         font-size: 1.3rem;
