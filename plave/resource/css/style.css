@@ -1043,9 +1043,6 @@ table {
 
 /**------------- 3.gallery -------------**/
 
-    #gallery .container {
-	max-width: 1700px;
-    }
     #gallery .container ul{
         display: flex;
         flex-wrap: wrap;
