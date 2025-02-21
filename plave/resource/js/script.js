@@ -12,9 +12,9 @@ $(document).ready(function(){
 
     if(a>=500){
         $('main .container ul li').mouseover(function(){
-            $(this).find('a').css({'opacity':'1'})
+            $(this).find('.background').css({'opacity':'1'})
         }).mouseout(function(){
-            $(this).find('a').css({'opacity':'0'})
+            $(this).find('.background').css({'opacity':'0'})
         })
     }else{
         $('main .container .content .text').css({'opacity':'1'})
