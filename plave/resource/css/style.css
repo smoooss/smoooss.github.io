@@ -1433,7 +1433,7 @@ table {
     }
     #notice .title > span {
         display: inline-block;
-        padding: 1.3rem 0 0 1.3rem;
+        padding: 1.3rem 1.3rem 0;
         font-size: 1.3rem;
         font-weight: 800;
     }
