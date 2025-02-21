@@ -1042,9 +1042,7 @@ table {
 
 
 /**------------- 3.gallery -------------**/
-    #gallery{
-	max-width: unset;
-    }
+
     #gallery .container {
 	max-width: 1700px;
     }
