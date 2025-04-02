@@ -1868,6 +1868,9 @@ table {
     #schedule .schedule .have{
         padding-left: 1.7rem;
     }
+    #schedule .schedule .have a:hover{
+	text-decoration: underline;
+    }
     #schedule .live{
         background-color: #0055ff50;
     }
