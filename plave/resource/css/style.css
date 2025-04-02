@@ -1870,6 +1870,7 @@ table {
     }
     #schedule .schedule .have a:hover{
 	text-decoration: underline;
+	text-underline-position: under;
     }
     #schedule .live{
         background-color: #0055ff50;
