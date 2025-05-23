@@ -187,6 +187,7 @@ table {
         transform: translate(-50%, 0);
         left: 50%;
         bottom: 0;
+        z-index: 1;
     }
     footer .link{
         width: 20px;
@@ -366,7 +367,7 @@ table {
         height: 100%;
         margin: unset;
         padding: unset;
-        background: url(https://smoooss.github.io/plave/resource/img/main/bg05.jpg) center/cover no-repeat;
+        background: url(../img/main/bg06.jpg) center top 20%/cover no-repeat;
         position: unset;
         opacity: unset;
         transition: unset;
@@ -433,12 +434,12 @@ table {
             min-height: unset;
         }
         #main .container{
-            background: url(https://smoooss.github.io/plave/resource/img/main/m_bg05.jpg) bottom/cover no-repeat;
+            background: url(../img/main/m_bg06.jpg) bottom/cover no-repeat;
         }
         #main .text{
             width: fit-content;
             transform: translate(0, 0);
-            top: 20%;
+            top: 18%;
             right: 7%;
         }
         #main .text a:nth-child(n+4){
@@ -1137,7 +1138,7 @@ table {
         width: 100vw;
         height: 100vh;
         background-color: rgba(1, 1, 1, 0.5);
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         z-index: 2;
@@ -1869,8 +1870,8 @@ table {
         padding-left: 1.7rem;
     }
     #schedule .schedule .have a:hover{
-	text-decoration: underline;
-	text-underline-position: under;
+        text-decoration-line: underline;
+        text-underline-position: under;
     }
     #schedule .live{
         background-color: #0055ff50;
