@@ -169,7 +169,7 @@ table {
         max-width: 1700px;
         margin: 0 auto;
         position: relative;
-        z-index: 1;
+        z-index: 2;
     }
     main .container{
         width: 86%;
