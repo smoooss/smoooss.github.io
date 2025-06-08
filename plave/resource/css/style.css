@@ -1118,6 +1118,14 @@ table {
     #gallery .container ul li:nth-child(88){
         width: 24.6%;
     }
+    #gallery .container ul li:nth-child(99),
+    #gallery .container ul li:nth-child(100){
+        width: 22%;
+    }
+    #gallery .container ul li:nth-child(101),
+    #gallery .container ul li:nth-child(102){
+        width: 27.5%;
+    }
     #gallery .container ul li a{
         display: block;
         width: 100%;
