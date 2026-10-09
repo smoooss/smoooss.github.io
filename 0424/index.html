@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet" >
@@ -251,30 +251,16 @@
                 <div class="inner">
                     <div class="article-title">
                         <h2 class="reveal">LOCATION</h2>
-                        <p class="reveal">트라디노이</p>
-                        <p class="address reveal">서울 강남구 도곡로99길 16</p>
+                        <p class="address flex-row reveal">트라디노이 | 서울 강남구 도곡로99길 16
+                            <svg width="16" height="16" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 32C4.23858 32 2 29.7614 2 27V7C2 4.23858 4.23858 2 7 2H27C29.7614 2 32 4.23858 32 7" stroke-width="3" stroke-linecap="round" stroke="currentColor"/>
+                                <rect x="17" y="17" width="30" height="30" rx="5" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </p>
                     </div>
                     <div class="map">
-                        <div id="kakao-map"></div>
+                        <div id="kakaoMap"></div>
                     </div>
-
-                    <div class="map-buttons">
-
-                        <a href="#">
-                            네이버지도
-                        </a>
-
-                        <a href="#">
-                            카카오맵
-                        </a>
-
-                        <a href="#">
-                            길찾기
-                        </a>
-
-                    </div>
-
-
 
                     <!-- 교통 안내 -->
 
@@ -685,43 +671,63 @@
 
     <script src="resource/js/script.js"></script>
 
-    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_JAVASCRIPT_KEY&libraries=services"></script>
+    <!-- 카카오 지도 API -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a0c4ee614885ee594fccef1bb3529b9d&libraries=services"></script>
+    <script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.4985, 127.0505),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+
     <script>
     document.addEventListener('DOMContentLoaded', function () {
+        const container = document.getElementById('kakaoMap');
 
-        const container = document.getElementById('kakao-map');
+        if (!container) {
+            console.error('오류: kakaoMap 요소를 찾을 수 없습니다.');
+            return;
+        }
 
-        if (!container || !window.kakao) return;
+        if (!window.kakao || !window.kakao.maps) {
+            console.error('오류: 카카오 지도 API가 로드되지 않았습니다.');
+            return;
+        }
 
+        // 우선 지도부터 생성
         const map = new kakao.maps.Map(container, {
             center: new kakao.maps.LatLng(37.4985, 127.0505),
-            level: 4
+            level: 6
         });
 
+        console.log('카카오 지도 생성 완료');
+
+        // 주소 검색
         const geocoder = new kakao.maps.services.Geocoder();
 
-        const address = '서울 강남구 도곡로99길 16';
-
-        geocoder.addressSearch(address, function (result, status) {
-
-            if (status === kakao.maps.services.Status.OK) {
-
+        geocoder.addressSearch(
+            '서울 강남구 도곡로99길 16',
+            function (result, status) {
+                console.log('주소 검색 결과:', status, result);
+                if (status !== kakao.maps.services.Status.OK) {
+                    console.error('주소 검색 실패:', status);
+                    return;
+                }
                 const position = new kakao.maps.LatLng(
                     result[0].y,
                     result[0].x
                 );
-
                 map.setCenter(position);
                 const marker = new kakao.maps.Marker({
                     map: map,
                     position: position
                 });
-                const infowindow = new kakao.maps.InfoWindow({
-                    content: '<div style="padding:8px 12px;white-space:nowrap;">트라디노이</div>'
-                });
-                infowindow.open(map, marker);
+                infoWindow.open(map, marker);
             }
-        });
+        );
     });
     </script>
 </body>
