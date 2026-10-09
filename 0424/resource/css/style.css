@@ -10,6 +10,7 @@ body.modal-open { overflow: hidden; }
 button, input, textarea { font: inherit; }
 button { border: 0; background: none; cursor: pointer; }
 a { color: inherit; text-decoration: none; }
+ul, li, ol { list-style: none; }
 :root {
     /* 브랜드 컬러 및 톤앤매너 */
     --color-primary: #C99CB2;
@@ -31,7 +32,7 @@ a { color: inherit; text-decoration: none; }
    PAGE
 ===================================================== */
 .wedding { width: 100%; max-width: 390px; margin: 0 auto; background: var(--color-white); box-shadow: 0 0 50px rgba(0,0,0,.05); overflow: hidden; position: relative; }
-.inner { width: 100%; margin: 0 auto; text-align: center; }
+.inner { width: 100%; margin: 0 auto; text-align: center; gap: 3rem; }
 article { position: relative; padding: 9rem 2rem; }
 .flex-column { display: flex; flex-direction: column; }
 .flex-row { display: flex; flex-wrap: wrap; }
@@ -54,41 +55,6 @@ article { position: relative; padding: 9rem 2rem; }
     to { transform: rotate(360deg); }
 }
 
-
-
-/* =====================================================
-   TYPOGRAPHY
-===================================================== */
-.small-title {
-    margin-bottom: 1.3rem;
-
-    font-size: 1.4rem;
-
-    color: #9b9492;
-}
-
-
-.serif-title {
-
-    font-size: 2rem;
-
-    font-weight: 300;
-
-    line-height: 1.7;
-
-    color: #696261;
-}
-
-
-.section-desc {
-    margin-top: 1rem;
-
-    font-size: .95rem;
-
-    line-height: 1.8;
-
-    color: #aaa3a0;
-}
 
 
 
@@ -139,7 +105,6 @@ article { position: relative; padding: 9rem 2rem; }
     to { stroke-dashoffset: 0; }
 }
 .invitation { display: flex; align-items: center; background: var(--color-white); }
-.invitation .inner { gap: 3rem; }
 .invitation-text { color: var(--color-gray500); font-size: 1.5rem; gap: 2rem; }
 .family-text { color: var(--color-black); font-size: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
 .family-text p { position: relative; }
@@ -156,7 +121,8 @@ article { position: relative; padding: 9rem 2rem; }
 .article-title h2 { color: var(--color-gray600); font-size: 3rem; font-weight: normal; }
 .article-title p { color: var(--color-gray500); font-size: 1.5rem; }
 /* CALENDAR */
-.calendar { margin: 3rem 0; padding: 2rem 0; border-top: 1px solid var(--color-gray200); border-bottom: 1px solid var(--color-gray200); }
+.calendar,
+.transport { padding: 2rem 0; border-top: 1px solid #00000010; border-bottom: 1px solid #00000010; }
 .calendar-week,
 .calendar-days { display: grid; grid-template-columns: repeat(7, 1fr); }
 .calendar span { padding: 1rem 0; color: var(--color-gray500); font-size: 1.5rem; }
@@ -179,9 +145,9 @@ article { position: relative; padding: 9rem 2rem; }
 /* =====================================================
    COUPLE
 ===================================================== */
-.couple { padding: 7rem 3rem; background: var(--color-secondary); }
-.couple .inner { display: grid; grid-template-columns: repeat(2, 1fr); gap: 5rem; justify-content: center; }
-.couple .inner div + div::before{ content: "♥"; color: var(--color-primary); position: absolute; transform: translateY(-50%); top: 50%; left: -2rem; /*width: 1px; height: 80%; background: var(--color-gray300);*/ }
+.couple { background: var(--color-secondary); }
+.couple .inner { display: grid; grid-template-columns: repeat(2, 1fr); }
+.couple .inner div + div::before{ content: "♥"; color: var(--color-primary); position: absolute; transform: translateY(-50%); top: 50%; left: 0; /*width: 1px; height: 80%; background: var(--color-gray300);*/ }
 .couple-person { position: relative; align-items: center; }
 .couple-person p { color: var(--color-gray600); font-size: 2rem; }
 .couple-person .parents { gap: 1rem; }
@@ -196,49 +162,12 @@ article { position: relative; padding: 9rem 2rem; }
    GALLERY
 ===================================================== */
 .gallery { padding: 9rem 0; }
-.gallery-list {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 2px;
-
-    margin-top: 3rem;
-}
+.gallery-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.gallery-item { width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background: var(--color-gray200); position: relative; }
+.gallery-item img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .8s cubic-bezier(.2,.8,.2,1); }
+.gallery-item:active img { transform: scale(1.05); }
 
 
-.gallery-item {
-    position: relative;
-
-    width: 100%;
-
-    aspect-ratio: 1 / 1;
-
-    overflow: hidden;
-
-    background: #eee;
-}
-
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    transition:
-        transform .8s
-        cubic-bezier(.2,.8,.2,1);
-}
-
-
-.gallery-item:active img {
-    transform:
-        scale(1.05);
-}
 
 
 
@@ -246,56 +175,11 @@ article { position: relative; padding: 9rem 2rem; }
    LOCATION
 ===================================================== */
 .location { background: var(--color-secondary); }
-.address { font-size: 1.5rem; justify-content: center; align-items: center; gap: 0.5rem; }
-
-
-.map {
-    margin-top: 2rem;
-
-    width: 100%;
-    height: 300px;
-
-    overflow: hidden;
-
-    background: #eee;
-}
-
+.address { font-size: 1.5rem; justify-content: center; align-items: center; gap: 0.5rem; cursor: pointer; }
+.map { width: 100%; aspect-ratio: 1 / 0.8; overflow: hidden; }
 #kakaoMap {width: 100%; height: 100%;}
-.map img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-}
 
 
-.map-buttons {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 1px;
-
-    margin-top: 1px;
-
-    background: #e2d8d8;
-}
-
-
-.map-buttons a {
-    padding: .8rem .2rem;
-
-    background: var(--color-white);
-
-    text-align: center;
-
-    font-size: .75rem;
-
-    color: var(--color-gray500);
-}
 
 
 
@@ -393,12 +277,6 @@ article { position: relative; padding: 9rem 2rem; }
 /* =====================================================
    ACCOUNT
 ===================================================== */
-
-.account {
-    background: var(--color-bg);
-}
-
-
 .account-list {
     margin-top: 3rem;
 }
@@ -496,7 +374,7 @@ article { position: relative; padding: 9rem 2rem; }
 ===================================================== */
 
 .rsvp {
-    background: var(--color-white);
+    background: var(--color-bg);
 }
 
 
@@ -590,109 +468,20 @@ article { position: relative; padding: 9rem 2rem; }
 
 
 /* =====================================================
-   SHARE
-===================================================== */
-
-.share {
-    padding: 4rem 2rem;
-
-    background: #f8edf1;
-
-    text-align: center;
-}
-
-
-.share p {
-
-    font-size: 1.1rem;
-
-    line-height: 1.8;
-
-    color: #8a7c80;
-}
-
-
-.share button {
-    margin-top: 2rem;
-
-    padding: .9rem 2.5rem;
-
-    border:
-        1px solid #d8bfc7;
-
-    background: var(--color-white);
-
-    color: #8b727b;
-
-    font-size: .8rem;
-}
-
-
-
-/* =====================================================
    FOOTER
 ===================================================== */
-
-footer {
-    padding: 4rem 2rem;
-
-    background: var(--color-white);
-
-    text-align: center;
-}
-
-
-.footer-mark {
-    font-size: 1.5rem;
-
-    color: #d3a9b7;
-}
-
-
-footer p {
-    margin-top: .8rem;
-
-    font-size: 1rem;
-
-    color: #999;
-}
-
-
-footer span {
-    display: block;
-
-    margin-top: .2rem;
-
-    font-size: .8rem;
-
-    color: #bbb;
-}
+footer { padding: 4rem 2rem 5rem; text-align: center; }
+.footer-mark { font-size: 1.5rem; color: var(--color-primary); }
+footer p { color: var(--color-gray400); font-size: 1.2rem; }
+footer span { display: block; margin-top: .2rem; color: var(--color-gray300); font-size: 1rem; }
 
 
 
 /* =====================================================
    REVEAL
 ===================================================== */
-
-.reveal {
-    opacity: 0;
-
-    transform:
-        translateY(3rem);
-
-    transition:
-        opacity .8s ease,
-        transform .8s
-        cubic-bezier(.2,.7,.2,1);
-}
-
-
-.reveal.is-visible {
-    opacity: 1;
-
-    transform:
-        translateY(0);
-}
+.reveal { opacity: 0; transform: translateY(3rem); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
 
 
 
