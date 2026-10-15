@@ -31,7 +31,7 @@ ul, li, ol { list-style: none; }
 /* =====================================================
    PAGE
 ===================================================== */
-.wedding { width: 100%; max-width: 390px; margin: 0 auto; background: var(--color-white); box-shadow: 0 0 50px rgba(0,0,0,.05); overflow: hidden; position: relative; }
+.wedding { width: 100%; max-width: 400px; margin: 0 auto; background: var(--color-white); box-shadow: 0 0 50px rgba(0,0,0,.05); overflow: hidden; position: relative; }
 .inner { width: 100%; margin: 0 auto; text-align: center; gap: 3rem; }
 article { position: relative; padding: 9rem 2rem; }
 .flex-column { display: flex; flex-direction: column; }
