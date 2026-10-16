@@ -435,61 +435,6 @@
             }
         );
     });
-
-
-
-    /* ----------------------------------------------
-        RSVP 구글폼 연결
-    ---------------------------------------------- */
-    const rsvpButton = document.getElementById("rsvpButton");
-
-    if (rsvpButton) {
-        rsvpButton.addEventListener("click", function () {
-            window.open(
-                "https://docs.google.com/forms/d/e/1FAIpQLSfi1WnuhAGzFApPVPM7W1xDIFL4jC11HKSQrLJYc3aA5lIbdQ/viewform",
-                "_blank",
-                "noopener,noreferrer"
-            );
-        });
-    }
-
-
-
-    /* ----------------------------------------------
-        꽃잎 파티클
-    ---------------------------------------------- */
-    const layer = document.querySelector(".petal-layer");
-
-    for (let i = 0; i < 18; i++) {
-        const petal = document.createElement("span");
-        petal.className = "petal";
-
-        // 화면 전체에 고르게 분산
-        petal.style.setProperty(
-            "--left", `${Math.random() * 140 - 20}%`
-        );
-        // 꽃잎 크기
-        petal.style.setProperty(
-            "--size", `${4 + Math.random() * 5}px`
-        );
-        // 꽃잎마다 다른 낙하 속도
-        petal.style.setProperty(
-            "--duration", `${18 + Math.random() * 12}s`
-        );
-        // 애니메이션 시작 시점을 분산
-        petal.style.setProperty(
-            "--delay", `${-Math.random() * 30}s`
-        );
-        // 투명도 차이
-        petal.style.setProperty(
-            "--opacity", `${0.25 + Math.random() * 0.4}`
-        );
-        // 꽃잎마다 다른 사선 이동 거리
-        petal.style.setProperty(
-            "--drift", `${-60 - Math.random() * 60}vw`
-        );
-        layer.appendChild(petal);
-    }
     </script>
 </body>
 
