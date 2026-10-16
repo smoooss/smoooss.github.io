@@ -28,6 +28,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =====================================================
+       MUSIC
+    ===================================================== */
+    const music = document.getElementById( "bgMusic" );
+    const musicButton = document.getElementById( "musicButton" );
+
+    let musicPlaying = false;
+
+    musicButton.addEventListener( "click", function () {
+
+            if (!musicPlaying) {
+                music.play().then( function () {
+                    musicPlaying = true;
+                    musicButton.classList.add( "playing" );
+                })
+                .catch( function () {
+                    showToast( "음악을 재생할 수 없습니다." ); }
+                );
+            } else {
+                music.pause();
+                musicPlaying = false;
+                musicButton.classList.remove( "playing" );
+            }
+        }
+    );
+
+
+
+    /* =====================================================
        HERO PARALLAX
     ===================================================== */
     const hero = document.querySelector(".hero");
@@ -60,72 +88,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =====================================================
-       HERO TOUCH / MOUSE
-
-    if (hero) {
-
-        hero.addEventListener(
-            "pointermove",
-            function (event) {
-
-                if (
-                    window.innerWidth <= 700
-                ) {
-                    return;
-                }
-
-
-                const rect =
-                    hero.getBoundingClientRect();
-
-
-                const x =
-                    (
-                        event.clientX -
-                        rect.left
-                    ) /
-                    rect.width -
-                    .5;
-
-
-                const y =
-                    (
-                        event.clientY -
-                        rect.top
-                    ) /
-                    rect.height -
-                    .5;
-
-
-                heroImage.style.transform =
-                    `
-                    translate3d(
-                        ${x * -10}px,
-                        ${y * -10}px,
-                        0
-                    )
-                    scale(1.04)
-                    `;
-
-            }
-        );
-
-
-        hero.addEventListener(
-            "pointerleave",
-            function () {
-
-                heroImage.style.transform =
-                    `
-                    translate3d(0,0,0)
-                    scale(1.04)
-                    `;
-
-            }
-        );
-
-    }
+        꽃잎 파티클
     ===================================================== */
+    const layer = document.querySelector(".petal-layer");
+
+    for (let i = 0; i < 18; i++) {
+        const petal = document.createElement("span");
+        petal.className = "petal";
+
+        // 화면 전체에 고르게 분산
+        petal.style.setProperty(
+            "--left", `${Math.random() * 140 - 20}%`
+        );
+        // 꽃잎 크기
+        petal.style.setProperty(
+            "--size", `${4 + Math.random() * 5}px`
+        );
+        // 꽃잎마다 다른 낙하 속도
+        petal.style.setProperty(
+            "--duration", `${18 + Math.random() * 12}s`
+        );
+        // 애니메이션 시작 시점을 분산
+        petal.style.setProperty(
+            "--delay", `${-Math.random() * 30}s`
+        );
+        // 투명도 차이
+        petal.style.setProperty(
+            "--opacity", `${0.25 + Math.random() * 0.4}`
+        );
+        // 꽃잎마다 다른 사선 이동 거리
+        petal.style.setProperty(
+            "--drift", `${-60 - Math.random() * 60}vw`
+        );
+        layer.appendChild(petal);
+    }
 
 
 
@@ -384,142 +380,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =====================================================
-       MUSIC
-    ===================================================== */
-    const music = document.getElementById( "bgMusic" );
-    const musicButton = document.getElementById( "musicButton" );
-
-    let musicPlaying = false;
-
-    musicButton.addEventListener( "click", function () {
-
-            if (!musicPlaying) {
-                music.play().then( function () {
-                    musicPlaying = true;
-                    musicButton.classList.add( "playing" );
-                })
-                .catch( function () {
-                    showToast( "음악을 재생할 수 없습니다." ); }
-                );
-            } else {
-                music.pause();
-                musicPlaying = false;
-                musicButton.classList.remove( "playing" );
-            }
-        }
-    );
-
-
-
-    /* =====================================================
-       SHARE
-    ===================================================== */
-    const shareButton = document.getElementById( "shareButton" );
-
-    shareButton.addEventListener( "click", async function () {
-
-            const shareData = {
-                title: "동엽 ♥ 상미 결혼식",
-                text: "소중한 분들을 결혼식에 초대합니다.",
-                url: window.location.href
-            };
-
-            if ( navigator.share ) {
-                try {
-                    await navigator.share( shareData );
-
-                } catch (error) { return; }
-                return;
-            }
-
-            try {
-                await navigator.clipboard.writeText( window.location.href );
-                showToast( "청첩장 주소가 복사되었습니다." );
-            } catch (error) {
-                showToast( "주소를 복사할 수 없습니다." );
-            }
-        }
-    );
-
-
-
-    /* =====================================================
        RSVP
     ===================================================== */
-    const rsvpButton = document.getElementById( "rsvpButton" );
+    const rsvpButton = document.getElementById("rsvpButton");
 
-    rsvpButton.addEventListener( "click", function () {
-        /* 실제 RSVP 페이지가 생기면 이 부분만 연결하면 됩니다. */
-        showToast( "참석 여부 전달 페이지를 연결해주세요." ); }
-    );
-
-
-
-    /* =====================================================
-       PARTICLE
-    ===================================================== */
-    const canvas = document.getElementById( "particleCanvas" );
-    const ctx = canvas.getContext("2d");
-
-    let particles = [];
-
-    function resizeCanvas() {
-
-        const ratio = Math.min( window.devicePixelRatio || 1, 2 );
-        canvas.width = window.innerWidth * ratio;
-        canvas.height = window.innerHeight * ratio;
-        canvas.style.width = window.innerWidth + "px";
-        canvas.style.height = window.innerHeight + "px";
-        ctx.setTransform( ratio, 0, 0, ratio, 0, 0 );
-        createParticles();
+    if (rsvpButton) {
+        rsvpButton.addEventListener("click", function () {
+            window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSfi1WnuhAGzFApPVPM7W1xDIFL4jC11HKSQrLJYc3aA5lIbdQ/viewform",
+                "_blank",
+                "noopener,noreferrer"
+            );
+        });
     }
-
-    function createParticles() {
-
-        particles = [];
-
-        const count = window.innerWidth < 430 ? 12 : 18;
-
-        for ( let i = 0; i < count; i++ ) {
-
-            particles.push({
-                x: Math.random() * window.innerWidth,
-                y: Math.random() * window.innerHeight,
-                size: Math.random() * 2 + .8,
-                speed: Math.random() * .15 + .05,
-                drift: Math.random() * .15 - .075,
-                opacity: Math.random() * .18 + .04
-            });
-        }
-    }
-
-    function animateParticles() {
-
-        ctx.clearRect( 0, 0, window.innerWidth, window.innerHeight );
-
-        particles.forEach(
-
-            function (particle) {
-
-                particle.y -= particle.speed;
-                particle.x += particle.drift;
-
-                if ( particle.y < -10 ) { particle.y = window.innerHeight + 10; }
-
-                ctx.beginPath();
-                ctx.arc( particle.x, particle.y, particle.size, 0, Math.PI * 2 );
-                ctx.fillStyle = `rgba( 255, 255, 255, ${particle.opacity} )`;
-                ctx.fill();
-            }
-        );
-        requestAnimationFrame( animateParticles );
-    }
-
-    resizeCanvas();
-
-    animateParticles();
-
-    window.addEventListener( "resize", resizeCanvas );
 
 
 
