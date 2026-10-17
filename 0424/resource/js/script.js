@@ -4,23 +4,21 @@ document.addEventListener("DOMContentLoaded", function () {
     /* =====================================================
        SCROLL REVEAL
     ===================================================== */
-    const revealElements =
-        document.querySelectorAll(".reveal");
+    const revealElements = document.querySelectorAll(".reveal");
+    const revealObserver = new IntersectionObserver(
+        function (entries, observer) {
 
-    const revealObserver =
-        new IntersectionObserver(
-            
-            function (entries, observer) {
-                entries.forEach(function (entry) {
+            entries.forEach(function (entry) {
 
-                    if (!entry.isIntersecting) { return; }
-                    
-                    entry.target.classList.add("is-visible");
-                    observer.unobserve(entry.target);
-                });
-            },
-            { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
-        );
+                if (!entry.isIntersecting) return;
+
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+            });
+        },
+        { threshold: 0, rootMargin: "0px 0px 0px 0px" }
+    );
+
     revealElements.forEach(function (element) {
         revealObserver.observe(element);
     });
@@ -382,10 +380,10 @@ document.addEventListener("DOMContentLoaded", function () {
     /* =====================================================
        RSVP
     ===================================================== */
-    const rsvpButton = document.getElementById("rsvpButton");
+    const rsvpSubmitBtn = document.getElementById("rsvpSubmitBtn");
 
-    if (rsvpButton) {
-        rsvpButton.addEventListener("click", function () {
+    if (rsvpSubmitBtn) {
+        rsvpSubmitBtn.addEventListener("click", function () {
             window.open(
                 "https://docs.google.com/forms/d/e/1FAIpQLSfi1WnuhAGzFApPVPM7W1xDIFL4jC11HKSQrLJYc3aA5lIbdQ/viewform",
                 "_blank",
