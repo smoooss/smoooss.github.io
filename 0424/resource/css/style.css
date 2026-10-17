@@ -46,8 +46,8 @@ ul, li, ol { list-style: none; }
 /* =====================================================
    MUSIC
 ===================================================== */
-.music-button { width: 3.5rem; height: 3.5rem; border-radius: 50%; background: rgba(255,255,255,.45); backdrop-filter: blur(10px); color: var(--color-gray500); font-size: 1.3rem; position: fixed; top: 1.5rem; right: max( calc((100vw - 430px) / 2 + 1.5rem), 1.5rem ); z-index: 100; }
-.music-button.playing { animation: rotateMusic 4s linear infinite; }
+.bg-music { width: 3.5rem; height: 3.5rem; border-radius: 50%; background: rgba(255,255,255,.45); backdrop-filter: blur(10px); color: var(--color-gray500); font-size: 1.5rem; position: fixed; top: 1.5rem; right: max( calc((100vw - 430px) / 2 + 1.5rem), 1.5rem ); z-index: 100; }
+.bg-music.playing { animation: rotateMusic 4s linear infinite; }
 @keyframes rotateMusic {
     to { transform: rotate(360deg); }
 }
