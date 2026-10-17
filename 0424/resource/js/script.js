@@ -26,30 +26,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =====================================================
-       MUSIC
+        MUSIC
     ===================================================== */
-    const music = document.getElementById( "bgMusic" );
-    const musicButton = document.getElementById( "musicButton" );
+    const music = document.getElementById("bgMusic");
+    const musicButton = document.getElementById("musicButton");
 
     let musicPlaying = false;
 
-    musicButton.addEventListener( "click", function () {
-
-            if (!musicPlaying) {
-                music.play().then( function () {
-                    musicPlaying = true;
-                    musicButton.classList.add( "playing" );
-                })
-                .catch( function () {
-                    showToast( "음악을 재생할 수 없습니다." ); }
-                );
-            } else {
-                music.pause();
+    // 음악 재생
+    function playMusic() {
+        music.play()
+            .then(function () {
+                musicPlaying = true;
+                musicButton.classList.add("playing");
+            })
+            .catch(function () {
                 musicPlaying = false;
-                musicButton.classList.remove( "playing" );
-            }
+                musicButton.classList.remove("playing");
+            });
+    }
+
+    // 페이지가 열리면 자동 재생 시도
+    window.addEventListener("load", function () {
+        playMusic();
+    });
+
+    // 음악 버튼으로 재생 / 일시정지
+    musicButton.addEventListener("click", function () {
+        if (!musicPlaying) {
+            playMusic();
+        } else {
+            music.pause();
+            musicPlaying = false;
+            musicButton.classList.remove("playing");
         }
-    );
+    });
+
+    // 재생 상태 동기화
+    music.addEventListener("play", function () {
+        musicPlaying = true;
+        musicButton.classList.add("playing");
+    });
+
+    music.addEventListener("pause", function () {
+        musicPlaying = false;
+        musicButton.classList.remove("playing");
+    });
 
 
 
