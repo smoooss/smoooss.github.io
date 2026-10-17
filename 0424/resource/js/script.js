@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         MUSIC
     ===================================================== */
     const music = document.getElementById("bgMusic");
-    const musicButton = document.getElementById("musicButton");
+    const bgMusicBtn = document.getElementById("bgMusicBtn");
 
     let musicPlaying = false;
 
@@ -38,11 +38,11 @@ document.addEventListener("DOMContentLoaded", function () {
         music.play()
             .then(function () {
                 musicPlaying = true;
-                musicButton.classList.add("playing");
+                bgMusicBtn.classList.add("playing");
             })
             .catch(function () {
                 musicPlaying = false;
-                musicButton.classList.remove("playing");
+                bgMusicBtn.classList.remove("playing");
             });
     }
 
@@ -52,25 +52,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // 음악 버튼으로 재생 / 일시정지
-    musicButton.addEventListener("click", function () {
+    bgMusicBtn.addEventListener("click", function () {
         if (!musicPlaying) {
             playMusic();
         } else {
             music.pause();
             musicPlaying = false;
-            musicButton.classList.remove("playing");
+            bgMusicBtn.classList.remove("playing");
         }
     });
 
     // 재생 상태 동기화
     music.addEventListener("play", function () {
         musicPlaying = true;
-        musicButton.classList.add("playing");
+        bgMusicBtn.classList.add("playing");
     });
 
     music.addEventListener("pause", function () {
         musicPlaying = false;
-        musicButton.classList.remove("playing");
+        bgMusicBtn.classList.remove("playing");
     });
 
 
