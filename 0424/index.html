@@ -453,15 +453,18 @@
         const shareButton = document.getElementById("kakaoShareBtn");
 
         if (!shareButton) {
-            console.error("kakaoShareBtn 버튼이 없습니다.");
+            console.error("공유 버튼을 찾을 수 없습니다.");
             return;
         }
-
-        // SDK JavaScript 키
-        Kakao.init("a0c4ee614885ee594fccef1bb3529b9d");
-
+        if (!window.Kakao) {
+            console.error("카카오 공유 SDK가 로드되지 않았습니다.");
+            return;
+        }
+        if (!Kakao.isInitialized()) {
+            Kakao.init("카카오_JavaScript_키");
+        }
         const invitationUrl = "https://smoooss.github.io/0424/";
-        const locationUrl = "https://map.kakao.com/link/search/트라디노이";
+        const locationUrl = "https://map.kakao.com/link/search/" + encodeURIComponent("트라디노이");
 
         shareButton.addEventListener("click", function () {
 
@@ -470,7 +473,7 @@
 
                 content: {
                     title: "동엽 ♥ 상미 결혼식",
-                    description: "2027년 4월 24일 토요일 오후 5시\n저희의 시작을 함께해주세요.",
+                    description: "2027년 4월 24일 토요일 오후 5시\n" + "저희의 시작을 함께해주세요.",
                     imageUrl: "https://smoooss.github.io/0424/resource/images/og-image.jpg",
                     link: {
                         webUrl: invitationUrl,
@@ -497,6 +500,7 @@
             });
         });
     });
+
     </script>
 </body>
 
