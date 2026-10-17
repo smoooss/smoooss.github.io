@@ -404,7 +404,7 @@
 
     <script src="resource/js/script.js"></script>
 
-    <!-- 카카오 지도 API -->
+    <!-- 카카오 지도 -->
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a0c4ee614885ee594fccef1bb3529b9d&libraries=services"></script>
     <script>
     /* ----------------------------------------------
@@ -450,16 +450,30 @@
             }
         );
     });
+    </script>
 
-
+    <!-- 카카오 공유-->
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.7/kakao.min.js"></script>
+    <script>
     /* ----------------------------------------------
-        카카오 공유하기
+        카카오 공유
     ---------------------------------------------- */
-    Kakao.init("a0c4ee614885ee594fccef1bb3529b9d&libraries");
+    document.addEventListener("DOMContentLoaded", function () {
 
-    document
-        .getElementById("kakaoShareBtn")
-        .addEventListener("click", function () {
+        const shareButton = document.getElementById("kakaoShareBtn");
+
+        if (!shareButton) {
+            console.error("kakaoShareBtn 버튼이 없습니다.");
+            return;
+        }
+
+        // SDK JavaScript 키
+        Kakao.init("a0c4ee614885ee594fccef1bb3529b9d");
+
+        const invitationUrl = "https://smoooss.github.io/0424/";
+        const locationUrl = "https://map.kakao.com/link/search/트라디노이";
+
+        shareButton.addEventListener("click", function () {
 
             Kakao.Share.sendDefault({
                 objectType: "feed",
@@ -467,14 +481,10 @@
                 content: {
                     title: "동엽 ♥ 상미 결혼식",
                     description: "2027년 4월 24일 토요일 오후 5시",
-                    imageUrl:
-                        "https://smoooss.github.io/0424/images/og-image.jpg",
-
+                    imageUrl: "https://smoooss.github.io/0424/resource/images/og-image.jpg",
                     link: {
-                        mobileWebUrl:
-                            "https://smoooss.github.io/0424/",
-                        webUrl:
-                            "https://smoooss.github.io/0424/"
+                        webUrl: invitationUrl,
+                        mobileWebUrl: invitationUrl
                     }
                 },
 
@@ -482,24 +492,21 @@
                     {
                         title: "청첩장 보기",
                         link: {
-                            mobileWebUrl:
-                                "https://smoooss.github.io/0424/",
-                            webUrl:
-                                "https://smoooss.github.io/0424/"
+                            webUrl: invitationUrl,
+                            mobileWebUrl: invitationUrl
                         }
                     },
                     {
                         title: "위치 보기",
                         link: {
-                            mobileWebUrl:
-                                "https://map.kakao.com/link/search/트라디노이",
-                            webUrl:
-                                "https://map.kakao.com/link/search/트라디노이"
+                            webUrl: locationUrl,
+                            mobileWebUrl: locationUrl
                         }
                     }
                 ]
             });
         });
+    });
     </script>
 </body>
 
